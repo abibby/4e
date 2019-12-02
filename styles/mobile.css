@@ -1,0 +1,320 @@
+﻿html, body, div, span, applet, object, iframe, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, 
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, 
+dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+}
+body {
+	line-height: 1;
+}
+ol, ul { 
+	list-style: none; 
+}
+blockquote, q {
+	quotes: none;
+}
+:focus { 
+	outline: 0; 
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+	font-size: 75%; /* Makes default size of text 12px on most older browsers */
+	line-height: 1.5em;
+}
+body, div, p, th, td, li, dd, input, select, textarea	{ /* Redundant selectors to help IE6 remember */
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000;
+}
+table, thead, tbody, tr, th, td { /* Redundant selectors to help IE6 remember */
+	font-size: 1em;
+}
+html>body { /* Makes default size of text 12px on Firefox, Safari, IE7, Opera, etc. */
+	font-size: 12px;
+}
+
+/* From here on out, 1em = 12px */
+
+a img { border-style: none; }
+
+a:link { color: blue; }
+a:visited { color: purple; }
+a:focus
+a:hover,
+a:active { color: blue; }
+
+p {
+	font-size: 1em;
+	margin: 0 0 1.5em 0;
+}
+p strong, p b { /* outside of paragraphs, strong can be used for emphasis not necessarily as bold text */
+	font-weight: bold;
+}
+p em, p i { /* outside of paragraphs, em can be used for emphasis not necessarily as italic text */
+	font-style: italic;
+}
+
+.left {
+	float: left;
+	margin: 0.5em 0.5em 0.5em 0;
+}
+.right {
+	float: right;
+	margin: 0.5em 0 0.5em 0.5em;
+}
+.clear { clear: both; }
+
+.hidden { position: absolute; left: -9999em; }
+
+span.super {
+	font-size: 0.917em;
+	vertical-align: super;
+}
+span.sub {
+	font-size: 0.917em;
+	vertical-align: sub;
+}
+
+#detail {
+	background: #fff;
+	float: left;
+	padding: 15px;
+	width: 295px;
+    color: #3e141e;
+}
+#detail {
+    font-size: 0.916em;
+}
+#detail p {
+	padding-left: 15px;
+	color: #3e141e;
+}
+#detail table {
+	width: 100%;
+}
+#detail table td {
+	vertical-align: top;
+	padding: 0 10px 0;
+	background: #d6d6c2;
+	border-bottom: 1px solid #fff;
+}
+#detail p.flavor,
+#detail span.flavor,
+#detail ul.flavor {
+	display: block;
+	padding: 2px 15px;
+	margin: 0;
+	background: #d6d6c2;
+}
+#detail p.powerstat {
+	padding: 0px 0px 0px 15px;
+	margin: 0;
+	background: #FFFFFF;
+}
+#detail span.ritualstats {
+	float:right;
+	padding: 0 30px 0 0;
+}
+#detail p.flavorIndent {
+	display: block;
+	padding: 2px 15px 2px 30px;
+	margin: 0;
+	background: #d6d6c2;
+}
+#detail span.clearIndent {
+	display: block;
+	padding: 2px 15px 2px 30px;
+	margin: 0;
+	background: #FFFFFF;
+}
+#detail p.alt,
+#detail span.alt,
+#detail td.alt {
+	background: #c3c6ad;
+}
+#detail th {
+    background: #1d3d5e;
+    color: #fff;
+    text-align: left;
+    padding: 0 0 0 5px;
+}
+#detail i,
+#detail em {
+	font-style: italic;
+}
+#detail ul {
+    list-style: disc;
+    margin: 1em 0 1em 30px;
+}
+#detail table,
+#detail ul.flavor {
+	margin-bottom: 1em;
+}
+#detail ul li {
+    color: #3e141e;
+}
+#detail ul.flavor li {
+	list-style-image: url("../images/bullet.gif");
+	margin-left: 15px;
+}
+#detail a {
+    color: #3e141e;
+}
+#detail blockquote 
+{
+	padding: 0 0 0 22px;
+	background: #d6d6c2;
+}
+#detail h1 {
+    font-size: 1.09em;
+    line-height: 2;
+    padding-left: 15px;
+    margin: 0;
+    color: #fff;
+    background: #000;
+}
+
+#detail h1.player {
+    background: #1d3d5e;
+    font-size: 1.35em;
+}
+#detail h1.monster {
+    background: #4e5c2e;
+    height:38px;
+}
+#detail h1.dm {
+    background: #5c1f34;
+}
+#detail h1.trap {
+    background: #5c1f34;
+    height:38px;
+}
+#detail h1.atwillpower {
+    background: #619869;
+}
+#detail h1.encounterpower {
+    background: #961334;
+}
+#detail h1.dailypower {
+    background: #4d4d4f;
+}
+#detail h1.magicitem {
+    background: #d8941d;
+}
+#detail h1.utilitypower {
+    background: #1c3d5f;
+}
+#detail h1.familiar 
+{
+	background: #4e5c2e;
+}
+#detail h1 .level {
+    padding-right: 15px;
+	margin-top: 0;
+	text-align: right;
+	float: right;
+}
+#detail h1.monster .level, h1.trap .level {
+	margin-top: 0;
+	text-align: right;
+	position:relative;
+	top:-60px;
+}
+#detail h1.monster .type,
+#detail h1.monster .xp {
+	display: block;
+	position: relative;
+	z-index: 99;
+	top: -0.75em;
+	height: 1em;
+	font-weight: normal;
+	font-size: 0.917em;
+}
+#detail .rightalign {
+	text-align: right;
+}
+/* Traps */
+#detail h1.trap .level {
+	margin-top: 0;
+	text-align: right;
+}
+#detail h1.trap .type,
+#detail h1.trap .xp {
+	display: block;
+	position: relative;
+	z-index: 99;
+	top: -0.75em;
+	height: 1em;
+	font-weight: normal;
+	font-size: 0.917em;
+}
+#detail .traplead {
+	display: block;
+	padding: 1px 15px;
+	margin: 0;
+	background: #ffffff;
+}
+#detail .trapblocktitle {
+	display: block;
+	padding: 1px 15px;
+	margin: 0;
+	background: #d6d6c2;
+	font-weight: bold;
+}
+#detail .trapblockbody {
+	display: block;
+	padding: 1px 15px 1px 30px;
+	margin: 0;
+	background: #ffffff;
+}
+
+/* Detail page related link section */
+/* -------------------------------------------- */
+
+#detail #RelatedArticles h5 {
+	width: 100px;
+	float: left;
+	padding-top: 10px;
+	padding-left: 20px;
+	color: #3e141e;
+	font-weight: bold;
+}
+#detail #RelatedArticles ul.RelatedArticles {
+	padding: 10px 0 0 0;
+	float: right;
+	width: 240px;
+	margin: 0;
+	list-style: none;
+}
+
+#detail .bodytable {
+	border: 0;
+	margin: 0;
+	width: 295px;
+	background: #d6d6c2;
+}
+#detail .bodytable td {
+	border-bottom: none;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+#detail h2 {
+    font-size: 1.25em;
+    padding-left: 15px;
+    margin: 0;
+    color: #fff;
+    background: #4e5c2e;
+    height:20px;
+    font-variant: small-caps;
+    padding-top: 5px;
+}

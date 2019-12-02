@@ -1,0 +1,41 @@
+﻿
+body { color: Black !important; background: White !important; overflow:visible; font-size: .18in; }
+
+#detail { background: #fff; overflow:visible !important; width: 95%; }
+
+p { margin: 0; padding:0; }
+p.alt { margin: 0; padding: 0; }
+p.flavor, p.powerstat { font-size: .15in; }
+p.flavorIndent { margin: 0; padding: 0 0 .1in .2in; }
+
+i { font-size: .15in; }
+
+h1.player, h1.magicitem { margin:0; padding:0; }
+h1.encounterpower, h1.atwillpower, h1.dailypower 
+{ font-size: .16in; }
+
+h1.monster, h1.player, h1.magicitem, h1.trap
+{ font-size: .25in; }
+
+h1.monster, h1.trap
+{height:.5in;}
+
+h1.monster .level, h1.encounterpower .level, h1.atwillpower .level, h1.dailypower .level, h1.trap .level
+{ text-align:right; float: right; }
+
+h1.monster .level, h1.trap .level
+{position: relative; top:-.814375in;}
+
+h1.monster .type, h1.monster .xp, h1.trap .type, h1.trap .xp 
+{ display: block; position: relative; top: -.03in; font-size: .18in; }
+
+h2 { font-size: .18in; margin: 0; padding: 0; }
+h3 { font-size: .16in; margin: 0; padding: 0; }
+
+table { width: 100%; }
+th { text-align: left; }
+
+.traplead, .trapblocktitle, .trapblockbody
+{display: block;}
+.trapblocktitle 
+{margin-top: .1in;}
