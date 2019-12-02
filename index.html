@@ -31,27 +31,23 @@
 
         window.addEventListener('hashchange', async () => {
             const selected = monsters
-                .filter(m => m.name.toLowerCase().includes(decodeURIComponent(location.hash.toLowerCase()).slice(1)))
-                .slice(0, 10)
-            list.innerHTML = selected
-                .map(m => `<li>${m.name}</li>`)
-                .join('')
+                .find(m => m.name === decodeURIComponent(location.hash.slice(1)))
 
-            if (selected.length === 0) {
+            if (!selected) {
                 return
             }
-            const html = await fetch("./content/monster/" + selected[0].file).then(r => r.text())
+            const html = await fetch("./content/monster/" + selected.file).then(r => r.text())
             detail.innerHTML = html
         })
 
-        search.addEventListener('input', () => {
-            location.hash = search.value
+        search.addEventListener('input', e => {
+            const selected = monsters
+                .filter(m => m.name.toLowerCase().includes(e.target.value.toLowerCase()))
+                .slice(0, 10)
+            list.innerHTML = selected
+                .map(m => `<li><a href="#${m.name}">${m.name}</a></li>`)
+                .join('')
         })
-
-        // const monster = monsters[1000]
-
-        // const html = await fetch("./content/monster/" + monster.file).then(r => r.text())
-        // document.getElementById('detail').innerHTML = html
     </script>
 </body>
 
