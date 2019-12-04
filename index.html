@@ -1,54 +1,15 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>DND 4e</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-    <link href="styles/detail.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="styles/print.css" media="print" rel="stylesheet" type="text/css" />
-    <link href="styles/mobile.css" media="handheld" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>4e</title>
 </head>
 
 <body>
-    <div>
-        <input type="text" id="search">
-        <ul id="list"></ul>
-    </div>
-    <div id="detail"></div>
-
-    <script>
-        const search = document.getElementById('search')
-        const list = document.getElementById('list')
-        const detail = document.getElementById('detail')
-        let monsters = []
-
-        fetch("./content/monster/index.json")
-            .then(r => r.json())
-            .then(m => {
-                monsters = m
-                window.dispatchEvent(new Event('hashchange'))
-            })
-
-        window.addEventListener('hashchange', async () => {
-            const selected = monsters
-                .find(m => m.name === decodeURIComponent(location.hash.slice(1)))
-
-            if (!selected) {
-                return
-            }
-            const html = await fetch("./content/monster/" + selected.file).then(r => r.text())
-            detail.innerHTML = html
-        })
-
-        search.addEventListener('input', e => {
-            const selected = monsters
-                .filter(m => m.name.toLowerCase().includes(e.target.value.toLowerCase()))
-                .slice(0, 10)
-            list.innerHTML = selected
-                .map(m => `<li><a href="#${m.name}">${m.name}</a></li>`)
-                .join('')
-        })
-    </script>
+    <a href="./monster.html">Monsters</a>
 </body>
 
 </html>
