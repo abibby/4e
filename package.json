@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:monsters": "ts-node build/indexgen.ts",
+    "build": "npm run build:monsters"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jsdom": "^15.2.1"
+    "@types/jsdom": "^20.0.1",
+    "@types/node": "^18.11.9",
+    "jsdom": "^15.2.1",
+    "ts-node": "^10.9.1"
   }
 }
