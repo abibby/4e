@@ -1,0 +1,310 @@
+[
+    {
+        "name": "Ardent",
+        "role": ""
+    },
+    {
+        "name": "Artificer",
+        "role": ""
+    },
+    {
+        "name": "Assassin",
+        "role": ""
+    },
+    {
+        "name": "Avenger",
+        "role": ""
+    },
+    {
+        "name": "Barbarian",
+        "role": ""
+    },
+    {
+        "name": "Bard",
+        "role": ""
+    },
+    {
+        "name": "Battlemind",
+        "role": ""
+    },
+    {
+        "name": "Barbarian (Berserker)",
+        "role": ""
+    },
+    {
+        "name": "Warlock (Binder)",
+        "role": ""
+    },
+    {
+        "name": "Paladin (Blackguard)",
+        "role": ""
+    },
+    {
+        "name": "Wizard (Bladesinger)",
+        "role": ""
+    },
+    {
+        "name": "Paladin (Cavalier)",
+        "role": ""
+    },
+    {
+        "name": "Cleric (Templar)",
+        "role": ""
+    },
+    {
+        "name": "Druid",
+        "role": ""
+    },
+    {
+        "name": "Sorcerer (Elementalist)",
+        "role": ""
+    },
+    {
+        "name": "Assassin (Executioner)",
+        "role": ""
+    },
+    {
+        "name": "Fighter (Weaponmaster)",
+        "role": ""
+    },
+    {
+        "name": "Warlock (Hexblade)",
+        "role": ""
+    },
+    {
+        "name": "Ranger (Hunter)",
+        "role": ""
+    },
+    {
+        "name": "Hybrid Ardent",
+        "role": ""
+    },
+    {
+        "name": "Hybrid Artificer",
+        "role": ""
+    },
+    {
+        "name": "Hybrid Assassin",
+        "role": ""
+    },
+    {
+        "name": "Hybrid Avenger",
+        "role": ""
+    },
+    {
+        "name": "Hybrid Barbarian",
+        "role": ""
+    },
+    {
+        "name": "Hybrid Bard",
+        "role": ""
+    },
+    {
+        "name": "Hybrid Battlemind",
+        "role": ""
+    },
+    {
+        "name": "Hybrid Warlock (Binder)",
+        "role": ""
+    },
+    {
+        "name": "Hybrid Paladin (Blackguard)",
+        "role": ""
+    },
+    {
+        "name": "Hybrid Paladin (Cavalier)",
+        "role": ""
+    },
+    {
+        "name": "Hybrid Cleric",
+        "role": ""
+    },
+    {
+        "name": "Hybrid Druid",
+        "role": ""
+    },
+    {
+        "name": "Hybrid Assassin (Executioner)",
+        "role": ""
+    },
+    {
+        "name": "Hybrid Fighter",
+        "role": ""
+    },
+    {
+        "name": "Hybrid Invoker",
+        "role": ""
+    },
+    {
+        "name": "Hybrid Monk",
+        "role": ""
+    },
+    {
+        "name": "Hybrid Paladin",
+        "role": ""
+    },
+    {
+        "name": "Hybrid Psion",
+        "role": ""
+    },
+    {
+        "name": "Hybrid Ranger",
+        "role": ""
+    },
+    {
+        "name": "Hybrid Rogue",
+        "role": ""
+    },
+    {
+        "name": "Hybrid Runepriest",
+        "role": ""
+    },
+    {
+        "name": "Hybrid Seeker",
+        "role": ""
+    },
+    {
+        "name": "Hybrid Druid (Sentinel)",
+        "role": ""
+    },
+    {
+        "name": "Hybrid Shaman",
+        "role": ""
+    },
+    {
+        "name": "Hybrid Sorcerer",
+        "role": ""
+    },
+    {
+        "name": "Hybrid Swordmage",
+        "role": ""
+    },
+    {
+        "name": "Hybrid Vampire",
+        "role": ""
+    },
+    {
+        "name": "Hybrid Warden",
+        "role": ""
+    },
+    {
+        "name": "Hybrid Warlock",
+        "role": ""
+    },
+    {
+        "name": "Hybrid Warlord",
+        "role": ""
+    },
+    {
+        "name": "Hybrid Wizard",
+        "role": ""
+    },
+    {
+        "name": "Invoker",
+        "role": ""
+    },
+    {
+        "name": "Fighter (Knight)",
+        "role": ""
+    },
+    {
+        "name": "Wizard (Mage)",
+        "role": ""
+    },
+    {
+        "name": "Monk",
+        "role": ""
+    },
+    {
+        "name": "Paladin",
+        "role": ""
+    },
+    {
+        "name": "Druid (Protector)",
+        "role": ""
+    },
+    {
+        "name": "Psion",
+        "role": ""
+    },
+    {
+        "name": "Ranger",
+        "role": ""
+    },
+    {
+        "name": "Rogue (Scoundrel)",
+        "role": ""
+    },
+    {
+        "name": "Runepriest",
+        "role": ""
+    },
+    {
+        "name": "Ranger (Scout)",
+        "role": ""
+    },
+    {
+        "name": "Seeker",
+        "role": ""
+    },
+    {
+        "name": "Druid (Sentinel)",
+        "role": ""
+    },
+    {
+        "name": "Wizard (Sha’ir)",
+        "role": ""
+    },
+    {
+        "name": "Shaman",
+        "role": ""
+    },
+    {
+        "name": "Bard (Skald)",
+        "role": ""
+    },
+    {
+        "name": "Fighter (Slayer)",
+        "role": ""
+    },
+    {
+        "name": "Sorcerer",
+        "role": ""
+    },
+    {
+        "name": "Swordmage",
+        "role": ""
+    },
+    {
+        "name": "Rogue (Thief)",
+        "role": ""
+    },
+    {
+        "name": "Vampire",
+        "role": ""
+    },
+    {
+        "name": "Warden",
+        "role": ""
+    },
+    {
+        "name": "Warlock",
+        "role": ""
+    },
+    {
+        "name": "Warlord (Marshal)",
+        "role": ""
+    },
+    {
+        "name": "Cleric (Warpriest)",
+        "role": ""
+    },
+    {
+        "name": "Wizard (Witch)",
+        "role": ""
+    },
+    {
+        "name": "Wizard (Arcanist)",
+        "role": ""
+    }
+]
