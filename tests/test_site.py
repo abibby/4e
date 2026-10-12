@@ -5,9 +5,10 @@ from pathlib import Path
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'build'))
 from searchdata import catalog, document, load_tables, schema
-from search import Client, import_rows
+from search import Client, import_rows, main as search_main
 import importlib.util
 spec = importlib.util.spec_from_file_location('site_build', Path(__file__).resolve().parents[1] / 'build/site.py')
 site_build = importlib.util.module_from_spec(spec)
@@ -64,6 +65,22 @@ class StaticSiteTests(unittest.TestCase):
             for rows in [[{**fixture(), 'file': '../secret.html'}], [fixture(), fixture()]]:
                 table.write_text(json.dumps(rows))
                 with self.assertRaises(ValueError): load_tables(Path(temporary))
+
+    def test_index_only_does_not_create_keys_or_change_site_config(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            tables = root / 'tables'; tables.mkdir()
+            (tables / 'item.json').write_text(json.dumps([fixture()]))
+            config = root / 'config.json'
+            config.write_text('{"searchKey":"existing-public-key"}')
+            with patch.dict(os.environ, {'TYPESENSE_URL': 'https://search.example',
+                                         'TYPESENSE_ADMIN_KEY': 'private-key'}, clear=True), \
+                 patch.object(sys, 'argv', ['search.py', '--index-only', '--tables', str(tables), '--config', str(config)]), \
+                 patch('search.Client') as client, patch('search.import_rows') as importer:
+                search_main()
+                importer.assert_called_once_with(client.return_value, [fixture()], 'compendium')
+                client.return_value.request.assert_not_called()
+            self.assertEqual(config.read_text(), '{"searchKey":"existing-public-key"}')
 
     def test_failed_import_does_not_switch_alias(self):
         class FakeClient:

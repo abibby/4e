@@ -93,6 +93,59 @@ To build without reimporting an existing index, supply `TYPESENSE_URL` and
 `TYPESENSE_SEARCH_KEY` when running `site.py`. Without search configuration, pages
 still render and remain readable; search displays an unavailable message.
 
+## Deploy with GitHub Actions
+
+Two independent workflows run on relevant pushes to `master`. Both also support
+manual runs from the Actions tab once they are on the default branch.
+
+| Workflow | Automatic triggers | Deployment |
+| --- | --- | --- |
+| [Deploy search indexes](.github/workflows/search.yml) | `content/**`, `build/indexgen.py`, `build/searchdata.py`, `build/search.py`, its own workflow file | Regenerates tables and updates the Typesense collection alias |
+| [Deploy to GitHub Pages](.github/workflows/pages.yml) | `content/**`, `images/**`, `web/**`, `build/indexgen.py`, `build/searchdata.py`, `build/site.py`, its own workflow file | Builds and uploads only `dist/` to Pages |
+
+Tables are generated and ignored by Git, so the index workflow watches their
+source content and generation code. Content and shared metadata changes trigger
+both workflows; frontend-only changes do not reindex, and importer-only changes
+do not redeploy Pages. Documentation and test-only changes trigger neither.
+
+One-time repository setup:
+
+1. In **Settings → Pages → Build and deployment**, select **GitHub Actions** as
+   the source ([GitHub's custom workflow documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)).
+2. In **Settings → Secrets and variables → Actions**, configure repository-level
+   settings so both workflows can access them:
+
+   | Type | Name | Value |
+   | --- | --- | --- |
+   | Variable | `TYPESENSE_URL` | Your public HTTPS Typesense Cloud endpoint |
+   | Secret | `TYPESENSE_ADMIN_KEY` | Private key used only by the index workflow to create/import collections and switch aliases |
+   | Secret | `TYPESENSE_SEARCH_KEY` | Stable search-only key scoped to the collection alias; required by the Pages workflow |
+   | Variable (optional) | `TYPESENSE_COLLECTION` | Collection alias; defaults to `compendium` |
+
+3. Create a key in Typesense with only the `documents:search` action for the
+   configured collection alias, or reuse the search-only key previously generated
+   in `dist/assets/config.json`. Store it as `TYPESENSE_SEARCH_KEY`. Index updates
+   retain this key; the Pages workflow never needs the admin key.
+4. Allow the Pages site's origin (normally `https://abibby.github.io`) in your
+   Typesense CORS configuration.
+5. Merge the workflows into `master`. For initial setup, run **Deploy search
+   indexes** first, then **Deploy to GitHub Pages**. The Pages deployment URL is
+   shown in the `github-pages` environment. Configuration changes alone do not
+   trigger a push; rerun the relevant workflow manually after changing settings.
+
+The index workflow uses `python3 build/search.py --index-only`: it neither creates
+search keys nor writes browser configuration. The Pages workflow regenerates the
+tables locally for page metadata and builds the static files with the configured
+search-only key; it makes no indexing requests. The browser still calls Typesense
+directly, and no application server is deployed.
+
+Each workflow serializes its own deployments. They may run concurrently when
+content changes, so Pages and search updates can briefly become available at
+different times. Failed imports retain the existing search alias. Previous
+Typesense collections remain available for rollback and need periodic manual
+cleanup. Cloud integration tests are skipped in both workflows; run those locally
+with Docker Compose to avoid creating test collections on the production cluster.
+
 ### Searchable and filterable data
 
 - Name receives the highest search weight, followed by structured metadata and

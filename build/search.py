@@ -60,6 +60,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--tables", type=Path, default=ROOT / "tables")
     parser.add_argument("--config", type=Path, default=ROOT / "dist/assets/config.json", help="Public browser configuration to write")
+    parser.add_argument("--index-only", action="store_true", help="Import the index without creating a search key or writing browser configuration")
     args = parser.parse_args()
     endpoint = os.getenv("TYPESENSE_URL", "")
     admin = os.getenv("TYPESENSE_ADMIN_KEY", "")
@@ -72,6 +73,9 @@ def main():
         client = Client(endpoint, admin)
         rows = load_tables(args.tables)
         import_rows(client, rows, alias)
+        if args.index_only:
+            print("Previous collections are retained for rollback; remove them manually after verification.")
+            return
         search_key = os.getenv("TYPESENSE_SEARCH_KEY")
         if not search_key:
             search_key = client.request("POST", "/keys", {
