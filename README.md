@@ -1,4 +1,139 @@
-# D&D 4e resource tables
+# D&D 4e compendium
+
+A fully static search interface for the 24,696 entries in `content/`. The homepage
+has a title and live search box; the results page has category-specific filters,
+full-text excerpts, sorting, pagination, and links to complete resource pages.
+Searches, filters, and pagination are encoded in the URL for sharing and browser
+back/forward navigation. Quick results support arrow keys, Enter, and Escape.
+
+**There is no application server.** The browser loads HTML/CSS/JavaScript from a
+static host and calls Typesense directly using a public, search-only API key.
+Python runs only at build/indexing time. No framework or JavaScript runtime is
+required for production hosting.
+
+```text
+Browser ── HTML, CSS, JS, resource pages ──> Static hosting (dist/)
+        └─ search, autocomplete, filters ─> Typesense Cloud
+
+Build machine ── tables/*.json ──> Typesense indexing API (private admin key)
+              └─ content/     ──> dist/ (static files)
+```
+
+## Run locally with Docker Compose
+
+```sh
+docker compose up -d
+```
+
+Open **http://localhost:8000** after the initial import finishes (usually a few
+minutes). Typesense is at `http://localhost:8108`. The `setup` container generates
+the tables, builds the site, imports all entries, and creates a search-only key.
+The `site` container is only a local static-file preview, not a production backend.
+Both published ports bind to loopback. The fixed admin key in `compose.yaml` is
+for local development only; the browser gets a separate generated search key.
+
+```sh
+# Watch the initial build/import
+docker compose logs -f setup
+
+# Rebuild after changing content, tables, or frontend files
+docker compose run --rm setup
+
+# Run extractor/build tests and real Typesense integration tests
+# Run `up -d` first; --no-deps avoids repeating the full setup/import.
+docker compose --profile test run --rm --no-deps test
+
+# Stop local services (keeps the Typesense data volume)
+docker compose down
+```
+
+If you change only frontend assets, copy `web/*` to `dist/assets/` to refresh the
+preview without rebuilding the index. The Docker setup regenerates `tables/`
+from `content/`; use the individual Python commands below if you have edited the
+tables directly and want to retain those edits.
+
+## Build for static hosting with Typesense Cloud
+
+1. Create a [Typesense Cloud](https://cloud.typesense.org/) cluster with browser
+   CORS enabled for your static site's origin.
+2. Set `TYPESENSE_URL` to its HTTPS API endpoint and `TYPESENSE_ADMIN_KEY` in the
+   build environment. `.env.example` lists the available settings; the Python
+   scripts read environment variables, not `.env` files.
+3. Build the files and upload the search index:
+
+```sh
+python3 build/indexgen.py     # Omit if existing tables are already up to date.
+python3 build/site.py
+python3 build/search.py
+```
+
+4. Upload **only `dist/`** to any static host: GitHub Pages, Cloudflare Pages,
+   Netlify, S3, or another CDN. No server, function, rewrite rule, or SPA fallback
+   is needed. Relative asset URLs support deployment under a subdirectory too.
+
+`build/search.py` writes `dist/assets/config.json` with the endpoint, collection
+alias, and public search-only key. It creates a key restricted to
+`documents:search` on the `compendium` alias unless `TYPESENSE_SEARCH_KEY` is
+provided. The admin key stays in the indexing environment and is never emitted
+into the site. The public key allows searching the collection's content; static
+hosting access restrictions alone do not make a public search index private.
+
+The importer creates a fresh collection, checks every import response and the
+final document count, then switches the alias only after all records succeed.
+This removes deleted entries from search on rebuild without exposing a partial
+index. Previous collections remain available for rollback; delete them manually
+after verification. Reuse `TYPESENSE_SEARCH_KEY` on later builds to avoid creating
+extra keys. Override `TYPESENSE_COLLECTION` if you need separate indexes.
+`TYPESENSE_PUBLIC_URL` overrides the browser endpoint when the indexing machine
+uses a different internal address, as in Docker Compose.
+
+Run `site.py` before `search.py`: the latter writes the final public configuration.
+Existing configuration is preserved during a rebuild unless a new search key is supplied.
+To build without reimporting an existing index, supply `TYPESENSE_URL` and
+`TYPESENSE_SEARCH_KEY` when running `site.py`. Without search configuration, pages
+still render and remain readable; search displays an unavailable message.
+
+### Searchable and filterable data
+
+- Name receives the highest search weight, followed by structured metadata and
+  the complete rules text. Labelled `attributes` are also included in search.
+- Every populated top-level table field, including sources, is available as a
+  category filter through the common controls or **More attributes**. Text filters
+  use exact values; suggestions come from Typesense facets and can be typed.
+- Numeric fields have minimum/maximum controls. Mixed numeric/formula fields stay
+  text filters so qualified values are preserved.
+- Item variant level, price, and enhancement are separate filters. They match any
+  variant on a page; combining them does not enforce that they come from the same
+  variant row. The full page retains the original variant table.
+- Arbitrary labels in `attributes` are full-text searchable. Category filter
+  controls use the explicit structured table columns, not the thousands of
+  one-off labels embedded in rules prose.
+
+### Files and checks
+
+- `web/`: dependency-free frontend assets.
+- `build/site.py`: static page generator; preserves source fragments and repairs
+  their relative image references in the generated pages.
+- `build/searchdata.py`: shared search document/schema and filter metadata.
+- `build/search.py`: Typesense import and public configuration writer.
+- `compose.yaml`: local Typesense, one-time setup, static preview, and tests.
+
+```sh
+# Python 3.9+; integration tests skip unless Typesense credentials are set
+python3 -m unittest discover -s tests -v
+
+# Node 22+; no npm dependencies required
+node --experimental-default-type=module tests/search-client.test.mjs
+```
+
+The four empty source files are rendered with an explicit empty-source message.
+Existing external publication links are preserved. Generated output is ignored
+by Git. Builds overwrite generated pages but do not delete old files in `dist/`;
+use a fresh output directory for deployment if source entries were removed.
+
+---
+
+## Generate resource tables
 
 Generate one searchable JSON table for every subfolder of `content` using Python
 3.9 or later. No dependencies are required.

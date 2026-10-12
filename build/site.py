@@ -40,7 +40,12 @@ def build(output, tables, content, endpoint, key, collection):
         if path.is_file():
             shutil.copyfile(path, assets / path.name)
     (assets / "catalog.json").write_text(json.dumps(catalog(rows), ensure_ascii=False), encoding="utf-8")
-    (assets / "config.json").write_text(json.dumps({"endpoint": endpoint.rstrip("/"), "searchKey": key, "collection": collection}), encoding="utf-8")
+    config_path = assets / "config.json"
+    # A local rebuild should keep working search while the next index imports.
+    if key or not config_path.exists():
+        if key and key == os.getenv("TYPESENSE_ADMIN_KEY"):
+            raise ValueError("The browser search key must differ from the admin key")
+        config_path.write_text(json.dumps({"endpoint": endpoint.rstrip("/"), "searchKey": key, "collection": collection}), encoding="utf-8")
     home = f'''<main id="main" class="home"><div class="home-inner"><h1>D&amp;D <span>4e</span><small>COMPENDIUM</small></h1>{search_form('./')}</div></main>'''
     (output / "index.html").write_text(page("Compendium", home), encoding="utf-8")
     header = f'''<header class="site-header"><a class="wordmark" href="./index.html">D&amp;D <span>4e</span><small>COMPENDIUM</small></a>{search_form('./')}</header>'''
