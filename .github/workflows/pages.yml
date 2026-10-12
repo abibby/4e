@@ -7,9 +7,14 @@ on:
       - 'content/**'
       - 'images/**'
       - 'web/**'
+      - 'index.html'
+      - 'search.html'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'vite.config.js'
       - 'build/indexgen.py'
       - 'build/searchdata.py'
-      - 'build/site.py'
+      - 'build/*.mjs'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 
@@ -39,16 +44,19 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Set up Python
+      - name: Set up Python for content metadata
         uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
-      - name: Set up Node for frontend tests
+      - name: Set up Node
         uses: actions/setup-node@v6
         with:
           node-version: '22'
-          package-manager-cache: false
+          cache: npm
+
+      - name: Install frontend dependencies
+        run: npm ci
 
       - name: Validate search configuration
         env:
@@ -71,14 +79,21 @@ jobs:
       - name: Run tests
         run: |
           python3 -m unittest discover -s tests -v
-          node --experimental-default-type=module tests/search-client.test.mjs
+          npm test
 
-      - name: Generate tables and static pages
+      - name: Extract content metadata
+        run: python3 build/indexgen.py
+
+      - name: Build site with Vite
         env:
           TYPESENSE_SEARCH_KEY: ${{ secrets.TYPESENSE_SEARCH_KEY }}
-        run: |
-          python3 build/indexgen.py
-          python3 build/site.py
+        run: npm run build
+
+      - name: Install test browser
+        run: npx playwright install --with-deps chromium
+
+      - name: Check routes and SSR in the browser
+        run: npm run test:browser
 
       - name: Upload static site
         uses: actions/upload-pages-artifact@v4

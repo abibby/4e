@@ -8,8 +8,15 @@ back/forward navigation. Quick results support arrow keys, Enter, and Escape.
 
 **There is no application server.** The browser loads HTML/CSS/JavaScript from a
 static host and calls Typesense directly using a public, search-only API key.
-Python runs only at build/indexing time. No framework or JavaScript runtime is
-required for production hosting.
+Vite server-renders React at build time and emits static HTML for the homepage,
+search shell, and every entry header. The browser hydrates those components for
+interactive search; page layout, navigation, and rules text work without
+JavaScript. Live Typesense search and filtering still require JavaScript, and the
+search page explains this instead of leaving a loading indicator. Build-time SSR
+keeps deployment compatible with GitHub Pages and other static hosts.
+Python extracts content
+metadata and uploads the search index. No JavaScript runtime is required for
+production hosting.
 
 ```text
 Browser ── HTML, CSS, JS, resource pages ──> Static hosting (dist/)
@@ -26,20 +33,22 @@ docker compose up -d
 ```
 
 Open **http://localhost:8000** after the initial import finishes (usually a few
-minutes). Typesense is at `http://localhost:8108`. The `setup` container generates
-the tables, builds the site, imports all entries, and creates a search-only key.
-The `site` container is only a local static-file preview, not a production backend.
+minutes). Typesense is at `http://localhost:8108`. The Python `setup` container
+generates the tables, imports all entries, and creates a search-only key. The Node
+`build` container then runs Vite. The `site` container serves `dist/` with nginx
+for local preview.
 Both published ports bind to loopback. The fixed admin key in `compose.yaml` is
 for local development only; the browser gets a separate generated search key.
 
 ```sh
 # Watch the initial build/import
-docker compose logs -f setup
+docker compose logs -f setup build
 
 # Rebuild after changing content, tables, or frontend files
 docker compose run --rm setup
+docker compose run --rm --no-deps build
 
-# Run extractor/build tests and real Typesense integration tests
+# Run extractor tests and real Typesense integration tests
 # Run `up -d` first; --no-deps avoids repeating the full setup/import.
 docker compose --profile test run --rm --no-deps test
 
@@ -47,24 +56,70 @@ docker compose --profile test run --rm --no-deps test
 docker compose down
 ```
 
-If you change only frontend assets, copy `web/*` to `dist/assets/` to refresh the
-preview without rebuilding the index. The Docker setup regenerates `tables/`
-from `content/`; use the individual Python commands below if you have edited the
-tables directly and want to retain those edits.
+For frontend-only changes, run `docker compose run --rm --no-deps build` to refresh
+the preview without rebuilding the index. The Docker setup regenerates `tables/`
+from `content/`; use the individual commands below to retain manually edited tables.
+
+## Develop the React frontend
+
+Install Node.js 22.12+ and Python 3.9+ (only needed to prepare content metadata):
+
+```sh
+npm ci
+python3 build/indexgen.py  # Once initially, then after changing content.
+cp .env.example .env      # Fill in the endpoint and public search-only key.
+npm run dev
+```
+
+Open **http://localhost:5173**. Vite provides React hot reload and serves the entry
+pages at their existing `content/<category>/<name>.html` URLs. It reads `.env`
+automatically; the Python indexing commands still require exported environment
+variables. If Docker has already created `dist/assets/config.json`, Vite reuses
+that configuration unless you supply a new `TYPESENSE_SEARCH_KEY`.
+
+```sh
+npm test             # Search client and page generation contracts
+npm run build        # Build React assets and all static pages into dist/
+npm run preview      # Preview the production build at http://localhost:4173
+```
+
+The frontend build consumes `tables/*.json`; it does not run Python or contact
+Typesense. Regenerate the tables after changing source content.
+
+React Router shares the route tree between `BrowserRouter` in the browser and
+`StaticRouter` during SSR. Home and search navigation stays in the same document;
+query parameters are the source of truth for filters, sorting, and pagination.
+Links to and from entry pages load their static documents so the original rules
+markup remains readable independently of React. Relative links support deployment
+under `/4e/` or another base path without changing the build.
+
+Browser regression tests use a mocked Typesense service and the production build:
+
+```sh
+npx playwright install chromium  # Once per development environment.
+npm run build
+npm run test:browser
+```
+
+These checks cover client navigation, URL history, filters, autocomplete, retries,
+SSR without JavaScript, and hydration under `/4e/`. The Pages workflow runs them
+before deploying. To use an existing Chromium installation, set
+`PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` to its executable path.
 
 ## Build for static hosting with Typesense Cloud
 
 1. Create a [Typesense Cloud](https://cloud.typesense.org/) cluster with browser
    CORS enabled for your static site's origin.
 2. Set `TYPESENSE_URL` to its HTTPS API endpoint and `TYPESENSE_ADMIN_KEY` in the
-   build environment. `.env.example` lists the available settings; the Python
-   scripts read environment variables, not `.env` files.
+   indexing environment. `.env.example` lists the available settings; Vite loads
+   `.env`, while Python scripts read exported environment variables.
 3. Build the files and upload the search index:
 
 ```sh
+npm ci
 python3 build/indexgen.py     # Omit if existing tables are already up to date.
-python3 build/site.py
-python3 build/search.py
+python3 build/search.py       # Imports records and writes the public configuration.
+npm run build
 ```
 
 4. Upload **only `dist/`** to any static host: GitHub Pages, Cloudflare Pages,
@@ -87,10 +142,11 @@ extra keys. Override `TYPESENSE_COLLECTION` if you need separate indexes.
 `TYPESENSE_PUBLIC_URL` overrides the browser endpoint when the indexing machine
 uses a different internal address, as in Docker Compose.
 
-Run `site.py` before `search.py`: the latter writes the final public configuration.
-Existing configuration is preserved during a rebuild unless a new search key is supplied.
+Run `search.py` before `npm run build` when creating a new search key. Vite reads
+the existing public configuration before cleaning the output directory and writes
+it back with the generated assets unless a new search key is supplied.
 To build without reimporting an existing index, supply `TYPESENSE_URL` and
-`TYPESENSE_SEARCH_KEY` when running `site.py`. Without search configuration, pages
+`TYPESENSE_SEARCH_KEY` when running `npm run build`. Without search configuration, pages
 still render and remain readable; search displays an unavailable message.
 
 ## Deploy with GitHub Actions
@@ -101,7 +157,7 @@ manual runs from the Actions tab once they are on the default branch.
 | Workflow | Automatic triggers | Deployment |
 | --- | --- | --- |
 | [Deploy search indexes](.github/workflows/search.yml) | `content/**`, `build/indexgen.py`, `build/searchdata.py`, `build/search.py`, its own workflow file | Regenerates tables and updates the Typesense collection alias |
-| [Deploy to GitHub Pages](.github/workflows/pages.yml) | `content/**`, `images/**`, `web/**`, `build/indexgen.py`, `build/searchdata.py`, `build/site.py`, its own workflow file | Builds and uploads only `dist/` to Pages |
+| [Deploy to GitHub Pages](.github/workflows/pages.yml) | `content/**`, `images/**`, `web/**`, HTML entry points, npm manifests, `vite.config.js`, content metadata scripts, `build/*.mjs`, its own workflow file | Builds with Vite and uploads only `dist/` to Pages |
 
 Tables are generated and ignored by Git, so the index workflow watches their
 source content and generation code. Content and shared metadata changes trigger
@@ -135,7 +191,7 @@ One-time repository setup:
 
 The index workflow uses `python3 build/search.py --index-only`: it neither creates
 search keys nor writes browser configuration. The Pages workflow regenerates the
-tables locally for page metadata and builds the static files with the configured
+tables locally for page metadata and runs Vite with the configured
 search-only key; it makes no indexing requests. The browser still calls Typesense
 directly, and no application server is deployed.
 
@@ -164,9 +220,19 @@ with Docker Compose to avoid creating test collections on the production cluster
 
 ### Files and checks
 
-- `web/`: dependency-free frontend assets.
-- `build/site.py`: static page generator; preserves source fragments and repairs
-  their relative image references in the generated pages.
+- `web/app.jsx`: shared route tree and application provider.
+- `web/pages/`: home, search, entry, and not-found route components.
+- `web/components/`: layout, search results, autocomplete, and filter controls.
+- `web/hooks/`: URL state, hydration, resource loading, search requests, and facets.
+- `web/providers/`: shared catalog and Typesense client with retry support.
+- `web/lib/`: pure search-state/catalog helpers and the Typesense HTTP client.
+- `web/entry-server.jsx`: React SSR entry point shared by the build and Vite dev server.
+- `web/main.jsx`: hydrates the rendered HTML with a router using the deployment base path.
+- `index.html`, `search.html`, `vite.config.js`: Vite entry points and build configuration.
+- `build/site.mjs`: Vite plugin coordinating development and production builds.
+- `build/catalog.mjs`: validates content tables and derives filter metadata.
+- `build/render.mjs`: React SSR and entry document templates; preserves source
+  fragments and repairs image references.
 - `build/searchdata.py`: shared search document/schema and filter metadata.
 - `build/search.py`: Typesense import and public configuration writer.
 - `compose.yaml`: local Typesense, one-time setup, static preview, and tests.
@@ -175,14 +241,16 @@ with Docker Compose to avoid creating test collections on the production cluster
 # Python 3.9+; integration tests skip unless Typesense credentials are set
 python3 -m unittest discover -s tests -v
 
-# Node 22+; no npm dependencies required
-node --experimental-default-type=module tests/search-client.test.mjs
+# Node 22.12+
+npm ci
+npm test
+npm run build
 ```
 
 The four empty source files are rendered with an explicit empty-source message.
 Existing external publication links are preserved. Generated output is ignored
-by Git. Builds overwrite generated pages but do not delete old files in `dist/`;
-use a fresh output directory for deployment if source entries were removed.
+by Git. Vite cleans `dist/` before each build, removing obsolete entry pages and
+bundles while preserving the public search configuration.
 
 ---
 

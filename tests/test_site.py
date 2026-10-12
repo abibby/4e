@@ -9,10 +9,6 @@ from unittest.mock import patch
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'build'))
 from searchdata import catalog, document, load_tables, schema
 from search import Client, import_rows, main as search_main
-import importlib.util
-spec = importlib.util.spec_from_file_location('site_build', Path(__file__).resolve().parents[1] / 'build/site.py')
-site_build = importlib.util.module_from_spec(spec)
-spec.loader.exec_module(site_build)
 
 
 def fixture():
@@ -39,25 +35,6 @@ class StaticSiteTests(unittest.TestCase):
         self.assertEqual(document(rows[1])['f_level'], ['Your level'])
         self.assertNotIn('n_level', document(rows[1]))
         self.assertTrue(all(f.get('optional') for f in schema('test', catalog(rows))['fields'] if f['name'].startswith(('n_', 'f_'))))
-
-    def test_static_pages_and_relative_assets(self):
-        with tempfile.TemporaryDirectory() as temporary:
-            root = Path(temporary); tables = root / 'tables'; tables.mkdir()
-            content = root / 'content'; (content / 'item').mkdir(parents=True)
-            row = fixture()
-            (tables / 'item.json').write_text(json.dumps([row]))
-            (content / row['file']).write_text('<h1>Magic sword</h1><img src="images/bullet.gif">')
-            output = root / 'dist'
-            site_build.build(output, tables, content, 'https://search.example', 'public-key', 'compendium')
-            page = (output / 'content' / row['file']).read_text()
-            self.assertIn('src="../../images/bullet.gif"', page)
-            self.assertIn('href="../../assets/site.css"', page)
-            self.assertIn('Wizard&#x27;s #1 + Sword', page)
-            config = json.loads((output / 'assets/config.json').read_text())
-            self.assertEqual(config['searchKey'], 'public-key')
-            self.assertTrue((output / 'search.html').exists())
-            site_build.build(output, tables, content, 'http://internal:8108', '', 'compendium')
-            self.assertEqual(json.loads((output / 'assets/config.json').read_text()), config)
 
     def test_unsafe_or_duplicate_table_paths_rejected(self):
         with tempfile.TemporaryDirectory() as temporary:

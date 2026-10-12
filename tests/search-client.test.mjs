@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {readState, stateParams, filterBy, SearchClient} from '../web/search-client.js';
+import {readState, stateParams, filterBy} from '../web/lib/search-state.js';
+import {SearchClient} from '../web/lib/search-client.js';
 
 test('shareable state preserves punctuation, ranges, pagination and sorting', () => {
   const state = readState('?q=magic+%26+fire&category=item&min_level=5&f_price=1%2C000+gp&sort=name&page=3');
