@@ -158,7 +158,11 @@ function filterControl(field, descriptor, suffix = '') {
 }
 function fillOptions(list, counts) {
   list.replaceChildren(...counts.map(item => {
-    const option = el('option'); option.value = item.value; option.label = `${item.count.toLocaleString()} entries`; return option;
+    const option = el('option');
+    option.value = item.value;
+    option.label = `${item.value} (${item.count.toLocaleString()} ${item.count === 1 ? 'entry' : 'entries'})`;
+    option.textContent = option.label;
+    return option;
   }));
 }
 function renderFilters() {
