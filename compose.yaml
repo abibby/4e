@@ -1,0 +1,59 @@
+# Local development only. Production uses a managed Typesense Cloud cluster.
+services:
+  typesense:
+    image: typesense/typesense:30.2
+    command: --data-dir /data --api-key=local-development-admin-key --enable-cors
+    ports:
+      - "127.0.0.1:8108:8108"
+    volumes:
+      - typesense-data:/data
+    restart: unless-stopped
+
+  setup:
+    image: python:3.12-slim
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+    environment:
+      TYPESENSE_URL: http://typesense:8108
+      TYPESENSE_PUBLIC_URL: http://localhost:8108
+      TYPESENSE_ADMIN_KEY: local-development-admin-key
+    depends_on:
+      - typesense
+    command:
+      - sh
+      - -ec
+      - |
+        python3 build/wait_search.py
+        python3 build/indexgen.py
+        python3 build/site.py
+        python3 build/search.py
+
+  site:
+    image: python:3.12-slim
+    working_dir: /site
+    volumes:
+      - ./dist:/site:ro
+    ports:
+      - "127.0.0.1:8000:8000"
+    depends_on:
+      setup:
+        condition: service_completed_successfully
+    command: python3 -m http.server 8000 --bind 0.0.0.0
+
+  test:
+    image: python:3.12-slim
+    profiles: [test]
+    working_dir: /workspace
+    volumes:
+      - .:/workspace:ro
+    environment:
+      TYPESENSE_URL: http://typesense:8108
+      TYPESENSE_ADMIN_KEY: local-development-admin-key
+    depends_on:
+      setup:
+        condition: service_completed_successfully
+    command: sh -ec 'python3 build/wait_search.py && python3 -m unittest discover -s tests -v'
+
+volumes:
+  typesense-data:

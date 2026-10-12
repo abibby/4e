@@ -1,0 +1,65 @@
+name: Deploy search indexes
+
+on:
+  push:
+    branches: [master]
+    # tables/ is generated and gitignored; watch its source inputs instead.
+    paths:
+      - 'content/**'
+      - 'build/indexgen.py'
+      - 'build/searchdata.py'
+      - 'build/search.py'
+      - '.github/workflows/search.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Serialize alias updates without blocking independent Pages deployments.
+concurrency:
+  group: typesense-indexes
+  cancel-in-progress: false
+
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      TYPESENSE_URL: ${{ vars.TYPESENSE_URL }}
+      TYPESENSE_COLLECTION: ${{ vars.TYPESENSE_COLLECTION || 'compendium' }}
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Validate indexing configuration
+        env:
+          TYPESENSE_ADMIN_KEY: ${{ secrets.TYPESENSE_ADMIN_KEY }}
+        run: |
+          python3 - <<'PY'
+          import os
+          from urllib.parse import urlparse
+
+          endpoint = urlparse(os.environ.get('TYPESENSE_URL', ''))
+          if endpoint.scheme != 'https' or not endpoint.hostname or endpoint.username or endpoint.password:
+              raise SystemExit('Set the TYPESENSE_URL Actions variable to your HTTPS Typesense endpoint.')
+          if not os.environ.get('TYPESENSE_ADMIN_KEY'):
+              raise SystemExit('Set the TYPESENSE_ADMIN_KEY Actions secret to allow indexing.')
+          PY
+
+      - name: Run Python tests
+        run: python3 -m unittest discover -s tests -v
+
+      - name: Generate search tables
+        run: python3 build/indexgen.py
+
+      - name: Update Typesense index
+        env:
+          TYPESENSE_ADMIN_KEY: ${{ secrets.TYPESENSE_ADMIN_KEY }}
+        run: python3 build/search.py --index-only

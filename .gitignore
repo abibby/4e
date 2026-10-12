@@ -1,2 +1,7 @@
-node_modules
 .DS_Store
+/tables/
+__pycache__/
+/dist/
+.env
+.env.*
+!.env.example
