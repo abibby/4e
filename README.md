@@ -102,6 +102,15 @@ Vite serves the content in development and copies it into `dist/content` during
 the production build. Configure your static host to serve `index.html` for SPA
 routes such as `/search` and `/c/*`.
 
+For Netlify, the root `netlify.toml` configures Node 22, `npm run build`, and
+the `dist` publish directory. Its SPA fallback supports direct visits and
+refreshes on `/search` and `/c/*`, while existing content and image files are
+served normally. Set `VITE_ALGOLIA_APP_ID`, `VITE_ALGOLIA_SEARCH_KEY`, and
+`VITE_ALGOLIA_INDEX_NAME` in the Netlify project's build environment before
+deploying. Use the search-only key; the site build does not need indexer admin
+credentials. Rebuild after changing these values because Vite embeds them in
+the browser bundle.
+
 The TypeScript indexer (`build/algolia.ts`, Node 22.6+) reads visible text directly
 from `public/content` and joins table metadata by `file`. Navigation-only
 `index.html` files are skipped, matching the table generator. Missing metadata
