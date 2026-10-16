@@ -1,7 +1,7 @@
 import { AlgoliaSearch } from "./algolia";
 import type { Search } from "./search";
 
-export type { Search, SearchRequest, SearchResponse, SearchHit } from "./search";
+export type { Search, SearchRequest, SearchResponse, SearchHit, FieldFilters, NumericRange } from "./search";
 export { AlgoliaSearch } from "./algolia";
 
 export function createSearch(): Search {

@@ -1,7 +1,17 @@
+/** Inclusive numeric bounds. Omit one bound for an open-ended range. */
+export interface NumericRange {
+  min?: number;
+  max?: number;
+}
+
+export type FieldFilters = Readonly<Record<string, string | number | boolean | NumericRange>>;
+
 /** Provider-independent search over compendium entries. Pages are zero-based. */
 export interface SearchRequest {
   query?: string;
-  /** Exact, case-sensitive field:value tags. All tags must match. */
+  /** Table field equality or numeric ranges. All conditions must match. */
+  filters?: FieldFilters;
+  /** field:value attribute filters, or explicit custom tags. All must match. */
   tags?: readonly string[];
   page?: number;
   pageSize?: number;
@@ -15,6 +25,8 @@ export interface SearchHit {
   category: string;
   summary: string;
   tags: string[];
+  level?: number;
+  rarity?: string;
 }
 
 export interface SearchResponse {

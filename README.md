@@ -93,8 +93,8 @@ python3 -m unittest discover -s tests -v
 ## Algolia search
 
 `src/search/search.ts` defines the provider-independent `Search` interface.
-`AlgoliaSearch` uses the `algoliasearch` npm client for full-text queries, exact
-tag filters, zero-based pagination, and cancellation of pending results. The SDK
+`AlgoliaSearch` uses the `algoliasearch` npm client for full-text queries,
+attribute filters, zero-based pagination, and cancellation of pending results. The SDK
 may finish its network request after cancellation. Empty queries browse entries or search by
 tags alone. The `/search` page uses this interface and preserves queries, tags,
 and pagination in its URL. Results link to the original HTML through `/c/*`.
@@ -102,8 +102,10 @@ Vite serves the content in development and copies it into `dist/content` during
 the production build. Configure your static host to serve `index.html` for SPA
 routes such as `/search` and `/c/*`.
 
-The indexer reads visible text directly from `content` and joins table metadata
-by `file`. Rebuild the tables after changing content:
+The TypeScript indexer (`build/algolia.ts`, Node 22.6+) reads visible text directly
+from `public/content` and joins table metadata by `file`. Navigation-only
+`index.html` files are skipped, matching the table generator. Missing metadata
+stops indexing before any upload. Rebuild the tables after changing content:
 
 ```sh
 python3 build/indexgen.py
@@ -113,14 +115,25 @@ npm run index:algolia
 npm run index:algolia -- --output /tmp/compendium-algolia.jsonl
 ```
 
-Tags are case-sensitive `field:value` strings. Multiple tags use AND, combined
-with the full-text query. Default fields are `category`, `level`, `role`, `rank`,
-`rarity`, `item_type`, `slot`, `class_or_path`, `power_type`, `usage`, `action`,
-`tier`, `keywords`, `size`, `origin`, `creature_type`, `power_source`,
-`category_label`, `sources`, `variant_level`, `variant_price`, and
-`variant_enhancement`. Array values become separate tags; nulls are omitted.
-An explicit table `tags` list is also retained. Add other structured fields with
-repeatable `--tag-field` options, for example `--tag-field languages`.
+All scalar and scalar-array table columns are indexed automatically, such as `category: "monster"`,
+`level: 1`, and `keywords: ["Fire", "Arcane"]`. Each field is registered in
+`attributesForFaceting` as `filterOnly(field)`. Numbers remain numeric for range
+filtering; arrays retain their individual values and nulls are omitted.
+No field allowlist or `--tag-field` option is needed. The nested `attributes`
+object contains duplicate extracted prose and isn't indexed as filter fields.
+Item variants are exposed as `variant_level`, `variant_price`, and
+`variant_enhancement` arrays. `level` retains the table's own level value.
+
+The search page has category, minimum level, maximum level, and rarity controls.
+For uncommon items at levels 3 through 6, select category `item`, minimum `3`,
+maximum `6`, and rarity `Uncommon`. Both bounds are inclusive. Leave the search
+text empty to browse all matching items. Additional `field:value` boxes support
+equality filters on other columns. All filters combine with AND and stay in the
+URL when paging. Attribute names are case-sensitive; facet string values are
+case-insensitive. `_tags` retains labels for existing search-result consumers
+and explicit custom tags.
+
+The search API accepts equality values and numeric ranges on any indexed column:
 
 ```ts
 import { AlgoliaSearch } from "./src/search/algolia";
@@ -131,23 +144,29 @@ const search = new AlgoliaSearch({
   indexName: "compendium",
 });
 const results = await search.search({
-  query: "ongoing damage",
-  tags: ["category:monster", "level:1"],
+  filters: {
+    category: "item",
+    level: { min: 3, max: 6 },
+    rarity: "Uncommon",
+  },
   page: 0,
   pageSize: 20,
 });
 ```
 
+Numeric equality uses a number, such as `level: 3`; ranges can omit either bound.
+The SDK request uses `facetFilters: ["category:item", "rarity:Uncommon"]` with
+`numericFilters: ["level:3 TO 6"]` for the example above. Strings like `"9,000 gp"`
+retain their table type and support equality filtering, not numeric comparisons.
+Re-upload the index after changing the indexed fields.
+
 Add the values from `.env.example` to your local `.env`. The browser uses only
 the `VITE_ALGOLIA_*` variables; use a search-only key restricted to the index.
 Never expose an admin key through a `VITE_` variable. Restart Vite after changing
-configuration. The Node indexer reads process environment variables, so export
-them before uploading (or source a shell-compatible `.env`):
+configuration. The Node indexer loads `.env` automatically; existing process
+environment variables take precedence:
 
 ```sh
-set -a
-. ./.env
-set +a
 npm run index:algolia -- --upload
 npm start
 ```
@@ -156,21 +175,25 @@ Uploads use `ALGOLIA_APP_ID`, `ALGOLIA_ADMIN_KEY`, and `ALGOLIA_INDEX_NAME`
 (default `compendium`, also overridable with `--index`). The upload command
 replaces that index, including its settings, using a temporary index after all
 batches finish. Use a dedicated compendium index. This removes stale records
-when files disappear or shrink. A failed upload leaves the live index intact;
-the printed temporary index can be removed in the Algolia dashboard. The upload
-key must permit settings, record writes, and moving temporary indices.
+when files disappear or shrink. Settings or batch failures leave the live index
+intact; the printed temporary index can be removed in the Algolia dashboard. If
+the final move or its polling fails, check the dashboard to confirm which index
+is live. The upload key must permit settings, record writes, and moving
+temporary indices.
 
 Long HTML files are split into overlapping records below 9,000 UTF-8 JSON bytes.
-Every chunk retains the same tags, and Algolia groups results by `file` so each
+Every chunk retains the same filter fields, and Algolia groups results by `file` so each
 entry appears once. All text is indexed, though query terms must match within
 one chunk; the overlap preserves short phrases near boundaries. This can use
 more Algolia records than there are HTML files.
 
 Both searches and uploads use the official [`algoliasearch` npm SDK](https://github.com/algolia/algoliasearch-client-javascript).
-`build/algolia.mjs` runs the Python extractor, then uses the SDK for settings,
-batched uploads, task polling, and index replacement. Python only generates local
-records and makes no network requests. Filtering and replacement follow Algolia's
-[tag filters](https://www.algolia.com/doc/api-reference/api-parameters/tagFilters)
+`build/algolia.ts` uses the SDK for settings, batched uploads, task polling, and
+index replacement. HTML parsing and entity decoding use `html5parser` and
+`entities`. Python is needed only when regenerating the metadata tables.
+Filtering and replacement follow Algolia's
+[filterable attributes](https://www.algolia.com/doc/api-reference/api-parameters/attributesForFaceting),
+[facet filters](https://www.algolia.com/doc/api-reference/api-parameters/facetFilters),
 and [index replacement](https://www.algolia.com/doc/rest-api/search/operation-index).
 
 Run search tests and build:

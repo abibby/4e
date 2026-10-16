@@ -13,6 +13,8 @@ interface AlgoliaRecord {
   category: string;
   text: string;
   _tags: string[];
+  level?: number;
+  rarity?: string;
 }
 
 type SearchClient = Pick<ReturnType<typeof algoliasearch>, "searchSingleIndex">;
@@ -41,21 +43,61 @@ export class AlgoliaSearch implements Search {
     this.client = client ?? algoliasearch(config.applicationId, config.searchKey);
   }
 
-  async search({ query = "", tags = [], page = 0, pageSize = 20, signal }: SearchRequest): Promise<SearchResponse> {
+  async search({ query = "", filters = {}, tags = [], page = 0, pageSize = 20, signal }: SearchRequest): Promise<SearchResponse> {
     if (!Number.isInteger(page) || page < 0 || !Number.isInteger(pageSize) || pageSize < 1 || pageSize > 100) {
       throw new RangeError("Search page must be non-negative and pageSize must be between 1 and 100.");
     }
     signal?.throwIfAborted();
+    const facetFilters: string[] = [];
+    const numericFilters: string[] = [];
+    const tagFilters: string[] = [];
+    const facet = (field: string, value: string) => `${field}:${value.startsWith("-") ? "\\" : ""}${value}`;
+    const numeric = (value: unknown): value is number => typeof value === "number" && Number.isFinite(value);
+    for (const [field, value] of Object.entries(filters)) {
+      if (!/^[a-z][a-z0-9_]*(?:\.[a-z][a-z0-9_]*)*$/i.test(field)) {
+        throw new Error(`Invalid filter field: ${field}`);
+      }
+      if (typeof value === "string" || typeof value === "boolean") {
+        facetFilters.push(facet(field, String(value)));
+      } else if (typeof value === "number") {
+        if (!numeric(value)) throw new RangeError(`Invalid numeric value for ${field}`);
+        numericFilters.push(`${field} = ${value}`);
+      } else {
+        if (!value || (value.min === undefined && value.max === undefined)
+          || (value.min !== undefined && !numeric(value.min))
+          || (value.max !== undefined && !numeric(value.max))
+          || (value.min !== undefined && value.max !== undefined && value.min > value.max)) {
+          throw new RangeError(`Invalid range for ${field}: provide a minimum and/or maximum, with minimum <= maximum`);
+        }
+        if (value.min !== undefined && value.max !== undefined) {
+          numericFilters.push(`${field}:${value.min} TO ${value.max}`);
+        } else if (value.min !== undefined) numericFilters.push(`${field} >= ${value.min}`);
+        else numericFilters.push(`${field} <= ${value.max}`);
+      }
+    }
+    for (const tag of new Set(tags.filter(Boolean))) {
+      const separator = tag.indexOf(":");
+      if (separator > 0) {
+        const field = tag.slice(0, separator);
+        const value = tag.slice(separator + 1);
+        // Escape a leading minus so a literal value doesn't become a NOT filter.
+        facetFilters.push(facet(field, value));
+      } else {
+        tagFilters.push(tag.startsWith("-") ? `\\${tag}` : tag);
+      }
+    }
     const result = await withCancellation(this.client.searchSingleIndex<AlgoliaRecord>({
       indexName: this.config.indexName,
       searchParams: {
         query,
         // Array syntax preserves punctuation without building a filter expression.
-        tagFilters: [...new Set(tags.filter(Boolean))].map(tag => tag.startsWith("-") ? `\\${tag}` : tag),
+        facetFilters,
+        numericFilters,
+        tagFilters,
         page,
         hitsPerPage: pageSize,
         distinct: 1,
-        attributesToRetrieve: ["file", "name", "category", "text", "_tags"],
+        attributesToRetrieve: ["file", "name", "category", "text", "_tags", "level", "rarity"],
         attributesToHighlight: [],
       },
     }), signal);
@@ -67,6 +109,8 @@ export class AlgoliaSearch implements Search {
         category: hit.category,
         summary: hit.text.slice(0, 340),
         tags: hit._tags,
+        level: hit.level,
+        rarity: hit.rarity,
       })),
       total: result.nbHits ?? 0,
       page: result.page ?? page,
