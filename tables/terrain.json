@@ -1,6 +1,6 @@
 [
   {
-    "file": "terrain/Abyssal Wellspring.html",
+    "file": "terrain/abyssal-wellspring.html",
     "name": "Abyssal Wellspring",
     "category": "terrain",
     "type": null,
@@ -21,7 +21,7 @@
     "text": "Abyssal Wellspring An abyssal wellspring is a suppurating wound in reality. It is a place where the raw madness and evil of the Abyss bulges into another plane. Effect: An abyssal wellspring appears as an area of at least 4 contiguous squares. When a creature starts its turn in a wellspring square, it takes 5 damage per tier, and gains a +1 bonus to attack rolls per tier and a +2 bonus to damage rolls per tier. These bonuses last until the end of its turn. Usage: One obvious thematic way to use an abyssal wellspring in an encounter is to pair it with demons, especially brutes like bariguras. They have enough hit points to take the damage from the wellspring, and the extra bonuses give them a nastier punch that normal. A wellspring can also offer an interesting choice to characters when you pair it with higher-level soldier monsters with high defenses. The characters must decide if the bonuses to hit and damage are worth the extra damage taken. Published in Manual of the Planes, page(s) 21."
   },
   {
-    "file": "terrain/Acidic Mire.html",
+    "file": "terrain/acidic-mire.html",
     "name": "Acidic Mire",
     "category": "terrain",
     "type": null,
@@ -42,7 +42,7 @@
     "text": "Acidic Mire Any quagmire can be dangerous and debilitating. In the Elemental Chaos, a swampy area filled with caustic liquid makes the peril far worse. Seas composed of flesh-dissolving liquids are bordered by shores riddled with moors that churn with acid bubbling up from below. Such conf luences of muck and acid are deadly to traverse, so creatures that crave solitude build bastions amid this inhospitable terrain. Effect: A square of acidic mire is difficult terrain for creatures without earth walk. They sink into the mire, muck clinging to f lesh and clothing. In addition, any creature that starts its turn in a square of acidic bog takes ongoing 5 acid damage per tier and is slowed (save ends both). Usage: Acidic mire requires characters to trudge more slowly through an area. Artillery or controller monsters take advantage of such terrain to hinder melee attackers. Published in The Plane Below, page(s) 12."
   },
   {
-    "file": "terrain/Agony Amplifier.html",
+    "file": "terrain/agony-amplifier.html",
     "name": "Agony Amplifier",
     "category": "terrain",
     "type": null,
@@ -63,7 +63,7 @@
     "text": "Agony Amplifier Many clichéd stories claim that there is power in pain, and that instinctive reactions to agony can be harnessed and used to great effect. The agony amplifier lends validity to these theories by broadcasting one creature’s pain to all those around it. Profane runes form the outer edge of such a ring, binding mental magic into its vile form. Effect: An agony amplifier typically covers a space 3 squares on a side. Whenever a creature in that space takes damage, each other creature in the space takes 5 psychic damage per tier. If no other creature is in the agony amplifier, the triggering creature takes 5 extra psychic damage per tier. Usage: An agony amplifier is most likely to be found in a dark priest’s temple or wizard’s lair. These circles are useful for convincing fiendish creatures to serve the binder that called them. They can also be used effectively by creatures that immobilize or restrain. Such creatures can lock down victims and then pile on the pain. Published in The Book of Vile Darkness, page(s) 2-27."
   },
   {
-    "file": "terrain/Angelic Lantern.html",
+    "file": "terrain/angelic-lantern.html",
     "name": "Angelic Lantern",
     "category": "terrain",
     "type": null,
@@ -84,7 +84,7 @@
     "text": "Angelic Lantern Angelic lanterns are faint manifestations of divine will. These tiny, pulsating balls of light float in a square, shedding bright light in a 20-square radius. Effect: A creature in a square containing an angelic lantern gains a +1 bonus per tier to attack rolls with divine or radiant attack powers. Once an angelic lantern grants this bonus to a creature, it winks out of existence at the end of the turn in which it granted the bonus. Usage: Since angelic lanterns are one-shot terrain effects, it’s more interesting to include a number of them in an encounter. Use the lanterns in an encounter with skirmishers that have radiant attack powers to create a moving battlefield where the monsters are seeking out each lantern’s bonus. Once the characters understand the benefit the lanterns provide, it will be a race for the characters to reach the lantern squares, either to take advantage of their effect, or to block their opponents from doing so. Published in Manual of the Planes, page(s) 21."
   },
   {
-    "file": "terrain/Ash Field.html",
+    "file": "terrain/ash-field.html",
     "name": "Ash Field",
     "category": "terrain",
     "type": null,
@@ -105,7 +105,7 @@
     "text": "Ash Field Defiling magic withers verdant areas, dissolving plants into a fine powder and creating extended areas of lifeless ash. Defiled vegetation is a primary source of Athas’s vast silt deposits. Effect: Over time, wind blows the ash into lowlands where it gathers to form silt pools. On occasion, squares of settled ash form in areas the wind rarely reaches. Usage: Ash fields serve as a chilling reminder of the devastation wrought by defiling magic. They can be found in canyons and other sheltered areas. Published in Dark Sun Creature Catalog, page(s) 134."
   },
   {
-    "file": "terrain/Astral Flame.html",
+    "file": "terrain/astral-flame.html",
     "name": "Astral Flame",
     "category": "terrain",
     "type": null,
@@ -126,7 +126,7 @@
     "text": "Astral Flame Astral flame is the burning essence of the Astral Sea. It is a fountain of fiery liquid that sheds bright light in a 20-square radius. Effect: It costs 1 extra square of movement to enter a square of astral flame. A creature that enters an astral flame square or starts its turn there takes 10 radiant damage per tier. A creature adjacent to an astral flame square can coat a weapon or implement in the astral flame as a minor action. Until the end of the encounter, attacks using that weapon or implement gain the radiant keyword. Usage: Large areas of astral flames will work well with creatures that have resistance or immunity to radiant damage, allowing them to ignore the flame’s radiant damage while the characters must decide if entering into the astral flame square is worth the damage. This terrain is also a good way to give creative characters a boost against creatures that are vulnerable to radiant damage. Use minions to guard a single astral flame square while an elite or solo leader that is vulnerable to radiant damage attacks the group in another part of the encounter area. Published in Manual of the Planes, page(s) 21."
   },
   {
-    "file": "terrain/Barbed Cacti.html",
+    "file": "terrain/barbed-cacti.html",
     "name": "Barbed Cacti",
     "category": "terrain",
     "type": null,
@@ -147,7 +147,7 @@
     "text": "Barbed Cacti Rugged cacti cling to Athas’s rocky badlands and stony barrens. The thorns of most cacti are painful but not debilitating. The barbed cactus, on the other hand, has wicked hooks that cling to a creature’s flesh to cause lasting problems. This vegetation clumps in patches covering 3 or 4 squares. Effect: A creature that enters a square of barbed cacti takes 3 damage per tier and a -2 penalty to attack rolls (save ends). Usage: Barbed cacti cordon off certain areas of the battlefield, a fact that characters or monsters can use to their advantage. Cacti-covered squares can be accessed only by accepting damage and an attack hindrance. Published in Dark Sun Creature Catalog, page(s) 134."
   },
   {
-    "file": "terrain/Black Sand.html",
+    "file": "terrain/black-sand.html",
     "name": "Black Sand",
     "category": "terrain",
     "type": null,
@@ -168,7 +168,7 @@
     "text": "Black Sand When defiling magic is used to slaughter innocents, a residue can cover the drained land. This foul miasma mixes with the ground to create black sand, which poisons the landscape and any creature that passes through it. Effect: A creature in a square of black sand regains half the normal number of hit points. Usage: Black sand terrain adds a flavorful dash of Athas to an encounter. It also requires characters to consider their positioning before they use their second wind or healing powers. Published in Dark Sun Creature Catalog, page(s) 134."
   },
   {
-    "file": "terrain/Blast Cloud.html",
+    "file": "terrain/blast-cloud.html",
     "name": "Blast Cloud",
     "category": "terrain",
     "type": null,
@@ -189,7 +189,7 @@
     "text": "Blast Cloud Rust-hued dust hangs in the air. The dust particles conduct and amplify certain types of energy and elemental forces. Effect: The squares containing the cloud are lightly obscured. When a burst or a blast created by a fire, force, lightning, psychic, or thunder power touches a square of blast cloud, the size of the burst or blast is increased by 1. Usage: A blast cloud encourages the characters (and their opponents) to remain farther apart than normal to avoid the enlarged areas of effect. Use this terrain in encounters featuring monsters that can take advantage of it, or when it can allow player characters who have attacks that might benefit from the blast cloud to take up an attractive combat position that utilizes the terrain’s effect. Published in Dungeon Master's Guide 2, page(s) 58."
   },
   {
-    "file": "terrain/Blood Grate.html",
+    "file": "terrain/blood-grate.html",
     "name": "Blood Grate",
     "category": "terrain",
     "type": null,
@@ -210,7 +210,7 @@
     "text": "Blood Grate Blood grates ref lect the fomorians’ fascination with butchery, even in battle. Not only do these hideous contraptions revitalize the fomorians and their allies as they fight off invaders, they also nourish the fortresses themselves with intruders’ blood. A blood grate typically fills an area of 4 to 6 contiguous squares (typically in a square or rectangular layout), though larger grates are rumored to exist in the grandest fortresses of Inbharann. A blood grate can be identified with a DC 25 Arcana check. Effect: The first time in each encounter that a living creature on a blood grate takes damage, the nearest enemy within 5 squares gains temporary hit points equal to half the damage dealt. The blood grate is then deactivated until the end of the encounter. Usage: Most Inbharann fortresses include several blood grates at key defensive positions, which simultaneously nourish the fortress and revitalize its defenders. The fomorians and their servants maneuver enemies atop the grates to gain stamina when those foes are wounded. Published in Underdark, page(s) 103."
   },
   {
-    "file": "terrain/Blood Midge Cloud.html",
+    "file": "terrain/blood-midge-cloud.html",
     "name": "Blood Midge Cloud",
     "category": "terrain",
     "type": null,
@@ -231,7 +231,7 @@
     "text": "Blood Midge Cloud A swarm of biting insects fills the area. Effect: The squares occupied by the cloud are lightly obscured, and the cloud is difficult terrain. If no creature is in the cloud when a creature starts its turn within 3 squares of a blood midge cloud, the cloud moves 5 squares and attempts to cover as many living creatures as possible. If an area or close attack includes squares occupied by the cloud, the cloud is destroyed in those squares. If a cloud is broken into smaller pieces by an attack, each piece acts as a separate terrain feature. Usage: A blood midge cloud is interesting because it is mobile obscured terrain that can move to engulf the greatest number of creatures. The concealment granted by the cloud helps anyone in the cloud, and it’s particularly beneficial to ranged attackers, who can fire out of it easily. Published in Dungeon Master's Guide 2, page(s) 58."
   },
   {
-    "file": "terrain/Blood Rock.html",
+    "file": "terrain/blood-rock.html",
     "name": "Blood Rock",
     "category": "terrain",
     "type": null,
@@ -252,7 +252,7 @@
     "text": "Blood Rock The site of ceremonial sacrifices, a great slaughter, or some other calamity, the spirit of death hovers over blood rock. Effect: A creature standing in a square of blood rock can score a critical hit on a natural die roll of 19 or 20. Usage: Blood rock makes encounters slightly more unpredictable, which usually favors the monsters. You can use a large expanse of it to make everyone score critical hits more often, or use just a few squares of it and let the adventurers and monsters fight over who gets to stand on it. Published in Dungeon Master's Kit, page(s) 209, Dungeon Master's Guide, page(s) 67."
   },
   {
-    "file": "terrain/Bolt Stone.html",
+    "file": "terrain/bolt-stone.html",
     "name": "Bolt Stone",
     "category": "terrain",
     "type": null,
@@ -273,7 +273,7 @@
     "text": "Bolt Stone In some areas, lightning energy fuses with rock to form a highly unstable, dangerous mixture. In various regions of the Elemental Chaos, and in dungeons located near the conflux of different types of elemental energy, blue-tinged areas of bolt stone appear. Effect: When a creature enters a square of bolt stone, it takes 5 lightning damage per tier. Roll a d20; on a 10 or higher, the bolt stone’s energy is discharged, and the stone becomes inert. Otherwise, the lightning energy is transferred to all unoccupied squares adjacent to the origin square, and those squares become bolt stone. Usage: Bolt stone works best when you scatter it across an encounter area. It offers some risk and reward. A player character might enter a square and take the damage in the hope of creating a barrier to hold back monsters or eliminate minions. Published in Dungeon Master's Guide 2, page(s) 58, Dungeon Master's Kit, page(s) 209."
   },
   {
-    "file": "terrain/Bonepowder Haze.html",
+    "file": "terrain/bonepowder-haze.html",
     "name": "Bonepowder Haze",
     "category": "terrain",
     "type": null,
@@ -294,7 +294,7 @@
     "text": "Bonepowder Haze In desolate sections of the Abyss, especially the dread region of Thanatos (see Manual of the Planes), strange clouds of fine, white powder hover in the air and crackle with necrotic energy. This strange haze saps the life force of creatures within it, dissipating or corrupting that life force to empower nearby undead. Effect: Fields of bonepowder haze are lightly obscured. Any living creature within a square containing this terrain regains only one-half normal hit points from healing effects. Furthermore, whenever a living creature receives a healing effect while in bonepowder haze, each undead creature within 3 squares of it gains a +2 power bonus to attack rolls until the end of the undead creature’s next turn. Usage: Pairing bonepowder haze with undead is a no-brainer. Even without undead, the haze makes any combat more dangerous by degrading healing. Brutes wade into the haze, knowing that the damage of their powerful strikes will persist longer. You can position artillery at the edge of a field of bonepowder haze to obscure the enemy and also hinder ranged counterattacks. Published in The Plane Below, page(s) 13."
   },
   {
-    "file": "terrain/Bookcase.html",
+    "file": "terrain/bookcase.html",
     "name": "Bookcase",
     "category": "terrain",
     "type": null,
@@ -330,7 +330,7 @@
     "text": "Single-Use TerrainBookcase A firm shove sends the bookcase toppling over onto the surprised victims. Standard Action Requirement: You must be adjacent to the bookcase. Check: Athletics check, DC 17, to shove the bookcase. Success: The bookcase falls to one direction, which is chosen by the attacking creature, and it fills a 2-square-by-2-square space in that direction. The bookcase then makes the following attack. Target: Each creature in the affected space. Attack: +9 vs. Fortitude Hit: 1d10 + 3 damage. Effect: The affected space becomes difficult terrain until the end of the encounter, and each creature in that space is knocked prone. Published in Dungeon Magazine 165."
   },
   {
-    "file": "terrain/Boulder.html",
+    "file": "terrain/boulder.html",
     "name": "Boulder",
     "category": "terrain",
     "type": null,
@@ -366,7 +366,7 @@
     "text": "Single-Use TerrainBoulder This large boulder is perched atop a long slope. One strong shove could send it hurtling into an oncoming mob of enemies. Standard Action Requirement: You must be adjacent to the boulder. Check: Athletics check (hard DC) to shove the rock. Success: The boulder rolls forward and down the slope, stopping after moving 1d6 squares away from the slope’s base. The boulder can move through a creature’s space. When it does so, make the following attack. Target: Each creature whose space the boulder enters Attack: Level + 3 vs. Fortitude Hit: 2d10 + one-half level damage, and the target is knocked prone. Miss: Slide the target 1 square out of the boulder’s path. Published in Dungeon Master's Guide 2, page(s) 63."
   },
   {
-    "file": "terrain/Brambleweed.html",
+    "file": "terrain/brambleweed.html",
     "name": "Brambleweed",
     "category": "terrain",
     "type": null,
@@ -387,7 +387,7 @@
     "text": "Brambleweed Brambleweed has finger-length thorns, sharp and sturdy enough to rend flesh. The plant’s thick vines spread across an area, hindering any who enter it. Effect: Brambleweed squares are difficult terrain. A creature that starts its turn in a brambleweed square takes 5 damage per tier. A creature that ends its turn in a brambleweed square is restrained until the start of its next turn. Usage: Brambleweed can survive in areas of defiled ground, taking its nutrients from passing creatures rather than the surrounding soil. As a result, defilers use the plant to ward their territory. In the wilds of Athas, shrewd predators and hunters weaken prey by herding it into patches of brambleweed. Published in Dark Sun Creature Catalog, page(s) 134."
   },
   {
-    "file": "terrain/Brazier.html",
+    "file": "terrain/brazier.html",
     "name": "Brazier",
     "category": "terrain",
     "type": null,
@@ -420,7 +420,7 @@
     "text": "Single-Use TerrainBrazier This brazier burns brightly and hot. Tipping its iron stand sends blazing coals over nearby foes. Standard Action Requirement: You must be adjacent to a brazier. Check: Strength check (DC 20) to overturn the brazier. Success: The brazier is overturned, making an attack in a close blast 3. Target: Each creature in blast Attack: +18 vs. Reflex Hit: Ongoing 10 fire damage (save ends). Published in Dungeon Magazine 177, page(s) 25."
   },
   {
-    "file": "terrain/Carnage Stone.html",
+    "file": "terrain/carnage-stone.html",
     "name": "Carnage Stone",
     "category": "terrain",
     "type": null,
@@ -441,7 +441,7 @@
     "text": "Carnage Stone There are places in the world where evil has triumphed. These dark, blighted areas bore witness to great and terrible slaughter. Each innocent cut down on these sites leaves an imprint on the stone. Their psychic anguish bleeds out from their dying bodies and infuses the rock below. Creatures who travel across these damaged sites see flashes of the slaughter, from the perspective of either predator or prey. Effect: Whenever a creature ends its turn on a square containing carnage stone, roll a d6. On an odd number, the creature falls prone. On an even number, the creature must make a melee basic attack as a free action against a random adjacent creature. If there are no adjacent creatures, the creature takes 5 psychic damage per tier. Usage: Place carnage stone in sites that witnessed a terrible slaughter. Old battlefields, sites of genocide, and other dark ruins are good locations. Carnage stone adds an unpredictable element to combat, potentially shifting the battle for or against the adventurers each round. Published in The Book of Vile Darkness, page(s) 2-27."
   },
   {
-    "file": "terrain/Carpet of Serpents.html",
+    "file": "terrain/carpet-of-serpents.html",
     "name": "Carpet of Serpents",
     "category": "terrain",
     "type": null,
@@ -462,7 +462,7 @@
     "text": "Carpet of Serpents These patches of ground are covered with swarms of serpents (or other venomous creatures) that dart in and out of various hidden dens. Effect: A carpet of serpents is difficult terrain. When a creature starts its turn in a carpet of serpents area, it takes 5 poison damage per tier, or 10 poison damage per tier if it is prone. Usage: Combine a carpet of serpents with creatures that have poison resistance or immunity, or as part of a trap that drops the characters into a chamber that has this feature. Published in The Plane Above, page(s) 86."
   },
   {
-    "file": "terrain/Caught Breath.html",
+    "file": "terrain/caught-breath.html",
     "name": "Caught Breath",
     "category": "terrain",
     "type": null,
@@ -483,7 +483,7 @@
     "text": "Caught Breath In several areas of the Shadowdark, the warm breath of living creatures freezes in the air, forming tinkling crystals. This is no mere fog. Each exhalation curls out and then halts in midair. Beards and mustaches swiftly become rimed with ice, and glinting frost collects all around the head and shoulders. An area of caught breath fills an encounter-sized cavern, though the icy exhalations appear to drift through the Underdark on imperceptible winds and can also be encountered in narrow tunnels or areas of much larger chambers. Caught breath can be identified with a DC 20 Dungeoneering check. Effect: Creatures in an area of caught breath take a -10 penalty to Stealth checks. Creatures that don’t breathe (such as angels, constructs, living constructs, and undead) do not take this penalty. Usage: Caught breath has a limited impact on combat, so its placement is more flavorful than dangerous. Placing it in an area where the characters have incentive to move quietly—perhaps forcing them to take a more elaborate and perhaps dangerous path—can add to the tension of a scene. Published in Underdark, page(s) 120."
   },
   {
-    "file": "terrain/Cave Slime.html",
+    "file": "terrain/cave-slime.html",
     "name": "Cave Slime",
     "category": "terrain",
     "type": null,
@@ -504,7 +504,7 @@
     "text": "Cave Slime This thin, blue slime is harmless but extremely slick. Effect: A creature that enters a square filled with cave slime must succeed on an easy Acrobatics check or fall prone. Usage: Use cave slime to shield artillery monsters from the characters. Skirmisher monsters that can fly or that excel at Acrobatics might dart back and forth across a patch of cave slime, defying adventurers to follow them. Published in Dungeon Master's Kit, page(s) 210, Dungeon Master's Guide, page(s) 67."
   },
   {
-    "file": "terrain/Chandelier.html",
+    "file": "terrain/chandelier.html",
     "name": "Chandelier",
     "category": "terrain",
     "type": null,
@@ -540,7 +540,7 @@
     "text": "Single-Use TerrainChandelier A large, ornate chandelier of iron and crystal hangs over the battlefield. It would be a pity if it fell to the ground. Standard Action Check: From a distance, to sever or loosen the rope or chain holding the chandelier aloft, make a ranged attack (the chandelier’s defenses are level + 5). Alternatively, you can spend a standard action to cut the rope while adjacent to either the chandelier or the rope or chain keeping it aloft. Success: The chandelier falls to the ground and smashes to pieces. Target: Each creature in an area burst 1 beneath the chandelier Attack: Level + 3 vs. Reflex Hit: 2d8 + one-half level damage. Miss: Half damage. Effect: The area where the chandelier fell becomes difficult terrain. Published in Dungeon Master's Guide 2, page(s) 63."
   },
   {
-    "file": "terrain/Chaos Breath.html",
+    "file": "terrain/chaos-breath.html",
     "name": "Chaos Breath",
     "category": "terrain",
     "type": null,
@@ -561,7 +561,7 @@
     "text": "Chaos Breath An area of chaos breath contains powerful, unpredictable wind gusts that extend high into the atmosphere, equally affecting flying and grounded creatures. The gusts occupy several areas, each 1 to 4 squares across. The currents react to movement and other disturbances, making them appear to be aware. Effect: When a creature enters a square containing chaos breath or starts its turn there, it slides 1d4 squares in a random direction and must make a saving throw to avoid being knocked prone. Creatures that are already allowed a saving throw to avoid being knocked prone gain a +2 bonus to this saving throw. A creature within a square of chaos breath can attempt an easy Athletics or Acrobatics check to reduce the distance of the slide by 1 square, plus 1 square for every 5 points by which the check result beats the DC. A creature that does not slide any distance is not knocked prone. Usage: Chaos breath confounds strategic maneuvering by adding unpredictability to movement. Since this terrain is difficult to spot (requiring a hard Perception check), it can catch both sides in a conflict off guard. Because of the variability of the Elemental Chaos, the effect of chaos breath might not be consistently applied in all cases. In certain areas, the gusts might not be strong enough to affect larger creatures. Air creatures might sense an area of chaos breath and avoid it, or can have an innate resistance to its effect at your discretion. To create more disarray—and more complexity—you could have chaos breath potentially affect the entire encounter area instead of specific squares within it. Each creature has a chance of being caught in a gust at the start of its turn, perhaps on a roll of 1-4 on a d20. Published in The Plane Below, page(s) 13."
   },
   {
-    "file": "terrain/Chaos Spots.html",
+    "file": "terrain/chaos-spots.html",
     "name": "Chaos Spots",
     "category": "terrain",
     "type": null,
@@ -582,7 +582,7 @@
     "text": "Chaos Spots Certain locations in the dominion are in constant (if sluggish) f lux, especially the Chaos Bog and isolated “chaos spots” elsewhere in the dominion. Effect: While in a chaos spot, a creature can attempt to stabilize or alter the area as though it were unstable (see Manual of the Planes), albeit with more difficulty (increase all DCs by 5). Usage: Put a chaos spot in an encounter to add an extra layer of depth to combat, as each side tries to turn the environment into terrain that suits its needs. Published in The Plane Above, page(s) 109."
   },
   {
-    "file": "terrain/Choke Frost.html",
+    "file": "terrain/choke-frost.html",
     "name": "Choke Frost",
     "category": "terrain",
     "type": null,
@@ -603,7 +603,7 @@
     "text": "Choke Frost Choke frost is found in the deepest caves of frozen lands or in the lairs of creatures of elemental ice. This light, white mist congeals into thick ice when creatures or other sources of heat move through it. Effect: When a creature enters a square of choke frost, it takes a -1 penalty to speed. This penalty is cumulative and lasts until the creature uses a move action to negate it. Creatures that have resistance or immunity to cold, or that have the cold keyword are immune to this effect. Usage: Use choke frost to slow down characters with high speed, limiting their ability to reach leaders, controllers, and artillery creatures in the back ranks. This terrain also works well with skirmishers that are resistant or immune to cold, allowing them to attack and retreat through choke frost squares, while the characters are forced to move around the terrain or pay the cost. Published in Dungeon Master's Guide, page(s) 67."
   },
   {
-    "file": "terrain/Choking Vapors.html",
+    "file": "terrain/choking-vapors.html",
     "name": "Choking Vapors",
     "category": "terrain",
     "type": null,
@@ -624,7 +624,7 @@
     "text": "Choking Vapors These fumes rise from volcanic vents, venomous incense—or both, in the case of rare sacrifices involving yuan-ti priests that expect to rise again after dying within the vent where the sacrifice is conducted. Effect: These squares are lightly obscured, and creatures in them must hold their breath or suffocate. (See “Suffocation\".) Creatures that have immunity or resistance to poison are immune to this effect. Usage: Add complexity to an encounter by introducing the vapors after a fight starts. Or have a creature that has poison resistance use the vapors to hide in while it attacks from concealment. Published in The Plane Above, page(s) 86."
   },
   {
-    "file": "terrain/Cloudspore.html",
+    "file": "terrain/cloudspore.html",
     "name": "Cloudspore",
     "category": "terrain",
     "type": null,
@@ -645,7 +645,7 @@
     "text": "Cloudspore Cloudspores are created by strange mushrooms found in the Underdark. The mushrooms, which are normal terrain, release a thick cloud of spores when creatures move through an area where they grow. Effect: When a creature enters a square of cloudspore mushrooms, that square becomes lightly obscured (Rules Compendium, page 220) for 5 minutes. Once a square of cloudspores has discharged, it cannot do so again for 24 hours. Usage: Cloudspores work well with encounters that include lurkers. The lurkers can either remain in the lightly obscured square, or move from one area to another to gain concealment and possible combat advantage. Mixing poisonous spores with cloudspores in later encounters is also a good way to surprise the characters. Published in Dungeon Master's Guide, page(s) 67."
   },
   {
-    "file": "terrain/Crawling Earth.html",
+    "file": "terrain/crawling-earth.html",
     "name": "Crawling Earth",
     "category": "terrain",
     "type": null,
@@ -666,7 +666,7 @@
     "text": "Crawling Earth The substance of the Elemental Chaos sometimes exhibits a destructive will, especially in the form of elementals, but sentience is not necessary for the semblance of living behavior. A prime example is crawling earth, which resembles normal ground but animates when stepped on, then quiets after a few moments. Effect: When any creature ends its movement in a square of crawling earth, it triggers that square and any contiguous squares containing that terrain. The ground rises up and moves 1d4 squares in a random direction, carrying along any creature in that space. The movement is so quick and jarring that a creature in a square of crawling earth must make a saving throw to avoid being knocked prone. A section of crawling earth is usually no larger than 4 squares on a side, but wider areas exist in particularly unstable sections of the Elemental Chaos. Usage: The Elemental Chaos contains several fantastic terrain types that create a dynamic environment, but crawling earth does the best job. Such terrain discourages creatures from ending their movement in certain spaces, forcing them to move farther than they otherwise would (which favors melee combatants) or discouraging movement altogether (making them easy prey for ranged attacks). You might also set the crawling earth’s movement in a specific direction or toward a given point to push the action a certain way or to enhance monsters’ control effects. Published in The Plane Below, page(s) 13."
   },
   {
-    "file": "terrain/Creeping Ice.html",
+    "file": "terrain/creeping-ice.html",
     "name": "Creeping Ice",
     "category": "terrain",
     "type": null,
@@ -687,7 +687,7 @@
     "text": "Creeping Ice In some areas infused with cold energy, particularly where icy parts of the Elemental Chaos erupt into the world, a strange form of ice crawls toward any kind of heat. Living creatures that stand on the ice are slowly drained of life. Effect: Any creature that starts and ends its turn in any square of creeping ice takes 5 cold damage per tier. Usage: Creeping ice is a great tool to persuade the characters to move around an encounter area, particularly if you place it in spots where characters who have ranged attacks are likely to position themselves. Published in Dungeon Master's Guide 2, page(s) 58."
   },
   {
-    "file": "terrain/Cursed Obelisk.html",
+    "file": "terrain/cursed-obelisk.html",
     "name": "Cursed Obelisk",
     "category": "terrain",
     "type": null,
@@ -708,7 +708,7 @@
     "text": "Cursed Obelisk These black, stone obelisks are usually covered in ruins and stand between 2 and 20 squares high. Effect: While a nonworshiper of Zehir is within a number of squares of an obelisk equal to the obelisk’s height, that creature takes a -2 penalty to attack rolls and skill checks, and gains vulnerable 2 per tier to all damage. Usage: A chamber full of these objects could provide cover to the characters’ enemies, while the characters take the penalty for being nonworshipers. the penalty to attack rolls allows enemy skirmishers to take more risk from opportunity attacks, and all enemies will benefit from the extra damage they can deal because of the characters’ vulnerability. Published in The Plane Above, page(s) 87."
   },
   {
-    "file": "terrain/Dead Magic.html",
+    "file": "terrain/dead-magic.html",
     "name": "Dead Magic",
     "category": "terrain",
     "type": null,
@@ -729,7 +729,7 @@
     "text": "Dead Magic The most powerful arcane magic (such as that used by the Dragon) completely drains an area of plant and animal life. These dead magic locales have nothing left to give. Effect: A creature in a square of dead magic takes a -5 penalty to the attack roll of any arcane or primal attack power. The arcane defiling power cannot be used in squares of dead magic. Usage: Dead magic defiled terrain should be used sparingly, even more so when the adventuring party includes arcane and primal heroes. It takes an extremely powerful defiler (such as a sorcerer-king) to so thoroughly eradicate all life in an area. Published in Dark Sun Creature Catalog, page(s) 135."
   },
   {
-    "file": "terrain/Defiled Ground.html",
+    "file": "terrain/defiled-ground.html",
     "name": "Defiled Ground",
     "category": "terrain",
     "type": null,
@@ -750,7 +750,7 @@
     "text": "Defiled Ground The dead do not always rest in peace. Some cemeteries are darker than others, and ancient events leave unseen traces of their former presence. Defiled ground sometimes attracts undead. Effect: Undead gain a +1 bonus to rolls to recharge their powers while on defiled ground. In addition, if an undead creature is reduced to 0 hit points while on defiled ground, roll a d20; on a 10 or higher, the undead creature rises with 1 hit point on its next turn. If radiant damage reduces an undead creature to 0 hit points, it can’t rise again in this manner. Usage: Defiled ground makes undead encounters somewhat more dangerous. Use it for encounters that are meant to have a feel of horror, or to evoke the atmosphere of a site sacred to undead, such as a temple to Orcus. Published in Dungeon Master's Guide 2, page(s) 59, Dungeon Master's Kit, page(s) 210."
   },
   {
-    "file": "terrain/Demon Jags.html",
+    "file": "terrain/demon-jags.html",
     "name": "Demon Jags",
     "category": "terrain",
     "type": null,
@@ -771,7 +771,7 @@
     "text": "Demon Jags These areas of sharp, rugged stone are formed when demons are trampled by other demons or otherwise violently absorbed into the surrounding surface. Most commonly encountered in the Abyss, demon jags could occur anywhere a demonic horde swarms. Effect: Squares containing demon jags are difficult terrain, but any creature can move through the space normally by taking 5 damage per tier for each square entered. Demons are immune to this effect—the spars yield to their passing or retract into the ground. Furthermore, a demon occupying a square of demon jags can use its variable resistance without reducing its limit for the current encounter. Usage: Demon jags serve well as walls and ramparts in demon lairs. Those unusual demons that have any degree of patience use the jags to slow or wear down approaching enemies. Published in The Plane Below, page(s) 13."
   },
   {
-    "file": "terrain/Demon Slick.html",
+    "file": "terrain/demon-slick.html",
     "name": "Demon Slick",
     "category": "terrain",
     "type": null,
@@ -792,7 +792,7 @@
     "text": "Demon Slick Dangerous and debilitating, this odd black slime is a common terrain feature throughout the Abyss. It is particularly widespread where large numbers of demons congregate for long periods of time. Effect: The vile gunk smells foul and makes footing treacherous, creating large areas of difficult terrain. Any nondemon creature that ends its turn in a square of demon slick takes 5 acid and poison damage per tier. In addition, the oily slick responds to certain attacks by extending and latching onto creatures within it. Any creature that is hit by an acid or poison attack while in a square of demon slick takes ongoing 5 acid and poison damage per tier (save ends). Usage: Demon slick is a natural complement to demons that have acid or poison attacks, such as bebiliths, mezzodemons, and vrocks. Against characters without protection against such types of damage, the demons’ debilitating attacks are even more effective. Published in The Plane Below, page(s) 14."
   },
   {
-    "file": "terrain/Dimensional Turbulence.html",
+    "file": "terrain/dimensional-turbulence.html",
     "name": "Dimensional Turbulence",
     "category": "terrain",
     "type": null,
@@ -813,7 +813,7 @@
     "text": "Dimensional Turbulence Instability in the fabric of a plane makes teleportation difficult and inaccurate. Dimensional turbulence is visible as a faint rippling of space with an occasional twinkling of purple light. Effect: A creature that teleports into a square of dimensional turbulence slides 1d4 squares in a random direction after teleporting. Usage: Most useful at the paragon and epic tiers, dimensional turbulence turns normally dependable teleportation powers into a risky proposition. Published in Dungeon Master's Guide 2, page(s) 59."
   },
   {
-    "file": "terrain/Divine Blood.html",
+    "file": "terrain/divine-blood.html",
     "name": "Divine Blood",
     "category": "terrain",
     "type": null,
@@ -834,7 +834,7 @@
     "text": "Divine Blood Wreckage from the ancient war between the gods and the primordials still litters the planes. In secluded places where few dare travel, one might stumble upon a pool of divine blood that was shed during that conflict. Effect: When a creature ends its movement in a divine blood square, it gains 5 temporary hit points per tier, but takes a -1 penalty to attack rolls and checks (the blood still retains much divine power, which assails the creature with confusing visions and memories). The penalty lasts until the temporary hit points are lost. The visions and memories are usually random and nonsensical, but sometimes they can impart information. Usage: Use pools of divine blood to create a feel of ancient, immense divine power. Play up the memories and visions of gods fighting primordials. Include just one square of divine blood with monsters that have forced movement powers to create a “capture the flag” feel to the encounter as the characters’ enemies try to position themselves on the divine blood square to gain temporary hit points. Or add multiple blood squares to give the characters the option of retreating to one for its temporary hit point benefit. Including a lurker that targets characters seeking one of those squares will make such an encounter more interesting. Published in Manual of the Planes, page(s) 22."
   },
   {
-    "file": "terrain/Doomlight Crystal.html",
+    "file": "terrain/doomlight-crystal.html",
     "name": "Doomlight Crystal",
     "category": "terrain",
     "type": null,
@@ -855,7 +855,7 @@
     "text": "Doomlight Crystal These rare, glowing rock formations exist in the Underdark and deep caverns. The glow comes from the gas inside the crystals, which explodes if it comes in contact with air. Effect: A fist-sized doomlight crystal emits dim yellow light in a 3-square radius. If a character in a square with a doomlight crystal is hit by a close or an area attack, the crystal is destroyed as well—and the gas inside it explodes, dealing 5 damage per tier to the character in its square. Usage: Obviously, this terrain feature makes area and close attacks more powerful. It can also add an interesting lighting element to a battle if the doomlights are the only source of illumination. As they are destroyed, the battlefield grows darker and darker. Published in Dungeon Master's Guide 2, page(s) 59."
   },
   {
-    "file": "terrain/Earth Nodes.html",
+    "file": "terrain/earth-nodes.html",
     "name": "Earth Nodes",
     "category": "terrain",
     "type": null,
@@ -876,7 +876,7 @@
     "text": "Earth Nodes Streams of invisible power run beneath the earth, occasionally crossing and collecting in a single spot like a river flowing into a lake. Such rare collection points are called earth nodes. These nodes are usually anywhere from 30 feet across to a half mile wide. Effect: An earth node focuses magic, allowing the following uses: • A node can be used as if it were a permanent teleportation circle. If it is used as a destination, those using it arrive at the center of the node. • While in the node, an arcane caster can make a DC 25 Arcana check as a standard action. On a successful check, that caster gains a +1 bonus to any one d20 roll it makes each round and a +1 bonus to damage rolls with arcane attack powers. These bonuses last until the caster leaves the node. • An earth node can have rituals tied to it. The most common rituals are: Linked Portal, Planar Portal, and Leomund’s Secret Chest. Even creatures without the Ritual Caster feat can access these rituals, as long as those creatures are the appropriate level. Usage: An earth node can make an interesting encounter location in addition to being a type of terrain. Usually found underground, nodes are often guarded by powerful magical creatures. Intelligent creatures like drow will take advantage of the +1 bonus, if able. An earth node is a good way to create an encounter where waves of opponents enter the combat at different intervals using the node’s teleportation effect. Published in Forgotten Realms Campaign Guide, page(s) 51."
   },
   {
-    "file": "terrain/Earthen Maw.html",
+    "file": "terrain/earthen-maw.html",
     "name": "Earthen Maw",
     "category": "terrain",
     "type": null,
@@ -897,7 +897,7 @@
     "text": "Earthen Maw Parts of the broken badlands open and close like jaws, seeking to snare passersby. Effect: Whenever a creature without earth walk remains on the same square of earthen maw throughout its turn, it takes 5 damage per tier and is grabbed (escape DC moderate based on the encounter level). Usage: Use earthen maw terrain to force the characters to make difficult movement choices, or to funnel them into a disadvantageous position. Published in The Plane Above, page(s) 87."
   },
   {
-    "file": "terrain/Earthflow.html",
+    "file": "terrain/earthflow.html",
     "name": "Earthflow",
     "category": "terrain",
     "type": null,
@@ -918,7 +918,7 @@
     "text": "Earthflow The world suffers the occasional mudslide or avalanche. In the Elemental Chaos, earth moves constantly in rivers of rock, dirt, or mud. Effect: Each area of earthflow has a direction of current (see “Underwater Terrain,”). Different sections of a single area could flow in different directions, creating a particularly turbulent earthcourse. Earthflow squares are difficult terrain. Each creature within an earthflow area at the start of its turn slides 3 squares in the direction of flow. If the creature is forced into an area with a different flow direction, it slides the remaining distance in the new direction. The creature must also make an Acrobatics or Athletics check to avoid sinking into the flow and becoming grabbed. Creatures that have earth walk ignore all earthflow effects. Usage: Earthflow terrain forces the characters in a certain direction or puts them at a disadvantage against creatures that have earth walk. An entire encounter area filled with earthflow can be frustrating, though, so be sure the encounter contains other terrain and rewards clever use of skills to bypass the earthflow. Published in The Plane Below, page(s) 14."
   },
   {
-    "file": "terrain/Earthmotes.html",
+    "file": "terrain/earthmotes.html",
     "name": "Earthmotes",
     "category": "terrain",
     "type": null,
@@ -939,7 +939,7 @@
     "text": "Earthmotes Earthmotes are free-floating bits of landscape that defy gravity to hover in the sky. Despite their appearance, these islands in the sky are stable and durable. Earthmotes vary in size and altitude, and most are mostly level on top, resembling upside down mountains peaks. Effect: Earthmotes are excellent traveling fortresses and adventure sites. Usage: Use an earthmote as the fantastic site of an enemy base. Have the mote descend near the ground when the enemy attacks a settlement, making it susceptible to easy infiltration. After stopping the raiders, the characters can return to the earthmotes to gain access before it takes to the air. Be careful, however, if you don’t want the characters to have their own flying base. One way to avoid this is to have the earthmote lose its magic and crash to the ground, or go out of control, traveling in a random direction, once the enemies controlling it are defeated. Published in Forgotten Realms Campaign Guide, page(s) 52."
   },
   {
-    "file": "terrain/Eldritch Influx.html",
+    "file": "terrain/eldritch-influx.html",
     "name": "Eldritch Influx",
     "category": "terrain",
     "type": null,
@@ -960,7 +960,7 @@
     "text": "Eldritch Influx One or more squares reflect light, as if a metallic object hung suspended in the air. Characters entering these squares feel energy surrounding them and hear a faint hum in the air. Magical energy pools in this area, flowing into the void left behind by the expenditure of magic item powers. Effect: As a standard action, a character in a square of eldritch influx can channel its energy to recharge an expended magic item power. Recharging a power in this way does not grant the item’s wielder the ability to make use of more daily magic item powers between milestones. Using an eldritch influx for this purpose depletes its energy, and it can’t be used again until 24 hours have passed. Usage: Since monsters rarely use magic items, this terrain feature is a great magnet for player characters. Place it so they have to work to reach it during a fight, encouraging movement and rewarding risk. Use it for paragon characters or in the first encounter after a milestone, when you know the characters have magic item activations available to them. Published in Dungeon Master's Guide 2, page(s) 59."
   },
   {
-    "file": "terrain/Elemental Seepage.html",
+    "file": "terrain/elemental-seepage.html",
     "name": "Elemental Seepage",
     "category": "terrain",
     "type": null,
@@ -981,7 +981,7 @@
     "text": "Elemental Seepage Elemental seepage is elemental fire, cold, thunder, or lightning, or some combination of the four. The seepage takes the form of a strange, viscous mass that pulsates and quivers with the energy of the Elemental Chaos. In general, elemental seepages are harmless, though some contain one-way, imprecise portals to the Elemental Chaos. Effect: An elemental seepage appears as an area of at least 4 contiguous squares. A creature within 5 squares of an elemental seepage square that uses an attack power with a keyword corresponding to any of the energy types forming the seepage gains a +1 bonus to attack rolls per tier with that power. Usage: Use this terrain to give creatures with attacks that match the seepage damage type extra hitting power. If you include only a few elite creatures whose attacks match the terrain’s damage type, it creates an interesting tactical situation where the characters are trying to keep those creatures more than 5 squares from the seepage. Published in Manual of the Planes, page(s) 22."
   },
   {
-    "file": "terrain/Elemental Spout.html",
+    "file": "terrain/elemental-spout.html",
     "name": "Elemental Spout",
     "category": "terrain",
     "type": null,
@@ -1002,7 +1002,7 @@
     "text": "Elemental Spout Eruptions of material or elemental energy are a common occurrence in the Plane Below. Any substance can issue forth from solid surfaces, bodies of liquid, raging storms, or empty air. Effect: An elemental spout fills a burst, 1 square per tier, centered on a particular origin square. The spout might erupt at intervals or when a creature moves within 1 square of the burst’s center. For interval eruptions, the spout rolls initiative at the start of combat or takes effect at a specific time in a round; for an erratic spout, you might roll initiative each round. The effect of an elemental spout depends on the type of energy or material it disgorges. A summary of common elemental spouts and their effects follows. Exotic spouts also exist that contain more than one substance. Acid: 5 acid damage per tier, and ongoing 5 acid damage per tier (save ends). Frost: 5 cold damage per tier, and the target is slowed (save ends). Lightning: 5 lightning damage per tier, and the target is dazed (save ends). If a target is already dazed, it is instead stunned (save ends). Magma: 5 fire damage per tier, and ongoing 5 fire damage per tier (save ends). Poison Gas: 5 poison damage per tier, and the target is weakened (save ends). Scalding Slick: 5 fire damage per tier, and the target is knocked prone. Thunder: 5 thunder damage per tier, and the target is pushed 2 squares from the spout’s origin square. Usage: Elemental spouts break up an encounter area and give the characters a reason to move in certain ways, whether to avoid the effects of the spouts or to use them in a clever tactical way. Creatures that have resistance or are immune to a spout’s effects can take advantage of the spout to block and damage enemies. Published in The Plane Below, page(s) 14."
   },
   {
-    "file": "terrain/Elemental Windchurn.html",
+    "file": "terrain/elemental-windchurn.html",
     "name": "Elemental Windchurn",
     "category": "terrain",
     "type": null,
@@ -1023,7 +1023,7 @@
     "text": "Elemental Windchurn The powerful, swirling wind in this area makes flying difficult. The elemental turbulence crackles with energy, bringing with it a strong ozone odor. Effect: An area of elemental windchurn is difficult terrain for creatures that are flying, and a creature that ends its turn aloft in the area slides 1d6 squares in a random direction. Usage: Elemental windchurn adds a touch of chaos to a battle while discouraging flight. Use it as an excuse to ground flying monsters at the heroic tier, while at higher tiers it makes an aerial duel far less predictable. Published in Dungeon Master's Guide 2, page(s) 59."
   },
   {
-    "file": "terrain/Ember Moss.html",
+    "file": "terrain/ember-moss.html",
     "name": "Ember Moss",
     "category": "terrain",
     "type": null,
@@ -1044,7 +1044,7 @@
     "text": "Ember Moss This strange Underdark moss is a useful ingredient in creating everburning torches and sunrods, because it’s highly flammable and burns bright and hot. Effect: A creature in a square of ember moss takes 5 extra damage from fire attacks and a -4 penalty to saving throws against ongoing fire damage. Usage: Ember moss is a good way for fire-based creatures to maximize their fire attacks. Place ember moss in a choke point with soldier or brute creatures blocking the path while artillery or controller creatures launch ranged fire attacks against the characters. Published in Dungeon Master's Guide, page(s) 67."
   },
   {
-    "file": "terrain/Energy Alteration Field.html",
+    "file": "terrain/energy-alteration-field.html",
     "name": "Energy Alteration Field",
     "category": "terrain",
     "type": null,
@@ -1065,7 +1065,7 @@
     "text": "Energy Alteration Field The air sparkles and the ground buzzes in the area of an energy alteration field. The terrain can be as big as an entire encounter area or as small as a few squares on a side. Effect: When a creature within the field makes an attack that has a damage type, or such an attack targets a creature or a square within the field, the attack’s damage type changes. For an attack that has an area of effect, the damage type changes only in the part of the area of effect that overlaps the field. Energy alteration fields are inherently chaotic, each one producing a different effect. Use the following table to determine the new damage type, rolling once for each of the attack’s damage types. If the new damage type is the same, nothing happens; an attack that has two or more damage types ends up with only one instead. d8 Energy d8 Energy 1 Acid 5 Lightning 2 Cold 6 Poison 3 Fire 7 Radiant 4 Force 8 Thunder Creatures trained in Arcana can manipulate an energy alteration field as a minor action. Arcana Easy DC: A successful check allows a creature to make one target ignore the effect of the energy alteration field until the end of that target’s next turn. Arcana Moderate DC: A successful check allows a creature to change the damage type of its attacks within the field to any other type that the field allows. This effect lasts until the start of the creature’s next turn. Arcana Hard DC: A successful check allows a creature to change the damage type of all attacks within the field to any other type that the field allows. This effect lasts until the start of the creature’s next turn. Usage: An energy alteration field lets characters and monsters alike tinker with their damage types and adds a surprise element to an encounter. It can be key strategic terrain in a battle, allowing a creature that specializes in limited damage types to diversify or to affect creatures that normally have resistance to such damage. Published in The Plane Below, page(s) 15."
   },
   {
-    "file": "terrain/Energy Crystals.html",
+    "file": "terrain/energy-crystals.html",
     "name": "Energy Crystals",
     "category": "terrain",
     "type": null,
@@ -1086,7 +1086,7 @@
     "text": "Energy Crystals These weird crystals collect and store energy of all kinds. Effect: Energy crystals are difficult terrain and have the following stats: 20 hit points per tier; AC 5, Fortitude 10. When an energy crystal is hit by a cold, fire, lightning, necrotic, radiant, or thunder attack, it absorbs the energy and takes no damage from the attack. In addition, until the end of the attacker’s next turn, any creature that enters the energy crystal’s square or starts its turn there takes 5 damage per tier of the type absorbed by the crystal. If an energy crystal is destroyed while it holds absorbed energy, it explodes, dealing 10 damage per tier of the absorbed energy type to each creature within 3 squares of it. Usage: Use energy crystals with creatures that have burst or blast attacks with a damage type that the crystals will absorb and resistances of the appropriate damage type. After priming the crystals with an attack, have those creatures destroy the crystals to deal extra damage in a large burst. Minions also work well at destroying crystals that have been primed, even if they destroy themselves in the process. Published in Manual of the Planes, page(s) 22."
   },
   {
-    "file": "terrain/Energy Node.html",
+    "file": "terrain/energy-node.html",
     "name": "Energy Node",
     "category": "terrain",
     "type": null,
@@ -1107,7 +1107,7 @@
     "text": "Energy Node An energy node is a particularly strong confluence of arcane, divine, and other forms of power. The air above it shimmers with energy, and anyone standing upon it feels fresh and reinvigorated. Effect: A creature that starts its turn in an energy node’s square can spend a minor action while in the square to regain a single encounter or recharge power. Using a node for this purpose depletes its energy, and it can’t be used again until 24 hours have passed. Usage: Energy nodes work well in long, running battles and in encounters with solo monsters. Not only do they allow the characters (and monsters) to use encounter powers multiple times, but they also create a situation in which the player characters might be racing against their opponents. Only one creature can benefit from each energy node, forcing the characters to fight for access to any nodes in an area. In a fight against a solo monster, consider placing more than one node around the perimeter of the encounter area, or in hard-to-reach places, which can force PCs to disengage in order to draw upon the power of a node. Published in Dungeon Master's Guide 2, page(s) 59."
   },
   {
-    "file": "terrain/Erratic Portal.html",
+    "file": "terrain/erratic-portal.html",
     "name": "Erratic Portal",
     "category": "terrain",
     "type": null,
@@ -1128,7 +1128,7 @@
     "text": "Erratic Portal When the magic of a portal begins to fail, it might transform into an erratic portal. Effect: When a creature ends its movement in an erratic portal square, it must make a saving throw. If the creature saves, it can teleport up to 5 squares per tier as a free action. If it fails, the creature can teleport up to 2 squares per tier as a free action, and it takes 10 lightning damage per tier. Usage: As with all terrain that teleports or moves creatures, use erratic portals to create a complex encounter that allows the combatants to rapidly move around the battlefield. This will make life difficult for defenders, but also rewards those who can make an attack against a marked opponent that shifts away. Include elite or solo monsters (and their better saving throws) to make it a challenging encounter. Published in Manual of the Planes, page(s) 22."
   },
   {
-    "file": "terrain/Exotic Fruit Trees.html",
+    "file": "terrain/exotic-fruit-trees.html",
     "name": "Exotic Fruit Trees",
     "category": "terrain",
     "type": null,
@@ -1158,7 +1158,7 @@
     "text": "Single-Use TerrainExotic Fruit Trees A quick leap and a swipe knocks bulbous fruit off a nearby tree. Standard Action Check: Athletics check, DC 17, or a melee attack roll, AC 17, to knock the fruit down. Success: Make the following attack. Target: Close burst 1 centered on the tree’s trunk; each creature in the burst Attack: +11 vs. Reflex; if the attacking creature is also a target of the attack, it gains a +5 bonus to Reflex against the attack. Hit: 1d6 + 4 damage, and the target is dazed until the end of your next turn. Published in Dungeon Magazine 165."
   },
   {
-    "file": "terrain/Eye Unblinking.html",
+    "file": "terrain/eye-unblinking.html",
     "name": "Eye Unblinking",
     "category": "terrain",
     "type": null,
@@ -1179,7 +1179,7 @@
     "text": "Eye Unblinking The fomorians of Inbharran use weapons called eyes unblinking, inset into spires of black steel. These magic weapons are made from the ritually enlarged evil eyes of deceased fomorian rulers and champions. Nourished by the blood of wounded foes (see “Blood Grate,”), they remain alive and vigilant, loosing beams of arcane energy at invaders. Each eye unblinking occupies a single square, set high in a tower. A typical fortress has one to four eyes unblinking, depending on its size. A fortress with insufficient eyes unblinking to cover all approaches rarely lasts long in the Feydark. An eye unblinking can be identified with a DC 25 Arcana check. Effect: Once per encounter on its turn, each eye unblinking can create a particular special effect as an area burst 5 within 20 squares of the tower in which the eye is set. The burst creates a zone that lasts until the end of the encounter. Once an eye unblinking creates its zone, it can move the zone 3 squares on its initiative count (initiative +11). Consider an eye to have a Will of 18 for the purpose of attempts to dispel its magic. Included here are three examples of special effects; feel free to create your own minor effect along these lines. All such effects are designed only to assist those loyal to the ruler of the tower. • No fomorian or fomorian ally within the zone grants combat advantage. • Each fomorian or fomorian ally within the zone gains resist 5 to a particular type of damage (such as acid or fire). • When a fomorian or fomorian ally within the zone hits an enemy with a melee attack, it can shift 1 square as a free action. Usage: Place eyes unblinking to drive home the difficulty of assaulting the fomorians on their home territory. Characters who know they must invade a fomorian fortress would do well to find some way to sabotage its defenses before making a frontal assault. Colluding with a rival fomorian would be a reasonable, if ethically dubious, plan. Published in Underdark, page(s) 103."
   },
   {
-    "file": "terrain/Festering Corruption.html",
+    "file": "terrain/festering-corruption.html",
     "name": "Festering Corruption",
     "category": "terrain",
     "type": null,
@@ -1200,7 +1200,7 @@
     "text": "Festering Corruption The Feywild and Shadowfell bleed into the natural world, and vice versa. There are tales about travelers vanishing into Faerie while walking a lonely road at night. Likewise, most rural communities know well there are nights when the dead walk and when the shadow reaches out from the underworld to snatch the living. Planar bleeds rarely last for long. From time to time, a bleed lingers long enough to leave an impression, and the memory of the merged planes lives on for anywhere from hours to centuries. Festering corruption is an example of one such memory, and it results when a part of the Shadowfell oozes into the natural world. Little can survive the dark plane’s touch. Affected areas feature dead grass underfoot, bones littering the ground, and skeletal trees whose clattering branches rattle with each gust. Only the most filth-hardened creatures can survive in these places for long. Effect: An area of festering corruption is usually no larger than 4 squares on a side. Festering corruption has two effects, one for the living and one for the undead. Whenever a living creature ends its turn in an area of festering corruption, it must make a saving throw. On a save, there is no effect. On a failed saving throw, the creature takes 5 necrotic damage per tier and is slowed until the end of its next turn. Whenever an undead creature ends its turn in an area of festering corruption, it gains a +2 bonus to attack rolls and its speed until the end of its next turn. Usage: Festering corruption results in places where someone or something has compromised the planar boundary’s integrity. Dark rituals, shadow magic, or the creation of powerful undead can all create pockets of festering corruption. Published in The Book of Vile Darkness, page(s) 2-27."
   },
   {
-    "file": "terrain/Fey Circle.html",
+    "file": "terrain/fey-circle.html",
     "name": "Fey Circle",
     "category": "terrain",
     "type": null,
@@ -1221,7 +1221,7 @@
     "text": "Fey Circle Often distinguished by the presence of tangled vines or large toadstools, this location is empowered with the extraordinary energy of the Feywild. Effect: A creature can spend a minor action while in a fey circle’s square to teleport 5 squares. Usage: A fey circle can add unpredictability to a combat area, and it can level the playing field somewhat when the player characters are fighting monsters that teleport—or when monsters familiar with the circle face player characters who teleport all the time. A fey circle is also a great addition to an encounter area that features a treacherous chasm or similarly dangerous terrain, giving the player characters a way to bypass the danger if they can figure out the purpose of the fey circle. Published in Dungeon Master's Guide 2, page(s) 60, Dungeon Master's Kit, page(s) 210."
   },
   {
-    "file": "terrain/Fey Crossroads.html",
+    "file": "terrain/fey-crossroads.html",
     "name": "Fey Crossroads",
     "category": "terrain",
     "type": null,
@@ -1242,7 +1242,7 @@
     "text": "Fey Crossroads A fey crossroads is an entry to the Feywild. Each one’s appearance varies, whether it is a stone arch, a pair of rune-scribed standing stones, or lintel-capped monoliths. Effect: A fey crossroads functions like a portal, transporting those going through it to another place, either in the world or in the Feywild. They can be keyed, restricted, variable, and even malfunctioning. Usage: Discovering a fey crossroads can be an adventure in itself. Once the location of one is discovered, consider placing powerful fey guardians such as eladrin knights, dark fey, or magical beasts that bar the entrance. Bypassing those guardians might require defeating them in combat, or negotiating passage for a price. Published in Forgotten Realms Campaign Guide, page(s) 53."
   },
   {
-    "file": "terrain/Fey Mounds.html",
+    "file": "terrain/fey-mounds.html",
     "name": "Fey Mounds",
     "category": "terrain",
     "type": null,
@@ -1263,7 +1263,7 @@
     "text": "Fey Mounds Fey mounds are hidden burial grounds of wild fey. When a fey creature dies, it is placed in a mound and covered loosely with earth, branches, and leaves. Mushrooms grow around such mounds, and lights, ghostly giggling, and fey apparitions are common near or on them. Powerful magical treasures, the former belongings of the dead fey, are often placed in the mound. Effect: A nearby creature that makes a DC 27 Arcana check can sense a fey mound. Fey mound soil is a powerful component in fertility rituals. Some mounds act as fey crossroads. Most are trapped, and some are guarded by living fey. Those guardians gain a +1 bonus to any one d20 roll they make each round while guarding the mound. Usage: Use a fey mound’s strange phenomena (strange lights, calling voices) to draw the characters into the area of a fey mound. Have the buried fey creature’s spirit rise to confront the characters. Depending on their interaction, the spirit either imparts useful knowledge or its former belongings, or turns into a vengeful spirit, such as a banshee, and attacks the characters for disturbing the burial site. Published in Forgotten Realms Campaign Guide, page(s) 53."
   },
   {
-    "file": "terrain/Font of Power.html",
+    "file": "terrain/font-of-power.html",
     "name": "Font of Power",
     "category": "terrain",
     "type": null,
@@ -1284,7 +1284,7 @@
     "text": "Font of Power Due to planar energy, the presence of a powerful artifact, or some other factor, this terrain boosts certain kinds of attacks. Effect: Choose one power keyword, such as fire, evocation, or arcane, for a font of power square. Attacks that have that keyword made in that square gain a +5 bonus to damage per tier. Usage: A font of power is a good way to make an average encounter into a hard encounter, and a hard encounter into a deadly one. Have the font squares fill most of an encounter area and use an elite or solo creature with one or more attacks that are keyed to the font of power’s damage bonus to increase its damage output and get the characters’ attention. Published in Dungeon Master's Guide, page(s) 68."
   },
   {
-    "file": "terrain/Forgotten Soul.html",
+    "file": "terrain/forgotten-soul.html",
     "name": "Forgotten Soul",
     "category": "terrain",
     "type": null,
@@ -1305,7 +1305,7 @@
     "text": "Forgotten Soul The legends concerning the Raven Queen’s rise to power suggest there is great power in souls, a power many vile creatures work to exploit. Most souls manage to pass through Letherna’s gates for whatever fate awaits the dead, but a few find their final journey thwarted. Forgotten souls are wretched entities prevented from moving on because they are confused, imprisoned, or waylaid in some other way. Despair consumes them, and they infect the living with their sorrow. Effect: A forgotten soul typically occupies 1 square. It does not block line of sight or effect, but creatures cannot move through its space. On initiative count 10, a forgotten soul moves 1 square in a random direction into an unoccupied space. Creatures adjacent to a forgotten soul grant combat advantage and take a -2 penalty to attack rolls. As well, any creature that starts its turn adjacent to a forgotten soul must make a saving throw. On a save, nothing happens. On a failed saving throw, the creature is immobilized until the start of its next turn, and it takes 5 psychic damage per tier. A creature can use a melee or a ranged attack to destroy a forgotten soul. The attack hits automatically, and the forgotten soul is removed from play. Forgotten souls are immune to close and area attacks. Usage: Forgotten souls might linger individually or in small packs. They are most often found in dark dominions such as the Nine Hells, Pluton, or Shom, or in the most evil regions in the Shadowfell. Published in The Book of Vile Darkness, page(s) 2-28."
   },
   {
-    "file": "terrain/Frozen Fire.html",
+    "file": "terrain/frozen-fire.html",
     "name": "Frozen Fire",
     "category": "terrain",
     "type": null,
@@ -1326,7 +1326,7 @@
     "text": "Frozen Fire Portions of the Elemental Chaos experience cold so intense that even fire freezes. In other areas, fire and ice mingle in ways that are contradictory to minds that are familiar only with the natural world. This mixing of opposites is highly unstable—the subtlest change in the surroundings can cause a dramatic explosion. Effect: Patches of frozen fire are usually no larger than 6 contiguous squares, but larger areas can exist. When a creature without the cold keyword enters a square adjacent to frozen fire, or a square of frozen fire is subjected to fire, lightning, or thunder damage, that square explodes. The effect is a close burst 1, centered on the origin square, dealing 1d8 cold and fire damage per tier. Usage: An encounter area containing several regions of frozen fire tightly limits safe zones on the battlefield. Such control particularly favors soldiers, forcing characters to make hard tactical choices during combat. Published in The Plane Below, page(s) 15."
   },
   {
-    "file": "terrain/Glimmering Mirage.html",
+    "file": "terrain/glimmering-mirage.html",
     "name": "Glimmering Mirage",
     "category": "terrain",
     "type": null,
@@ -1347,7 +1347,7 @@
     "text": "Glimmering Mirage Heat mirages are common in the wastelands. They appear near the horizon and beckon viewers with the promise of shade or water, only to vanish as the travelers draw close. Certain malign visions linger, however. These glimmering mirages are crafted by cruel primal spirits to confuse and distress wanderers. Effect: A glimmering mirage is a wall 4 or more squares long, which blocks line of sight. A creature adjacent to this terrain gains concealment against ranged attacks. At the end of each round, roll a d6. On a result of 1, the glimmering mirage vanishes until the end of the encounter; on a result of 6, the mirage moves 5 squares in a random direction. Other results leave the scene unchanged. Usage: Visible from a distance, glimmering mirages can lure adventurers to a particular location. They also conceal creatures and add a random element to an encounter. Published in Dark Sun Creature Catalog, page(s) 135."
   },
   {
-    "file": "terrain/Godsblood.html",
+    "file": "terrain/godsblood.html",
     "name": "Godsblood",
     "category": "terrain",
     "type": null,
@@ -1368,7 +1368,7 @@
     "text": "Godsblood Thanks to the natural vitality of the Feydark, the blood that Torog shed while burrowing through the Feydark remains as fresh and potent as on the day it was spilled, as long as it remains on the highway. The divine energy remaining within this godsblood temporarily supercharges the natural healing capability of any creature, but at the cost of its own stamina and sanity as the dormant power of the King that Crawls surges through the creature’s body. Pools of godsblood are found in areas of 3 to 12 contiguous squares. Godsblood can be identified with a DC 25 Dungeoneering or Religion check. Effect: Any creature that spends a healing surge while in an area of godsblood gains regeneration 2 per tier and a -4 penalty to Fortitude and Will. These effects last until the creature reaches full hit points. Only one creature can be affected by an area of godsblood at a time; once it is activated by a healing surge, the godsblood becomes dormant until its effect ends on that creature. Godsblood removed from its pool loses its power instantly, so it can’t be bottled or transported. Usage: The source of godsblood somewhat limits where you can position it. However, you can make good use of it in a running series of encounters that occur along the King’s Highway to either help the characters when they’re in need of a healing break or assist a wily enemy you might want to keep around. Published in Underdark, page(s) 102."
   },
   {
-    "file": "terrain/Godsrock.html",
+    "file": "terrain/godsrock.html",
     "name": "Godsrock",
     "category": "terrain",
     "type": null,
@@ -1389,7 +1389,7 @@
     "text": "Godsrock No divine entity can enter the underworld without in some way dying or taking on an aspect of death. Some live again when they exit the land of the dead, but all leave pieces of themselves behind. Even the King that Crawls could not escape this reality. As Torog stabbed like a knife into the heart of death’s realm, it slashed back into him. Where fragments of Torog’s bones struck the earth, formations called godsrock sprouted. These columns of chalky material resemble limestone and rise from the floor at irregular intervals. These stony pillars share an echo of Torog’s physical and mental endurance with nearby living creatures, but also mete out excruciating pain to those wracked by other conditions. At least one faction of incunabula seeks to locate and record the position of every fragment of gods rock in the Shadowdark. If they know the reason for gathering this information, they aren’t sharing it. A godsrock fragment typically occupies an area of 3 to 9 contiguous squares. It can be identified with a DC 25 Dungeoneering or Religion check. Effect: A typical square of godsrock is 3 to 10 feet in height, and it can function as cover or blocking terrain, depending on height. Living creatures adjacent to a square of godsrock gain a +2 bonus to Fortitude and Will. In addition, any living creature that fails a saving throw while adjacent to godsrock takes 5 necrotic damage per tier. Usage: Adding godsrock to an encounter with several creatures that use powers requiring saving throws allows the necrotic damage to come into play, while also providing living characters with a benefit (as long as they stay near the godsrock, of course). Published in Underdark, page(s) 119."
   },
   {
-    "file": "terrain/Grab Grass.html",
+    "file": "terrain/grab-grass.html",
     "name": "Grab Grass",
     "category": "terrain",
     "type": null,
@@ -1410,7 +1410,7 @@
     "text": "Grab Grass This thick, tough grass grows in deep forests of the Feywild or in areas where the Feywild’s magic filters into the material world. Effect: A creature that falls prone in a square of grab grass must make a Strength check to stand up (use a DC based on the creature’s level, and usually an easy or moderate check). Usage: Grab grass works best in an outdoor encounter. Use controllers and other creatures with the ability to move opponents and knock them prone. Then when the characters are prone and having a difficult time standing up, bring in the brutes to deal heavy damage. If you want to make it more difficult, choose brutes with reach attacks so that most characters won’t be able to attack from prone. Published in Dungeon Master's Guide, page(s) 68."
   },
   {
-    "file": "terrain/Grasping Bog.html",
+    "file": "terrain/grasping-bog.html",
     "name": "Grasping Bog",
     "category": "terrain",
     "type": null,
@@ -1431,7 +1431,7 @@
     "text": "Grasping Bog A grasping bog is an area of deep, viscous mud that not only hampers movement but also clings to characters who tumble into it. Effect: A grasping bog is difficult terrain. In addition, a creature that falls prone in a square of grasping bog is restrained (save ends). Usage: Combine grasping bog terrain with monsters that can knock their enemies prone. Published in Dungeon Master's Guide 2, page(s) 60."
   },
   {
-    "file": "terrain/Grasping Slime.html",
+    "file": "terrain/grasping-slime.html",
     "name": "Grasping Slime",
     "category": "terrain",
     "type": null,
@@ -1452,7 +1452,7 @@
     "text": "Grasping Slime This black, viscous goo feeds on Underdark insects and vermin by trapping them in place and slowly digesting them. This black, viscous goo feeds on Underdark insects and vermin by trapping them in place and slowly digesting them. Effect: Grasping slime is difficult terrain. A creature moving through a square of grasping slime must make an Athletics check (based on the creature’s level) to pass. On a failed check, the creature ends its movement in that square. Usage: Use multiple patches of grasping slime to slow the characters’ advance against ranged creatures, potentially giving those creatures multiple rounds to attack. The slime’s ability to negate movement will also give soldiers with marking powers time to engage the front ranks of stuck characters, further slowing their advance while the ranged creatures continue to attack. Grasping slime is also a good way to control the characters’ movements, funneling them toward a trap. Published in Dungeon Master's Guide, page(s) 68."
   },
   {
-    "file": "terrain/Grasping Vines.html",
+    "file": "terrain/grasping-vines.html",
     "name": "Grasping Vines",
     "category": "terrain",
     "type": null,
@@ -1473,7 +1473,7 @@
     "text": "Grasping Vines Vines, roots, and other vegetation that has become infused with aberrant energies emanating from agathys can entangle those that come near. Effect: When a creature starts its turn in or adjacent to a square of grasping vines, it must make a saving throw. If the creature saves, it’s slowed until the start of its next turn; otherwise, it’s restrained until the start of its next turn. Usage: Creatures familiar with the local landscape might use grasping vines as part of a trap for unwary visitors, focusing their attention subsequently on the ones who remain unrestrained. Published in The Plane Above, page(s) 107."
   },
   {
-    "file": "terrain/Green Fog.html",
+    "file": "terrain/green-fog.html",
     "name": "Green Fog",
     "category": "terrain",
     "type": null,
@@ -1494,7 +1494,7 @@
     "text": "Green Fog A swirling green mist spreads across the ground, moving despite the lack of a breeze. As strange as the mists are, their sinister nature is not revealed until a creature vanishes into the fog. The mist transforms and corrupts the unwary soul, twisting it into a horrid mockery of what it once was. Unless the creature can somehow shake the green fog’s effects quickly, the transformation will become permanent. Effect: A patch of green fog covers an area 4 squares on a side. Squares in the fog are lightly obscured. Each round on initiative count 10, roll a d4. The green fog moves a number of squares equal to the die result in a random direction. Should the green fog move entirely out of the encounter area, remove the fog from play. Any living creature that starts its turn in the green fog must make a saving throw. On a save, there is no effect. On a failed saving throw, the creature becomes a green fog mutant (save ends). Until the effect ends, the creature takes a -2 penalty to attack rolls, speed, and skill checks, but gains a +2 bonus per tier to damage rolls. If a creature ends the encounter still subjected to the green fog’s effects, the effects are permanent until the creature is the recipient of a Remove Affliction ritual or similar magic. Usage: Green fog is not natural to the world; it originated in the Far Realm. For this reason, the queer mist only appears in tortured landscapes and warped terrain where the Far Realm’s influence has been felt. Published in The Book of Vile Darkness, page(s) 2-28."
   },
   {
-    "file": "terrain/Ground Swarms.html",
+    "file": "terrain/ground-swarms.html",
     "name": "Ground Swarms",
     "category": "terrain",
     "type": null,
@@ -1515,7 +1515,7 @@
     "text": "Ground Swarms Various types of vermin crawl through the tunnels of the Feydark, including masses of rats, beetles, tiny drakes, and other nuisance creatures. A ground swarm can occupy a single square or an area up to 3 squares on a side. It can be identified with a DC 20 Nature check. Effect: A ground swarm turns its squares into challenging terrain, requiring a creature that enters the swarm to make an easy Acrobatics check to avoid falling prone. Any living creature that falls prone or starts its turn prone in a ground swarm takes 1 damage per tier (or 2 per tier if bloodied). A ground swarm moves around during combat. Assign the swarm a position in the initiative order (initiative +10) and move it 1d4-1 squares on its turn, typically toward the nearest bloodied combatant. Any blast or burst that includes one or more squares occupied by a ground swarm disperses the swarm in the included squares. Usage: Using a ground swarm near other hazards or dangerous terrain features can make an encounter more dangerous. For example, consider having a swarm of beetles near a fast-moving stream so that if the characters can’t keep their feet, they end up having to deal with the current. Published in Underdark, page(s) 100."
   },
   {
-    "file": "terrain/Healing Ground.html",
+    "file": "terrain/healing-ground.html",
     "name": "Healing Ground",
     "category": "terrain",
     "type": null,
@@ -1536,7 +1536,7 @@
     "text": "Healing Ground This area is infused with primal energy that allows life of all sorts to flourish. Undergrowth or fungus that thrives on the primal energy in the place grows wildly and chokes the area with its profusion. Effect: If a creature in this terrain spends a healing surge, it regains an additional 2 hit points per tier. Healing ground is also difficult terrain due to the abundant plant life. Usage: Healing ground, assuming that the characters can recognize it, is a good example of attractive terrain that gives characters an incentive to move into a room and take up advantageous positions. Published in Dungeon Master's Guide 2, page(s) 60."
   },
   {
-    "file": "terrain/Hellfire.html",
+    "file": "terrain/hellfire.html",
     "name": "Hellfire",
     "category": "terrain",
     "type": null,
@@ -1557,7 +1557,7 @@
     "text": "Hellfire Hellfire is a rare flame created by extracting energy from a tortured soul. Found almost exclusively in the Nine Hells’ deepest reaches, these vile flames burn uncontrollably in areas where souls are gathered. Effect: Whenever a creature that is not a devil enters a square containing hellfire or starts its turn there, it takes ongoing 5 fire and psychic damage per tier (save ends). If the creature is bloodied, the damage increases by 5. In addition, whenever a creature takes ongoing damage from hellfire, the creature cannot take opportunity actions or immediate actions until the start of its next turn. Usage: Hellfire is common to the Nine Hells and rare elsewhere. Diabolists and those in service to Mephistopheles might know how to create hellfire and use it to ward their lairs. Published in The Book of Vile Darkness, page(s) 2-28."
   },
   {
-    "file": "terrain/Hungry Void.html",
+    "file": "terrain/hungry-void.html",
     "name": "Hungry Void",
     "category": "terrain",
     "type": null,
@@ -1578,7 +1578,7 @@
     "text": "Hungry Void Some places in the unending night below sap existence as well as light and warmth. These hungry voids give creatures in them a disorienting feeling of falling away from their bodies. Light cannot dispel this effect because it is the area and not the shadows that unravel the threads of life. A creature in a hungry void is closer to death than elsewhere. A hungry void typically fills an area 5 to 10 squares on a side, but some hungry voids—said to reflect the sites of epic battles in the Underdark—can be much larger. A hungry void can be identified with a DC 20 Dungeoneering check. Effect: Bright light in a hungry void is automatically reduced to dim. A creature in a hungry void takes a -1 penalty to death saving throws. A bloodied creature that ends its turn in a hungry void square takes 2 necrotic damage per tier. Usage: A hungry void accelerates the slide from bloodied to unconscious to dead, making any dangerous encounter more terrifying for the characters. Published in Underdark, page(s) 120."
   },
   {
-    "file": "terrain/Ice Maws.html",
+    "file": "terrain/ice-maws.html",
     "name": "Ice Maws",
     "category": "terrain",
     "type": null,
@@ -1599,7 +1599,7 @@
     "text": "Ice Maws These expanses of permafrost seem tranquil from a distance, but when a creature approaches, the frozen ground seems to come alive with mouthlike openings that snap at the creature’s feet. The voracious maws are individually small and slow, but their collective bite is debilitating. Effect: If a creature without ice walk starts and ends its turn in the same ice maws space, it takes 5 cold damage per tier and is immobilized (save ends). The affected creature cannot make a saving throw against this effect until the end of its next turn. Usage: Large sections of ice maws can encourage characters to pass through an encounter area with haste and discourage ranged attackers from staying in one place. Ice archons are well known for using ice maws to protect their crystalline fortresses. Published in The Plane Below, page(s) 15."
   },
   {
-    "file": "terrain/Illusions.html",
+    "file": "terrain/illusions.html",
     "name": "Illusions",
     "category": "terrain",
     "type": null,
@@ -1620,7 +1620,7 @@
     "text": "Illusions Illusions can mimic any terrain. Effect: Creatures that realize that an object is an illusion ignore its effects, while those that do not realize the truth behind the illusion react to it as appropriate. Usage: Use characters’ passive Insight checks to determine if they notice something “not right,” but don’t allow them to make active checks without good reason. Once a character has reason to be suspicious, he can make an Insight check as a minor action to attempt to disbelieve an illusion. Illusory Wall: An illusory wall blocks line of sight. Creatures can walk through it without penalty, though obviously creatures that believe the illusion aren’t likely to try doing so. Some illusory walls are similar to one-way mirrors in that they are transparent from one side (allowing a viewer to see creatures on the other side) while from the other side they appear to be normal walls (blocking line of sight, and looking like normal wall terrain). Published in Dungeon Master's Kit, page(s) 210, Dungeon Master's Guide, page(s) 68."
   },
   {
-    "file": "terrain/Infectious Pallor.html",
+    "file": "terrain/infectious-pallor.html",
     "name": "Infectious Pallor",
     "category": "terrain",
     "type": null,
@@ -1641,7 +1641,7 @@
     "text": "Infectious Pallor Pockets of diseased air drift through the Abyss. These vapors are often invisible, and those that can be seen appear innocuous. Light within an area of infectious pallor looks slightly different from that in surrounding areas. Also, creatures within this terrain appear sickly and wan, and any wounds they take seem to ooze with infection. Effect: Each area of infectious pallor carries a specific disease. Any creature that starts and ends its turn in a square of infectious pallor (even if they are different squares in the same area) is exposed to that disease. A common plague of the Abyss is demon pox. Usage: This terrain works well with undead and elemental creatures, both of which are commonly immune to disease and have no fear of being within the area. The disease you pick determines how scary the pallor is. Try positioning this terrain around areas that you want to be challenging to reach, or in places you want characters to pass through quickly. Published in The Plane Below, page(s) 16."
   },
   {
-    "file": "terrain/Infernal Brazier.html",
+    "file": "terrain/infernal-brazier.html",
     "name": "Infernal Brazier",
     "category": "terrain",
     "type": null,
@@ -1674,7 +1674,7 @@
     "text": "Single-Use TerrainInfernal Brazier These heavy brass braziers smoke with noxious fumes. What’s burning in there, anyway? Standard Action Requirement: You must be adjacent to the brazier. Check: Athletics check (DC 23) to push over the brazier. Success: The brazier spills its contents. Target: Each creature in a close blast 3 from the brazier Attack: +16 vs. Reflex Hit: Ongoing 10 fire and poison damage (save ends). Published in Dungeon Master's Guide 2, page(s) 77."
   },
   {
-    "file": "terrain/Infernal Fumes.html",
+    "file": "terrain/infernal-fumes.html",
     "name": "Infernal Fumes",
     "category": "terrain",
     "type": null,
@@ -1695,7 +1695,7 @@
     "text": "Infernal Fumes Most common in regions of the Nine Hells and certain volcanic regions of the world, infernal fumes are great clouds of gray smoke that glow red with inner heat. Infernal fumes drift as if alive, apparently seeking concentrations of multiple creatures. Effect: Squares filled with infernal fumes are lightly obscured. The fumes can move up to 4 squares each round. A creature that ends its turn in a square of infernal fumes takes 5 fire and poison damage per tier and is dazed until the end of its next turn. Usage: Infernal fumes are an effective way to chase player characters around an encounter area. This terrain is similar to a blood midge cloud, but has a significant harmful effect to characters and monsters inside it. Few monsters, even devils, are immune to the effect of infernal fumes, so they challenge both sides of a fight equally. Creatures that remain outside the cloud are hindered in their attempts to attack creatures inside the cloud as a result of the concealment it grants. Published in Dungeon Master's Guide 2, page(s) 60."
   },
   {
-    "file": "terrain/Insect Cloud.html",
+    "file": "terrain/insect-cloud.html",
     "name": "Insect Cloud",
     "category": "terrain",
     "type": null,
@@ -1716,7 +1716,7 @@
     "text": "Insect Cloud Swarms of flying, blood-drinking bugs infest the Feydark, searching for targets for their hunger. Though they can survive on carrion and plant sap, they greatly prefer living prey. An insect cloud can occupy a single square or an area up to 5 squares on a side. It can be identified with a DC 20 Nature check. Effect: Insect clouds create lightly obscured terrain. Any living creature that starts its turn in an insect cloud takes 1 damage per tier (or 2 per tier if bloodied). An insect cloud changes position during an encounter. Assign the cloud a position in the initiative order (initiative +10) and move it 1d4-1 squares on its turn, typically toward the nearest bloodied combatant. Any blast or burst that includes one or more squares occupied by an insect cloud disperses the cloud in the included squares. Usage: As it moves about during combat, an insect cloud adds an element of unpredictability to an encounter. Player characters can also take advantage of the situation by moving enemies into the cloud. Published in Underdark, page(s) 100."
   },
   {
-    "file": "terrain/Insect Swarm.html",
+    "file": "terrain/insect-swarm.html",
     "name": "Insect Swarm",
     "category": "terrain",
     "type": null,
@@ -1737,7 +1737,7 @@
     "text": "Insect Swarm Swarms of biting, sucking insects are found throughout the area, looking for their next source of food. Fresh blood often draws them. Effect: When a living creature starts its turn within an insect swarm, it takes 5 damage per tier and grants combat advantage until the start of its next turn. Creatures immune to this damage (considered melee damage) do not grant combat advantage. Usage: An insect swarm can serve either as a form of controller in combat (used purposely by the characters’ enemies), or as an unpredictable element in an encounter that changes all the combatants’ tactics. Introduce one or more swarms a few rounds after the start of a fight and have them move to the nearest creature each round. Published in The Plane Above, page(s) 107."
   },
   {
-    "file": "terrain/Jade Flame.html",
+    "file": "terrain/jade-flame.html",
     "name": "Jade Flame",
     "category": "terrain",
     "type": null,
@@ -1758,7 +1758,7 @@
     "text": "Jade Flame This strange, vibrant green fire burns everything that comes near it, yet the nature of its magic is such that a creature it burns cannot be harmed by other sources of heat for a limited time. Effect: A creature that enters a square of jade flame or that starts its turn adjacent to such a square takes ongoing 5 radiant damage per tier (save ends). However, until the creature saves against the ongoing damage, it has resist fire equal to 10 per tier. Usage: Jade flame offers the characters a choice. They can accept some constant radiant damage in return for protection against a potentially more dangerous threat. The characters might need to use jade flame to protect themselves before they race across a lava chamber or face another sort of fire hazard. Published in Dungeon Master's Guide 2, page(s) 60."
   },
   {
-    "file": "terrain/Larvae Pool.html",
+    "file": "terrain/larvae-pool.html",
     "name": "Larvae Pool",
     "category": "terrain",
     "type": null,
@@ -1779,7 +1779,7 @@
     "text": "Larvae Pool Among the many crimes one can lay at the feet of the night hags, the worst is their propensity for stealing souls bound to the Shadowfell. They warp their prisoners into squirming maggot forms called larvae, stuff them in bags, and slip away before anyone notices their villainy. The night hags use the larvae for their own dark rites and as currency for payment to other fiends in return for their loyalty or services. Effect: A larvae pool covers a 2-square-by-2-square area and is difficult terrain. Any creature that ends its turn prone in the pool cannot crawl or stand up (save ends). Each time the creature fails a saving throw against this effect, the creature takes 5 damage per tier. Usage: Larvae pools are found anywhere night hags are likely to haunt and might be guarded by demonic or devilish soldiers and brutes, especially those that can knock creatures prone. Published in The Book of Vile Darkness, page(s) 2-28."
   },
   {
-    "file": "terrain/Lava Pit.html",
+    "file": "terrain/lava-pit.html",
     "name": "Lava Pit",
     "category": "terrain",
     "type": null,
@@ -1812,7 +1812,7 @@
     "text": "At-Will TerrainLava Pit A fiery blob of lava launches itself at a nearby target. Minor Action Requirement: You must be trained in Arcana and must have seen a creature be attacked with this terrain power. Check: Arcana check (DC 13) to understand how to control and attack with the Lava Pit. Success: You can use this terrain power automatically until the end of the encounter. Each use counts as a standard action. You must be within 3 squares of the lava to trigger the attack. Target: One creature within 3 squares of the lava pit. Attack: +6 vs. Reflex Hit: 1d4 fire damage plus ongoing 3 fire damage (save ends). Published in Dungeon Magazine 179, page(s) 35."
   },
   {
-    "file": "terrain/Lightning Mist.html",
+    "file": "terrain/lightning-mist.html",
     "name": "Lightning Mist",
     "category": "terrain",
     "type": null,
@@ -1833,7 +1833,7 @@
     "text": "Lightning Mist These fields of gray-blue fog that drift slowly through the Elemental Chaos are hazardous to traverse quickly. Lightning mist typically coalesces into an area 5 squares on a side, but masses miles wide and just as deep are not unknown in treacherous territories. Effect: When the particles within the mist are stirred, a charge of electricity lashes out. Any creature that enters more than 2 squares of lightning mist during a single move action takes 5 lightning damage per tier. Squares containing the mist are lightly obscured. Usage: Lightning mist forces creatures to slow down or suffer the consequences. Artillery monsters zero in on slowly moving creatures within the mist, gaining more attacks at a slight cost to accuracy. Elemental creatures that have resistance or are immune to lightning damage thrive in these areas. Published in The Plane Below, page(s) 16."
   },
   {
-    "file": "terrain/Lightning Pillar Strike.html",
+    "file": "terrain/lightning-pillar-strike.html",
     "name": "Lightning Pillar Strike",
     "category": "terrain",
     "type": null,
@@ -1866,7 +1866,7 @@
     "text": "At-Will TerrainLightning Pillar Strike At your command, lightning lashes out from an ancient stone monolith. Standard Action Requirement: You must be within 5 squares of a lightning pillar. Check: Arcana, Nature, or Religion check (hard DC) to trigger the pillar’s attack. Success: You activate the lightning pillar. Target: One creature you choose in a close burst 5 Attack: Level + 3 vs. Reflex Hit: 2d6 + one-half level lightning damage. Published in Dark Sun Creature Catalog, page(s) 135."
   },
   {
-    "file": "terrain/Lightning Pillar.html",
+    "file": "terrain/lightning-pillar.html",
     "name": "Lightning Pillar",
     "category": "terrain",
     "type": null,
@@ -1887,7 +1887,7 @@
     "text": "Lightning Pillar This fantastic, charged monolith rises from the ground in an open area. The pillar hums with elemental power and is clearly an otherworldly formation. Clusters of these pillars form over a wide area when lightning from the Elemental Chaos bleeds into Athas’s wastes. Effect: A lightning pillar occupies 1 square and is capable of delivering a lightning pillar strike attack. Usage: Lightning pillars give characters and their enemies an extra weapon to use on the battlefield. Published in Dark Sun Creature Catalog, page(s) 135."
   },
   {
-    "file": "terrain/Lingering Evil.html",
+    "file": "terrain/lingering-evil.html",
     "name": "Lingering Evil",
     "category": "terrain",
     "type": null,
@@ -1908,7 +1908,7 @@
     "text": "Lingering Evil What might seem a trick of the eye could reveal some darker influence, a stain left by some profoundly wicked act. A revolting stench, dancing shadows, or weird chills can all indicate a lingering evil presence. Effect: An area of lingering evil can be any size, though a 4-square-by-4-square space is common. Good creatures take a -1 penalty to ability checks and skill checks made in the area of lingering evil. In addition, a natural or fey beast will not willingly enter its space. If forced, the beast is dazed until it exits. Usage: Only the most profoundly wicked events create lingering evil. An evil god’s appearance, a savage murder, or even a dark ritual can create an area of lingering evil. The phenomenon lasts in proportion to the creating event’s duration, lasting for just a few minutes to centuries. Published in The Book of Vile Darkness, page(s) 2-29."
   },
   {
-    "file": "terrain/Liquid Thunder.html",
+    "file": "terrain/liquid-thunder.html",
     "name": "Liquid Thunder",
     "category": "terrain",
     "type": null,
@@ -1929,7 +1929,7 @@
     "text": "Liquid Thunder After a powerful elemental storm ravages an area of the Elemental Chaos, gray and placid pools are left behind. These innocuous-looking puddles are actually highly volatile liquid coalesced from the force of the storm. Liquid thunder pools are so unstable that they are rarely larger than 1 square. Effect: A pool of liquid thunder remains calm and mirrorlike until a creature or an object enters it. It then releases the tremendous thunder stored within it, blasting a creature in its square and each creature adjacent to that square. The force of the blast hurls the affected creatures 10 feet per tier into the air. Any creature that falls back to the ground takes 1d10 damage per tier; it can make an Acrobatics check as normal to reduce the falling damage. Usage: Liquid thunder is a simple but dangerous obstruction. Creatures that have forced movement powers use it to great effect. Published in The Plane Below, page(s) 16."
   },
   {
-    "file": "terrain/Loadstone.html",
+    "file": "terrain/loadstone.html",
     "name": "Loadstone",
     "category": "terrain",
     "type": null,
@@ -1950,7 +1950,7 @@
     "text": "Loadstone This strange rock dramatically increases the weight of all objects on it or near it. Effect: Loadstone squares are difficult terrain. A ranged attack that passes through a loadstone square takes a -2 penalty to the attack roll. Usage: Use loadstone areas improve the changes of brutes against characters with ranged attacks, forcing those characters to maneuver for better line of effect. This terrain is useful for giving extra protection to soldier or brute creatures guarding a narrow point, such as a bridge across a chasm, from ranged attacks while they engage melee-based characters at the choke point. Published in Dungeon Master's Guide, page(s) 68."
   },
   {
-    "file": "terrain/Martyr's Monument.html",
+    "file": "terrain/martyrs-monument.html",
     "name": "Martyr's Monument",
     "category": "terrain",
     "type": null,
@@ -1971,7 +1971,7 @@
     "text": "Martyr's Monument This area contains the life energy of an ancient and powerful champion of the gods, embodied in a statue or some other holy icon. Effect: The monument grants a +2 bonus to saving throws to all creatures within 5 squares of it. In addition, a creature adjacent to the monument can touch it as a minor action to make a saving throw. Each time a creature touches the monument to make a saving throw, roll a d20; on a 5 or lower, the monument loses all its magical properties for 24 hours. Usage: A martyr’s monument gives characters a new option for their minor actions. Such terrain is also great for monsters that have nothing else to do with their minor actions. Characters and monsters can use forced movement powers to drive their enemies away from the monument so they can’t gain the saving throw bonus it grants. Use this feature in combination with monsters whose attacks impose effects that a save can end, or if the characters have been making particularly effective use of such attacks against previous foes. Published in Dungeon Master's Guide 2, page(s) 60."
   },
   {
-    "file": "terrain/Mirror Crystal.html",
+    "file": "terrain/mirror-crystal.html",
     "name": "Mirror Crystal",
     "category": "terrain",
     "type": null,
@@ -1992,7 +1992,7 @@
     "text": "Mirror Crystal Mirror crystal causes strange twists and turns in space. Effect: A creature standing on mirror crystal can look down and see all the other mirror crystal spaces within 20 squares. Creatures can make ranged attacks through mirror crystal, targeting any creature on or adjacent to another square of mirror crystal. The range to a creature attacked through mirror crystal is 1 square. Usage: Start an encounter with artillery monsters hidden from sight but positioned on squares of mirror crystal. Then watch as the players figure out how to return the monsters’ fire! Published in Dungeon Master's Kit, page(s) 211, Dungeon Master's Guide, page(s) 68."
   },
   {
-    "file": "terrain/Mud Sink.html",
+    "file": "terrain/mud-sink.html",
     "name": "Mud Sink",
     "category": "terrain",
     "type": null,
@@ -2022,7 +2022,7 @@
     "text": "At-Will TerrainMud Sink A patch of innocuous mud conceals a clinging morass that proves hard to escape. Standard Action Check: Athletics check (moderate DC) to maneuver one creature adjacent to you and to the mud sink into a mud sink square. Success: You slide the creature 1 square into the mud sink square adjacent to it. You then make the following attack against that creature. Target: Melee 1; one creature Attack: Level +3 vs. Reflex Hit: The target is immobilized (save ends). Aftereffect: The target is slowed (save ends). Published in Dark Sun Creature Catalog, page(s) 136."
   },
   {
-    "file": "terrain/Mudflats.html",
+    "file": "terrain/mudflats.html",
     "name": "Mudflats",
     "category": "terrain",
     "type": null,
@@ -2043,7 +2043,7 @@
     "text": "Mudflats Underground water reservoirs seep up through the soil to create a dusty sludge. The hint of life-sustaining water in these mudflats attracts parched creatures, but those who venture in can become trapped. Effect: Particularly thick sections of mudflats are difficult terrain. The mire also hides mud sinks, occupying 2-by-2-square or larger areas. Usage: Numerous mudflats are scattered around the Sea of Silt. The rarer inland ones draw settlers, who carefully extract life-giving water from the damp ground. Published in Dark Sun Creature Catalog, page(s) 135."
   },
   {
-    "file": "terrain/Mushroom Arch.html",
+    "file": "terrain/mushroom-arch.html",
     "name": "Mushroom Arch",
     "category": "terrain",
     "type": null,
@@ -2064,7 +2064,7 @@
     "text": "Mushroom Arch The primal mud (see below) found in various portions of the Feydark gives rise to several secondary terrain features of interest, including the mushroom arch. Also called an arch of wonder, a mushroom arch appears as a series of glowing mushrooms (frequently pale purple) that grow together to form an arch over a corridor through which a creature can pass. A mushroom arch can form over a tunnel of any size up to 4 squares in width or height. It can be identified with a DC 20 Arcana or Dungeoneering check. Effect: A mushroom arch gives off dim light in a 5-square radius. It also can affect creatures that pass through it, but rarely the same way twice. The effect is sometimes negligible, other times positive, and occasionally awful. A creature that walks through a mushroom arch (or moves to stand directly beneath it) is affected automatically; roll a d10 and refer to the table below to determine the effect. A fey creature that walks through a mushroom arch adds 2 to the roll. Any time a creature triggers a mushroom arch, the power resident within it is temporarily drained, and the arch can’t be activated again for 1 hour. d10 Effect 1-2 Ongoing 5 damage per tier (save ends) 3-4 Slowed (save ends) 5-6 No effect 7-8 Bioluminescent haze grants concealment until the end of the encounter 9 or higher Regeneration 2 per tier until the end of the encounter Usage: Place a mushroom arch over a tunnel leading directly to a combat encounter to start the encounter off with a variable effect. Alternatively, placing the arch within an encounter space—perhaps in a tunnel connecting two areas of the battlefield—allows it to change the tenor of the fight in mid-combat. Published in Underdark, page(s) 101."
   },
   {
-    "file": "terrain/Mythals.html",
+    "file": "terrain/mythals.html",
     "name": "Mythals",
     "category": "terrain",
     "type": null,
@@ -2085,7 +2085,7 @@
     "text": "Mythals Mythals are enormous, layered magic constructions created by extensive and unique group rituals. They were designed to provide magical support to those in their area, but most have lost their power and now provide only protective fields to hinder enemies and help allies. Effect: A mythal usually protects a large area such as a city or town. Most commonly have the following effects on creatures while they are in its area: • Evil or chaotic evil creatures take a -2 penalty to attack rolls, checks, and saving throws. In addition, those creatures cannot use teleportation powers. • Creatures allied to the mythal gain a +2 bonus to saving throws. • Any creature that activates a spellscar is affected by the mythal for the rest of that day as if it were evil. • Any attempt to teleport into the mythal’s area alerts any wizards that are linked to the mythal, and such attempts fail unless they have been specifically allowed. Those entering the mythal’s area arrive in a magically warded, well-guarded location. Usage: Mythals provide protection from outside (and usually evil) threats. The protection of a mythal offers a good opportunity to defend a population center or stronghold from outside attack. If the characters are considered allies of the mythal, they can handle stronger threats while in the mythal’s area. Have the heroes defend the area against a powerful raiding party, or a horde of minions following a powerful leader. The encounter can be difficult or extremely difficult due to the mythal’s effects. Published in Forgotten Realms Campaign Guide, page(s) 53."
   },
   {
-    "file": "terrain/Necrotic Ground.html",
+    "file": "terrain/necrotic-ground.html",
     "name": "Necrotic Ground",
     "category": "terrain",
     "type": null,
@@ -2106,7 +2106,7 @@
     "text": "Necrotic Ground This area is infused with necrotic energy. All light sources appear slightly dimmer, and the air is cold and still. Creatures that enter this area feel tired and drained. Effect: A creature that spends a healing surge in an area of necrotic ground recovers only half the normal number of hit points. (All other effects, such as additional hit points regained or the bonus to defense from using second wind, are unaffected.) Usage: Unless an encounter area consists entirely of necrotic ground, characters will wisely do anything they can to avoid being in the area when they spend healing surges. If you combine necrotic ground with a strong defensive position or another advantageous location, you might force characters into the difficult choice of staying in their good position but gaining less benefit from healing effects, or abandoning their position so that they can regain as many hit points as possible. Published in Dungeon Master's Guide 2, page(s) 61."
   },
   {
-    "file": "terrain/Needle Hedge.html",
+    "file": "terrain/needle-hedge.html",
     "name": "Needle Hedge",
     "category": "terrain",
     "type": null,
@@ -2127,7 +2127,7 @@
     "text": "Needle Hedge Areas of sharp-needled bushes grow in the dark forests of the Shadowfell and in areas of the world where shadow’s influence is strong. The plants are covered in long, sharp spines and thorns, forcing creatures to slow down as they move through the bushes or suffer a multitude of small cuts. Effect: A needle hedge is difficult terrain, and it grants cover to a creature within it or behind it. If a creature moves through more than 1 square of needle hedge during a single move action or incident of forced movement, that creature takes 5 damage per tier. Usage: Characters are likely to consider a needle hedge an effectively solid barrier until they’re pushed through it. Use it with monsters that can force movement, or with elves or other skirmishers that can shift freely in difficult terrain (including creatures that have the forest walk ability). Published in Dungeon Master's Guide 2, page(s) 61."
   },
   {
-    "file": "terrain/Phase Crystal.html",
+    "file": "terrain/phase-crystal.html",
     "name": "Phase Crystal",
     "category": "terrain",
     "type": null,
@@ -2148,7 +2148,7 @@
     "text": "Phase Crystal This translucent, silvery crystal is related to phase rock (see Manual of the Planes). It can be induced to discharge its extradimensional energy and shunt a creature out of phase for a short time. Effect: When a creature ends its move in a square of phase crystal, it gains phasing until the end of its next turn. That square cannot affect another creature until the end of the encounter. Usage: Combined with obstacles that restrict a battlefield, phase crystal allows characters or monsters greater mobility. You can restrict the terrain’s effect by limiting the number of squares it covers. Try not to use phase crystal as the only way to get to a special area or encounter unless the terrain is large enough to affect the entire party at one time. Published in The Plane Below, page(s) 17."
   },
   {
-    "file": "terrain/Phase Mist.html",
+    "file": "terrain/phase-mist.html",
     "name": "Phase Mist",
     "category": "terrain",
     "type": null,
@@ -2169,7 +2169,7 @@
     "text": "Phase Mist Phase mist is an extremely rare phenomenon. It appears as a hazy cloud of swirling colors similar to those found in the Astral Sea. When a creature steps into phase mist, its body phases into the strange spaces that exist between the planes. Effect: A square of phase mist is lightly obscured. A creature that starts its turn in a square of phase mist gains phasing until the end of its turn. Usage: Use phase mist to create encounters that force the characters to split up. For example, the characters might use the mist to enter a chamber that lacks a door. Within the chamber is another patch of phase mist and an object that the characters need. In addition, monsters that have phasing, or undying guardians that lurk in the inaccessible chambers, wait to ambush lone characters. Published in Dungeon Master's Guide 2, page(s) 61."
   },
   {
-    "file": "terrain/Phase Rock.html",
+    "file": "terrain/phase-rock.html",
     "name": "Phase Rock",
     "category": "terrain",
     "type": null,
@@ -2190,7 +2190,7 @@
     "text": "Phase Rock Phase rock areas are slightly out of sync with reality. Effect: While in a phase rock square, a creature is insubstantial and phasing. When a creature starts its turn in a phase rock square and moves out of that square, it is insubstantial and phasing until the end of its move. Usage: Use phase rock to let creatures that don’t normally have phasing move through blocking terrain or obstacles, allowing them to avoid defenders and surprise the characters. Be careful with placing too many phase rock squares, because creatures can remain insubstantial in those squares, taking half damage and prolonging encounters. Published in Manual of the Planes, page(s) 22."
   },
   {
-    "file": "terrain/Pillar of Life.html",
+    "file": "terrain/pillar-of-life.html",
     "name": "Pillar of Life",
     "category": "terrain",
     "type": null,
@@ -2211,7 +2211,7 @@
     "text": "Pillar of Life This tall stone pillar is infused with life energy. Effect: When a creature starts its turn adjacent to a pillar of life, it regains 5 hit points per tier. Usage: Adding a pillar of life to an encounter can create an interesting tactical situation, especially if the monsters are initially surrounding the pillar and gaining extra hit points each turn. If you choose not to reveal the terrain’s effect immediately, use visual clues to help the players understand the terrain effect. Adding a pillar of life to an encounter will also let you set the characters against a much more difficult encounter, since they will gain the extra healing. As an alternative to reduce the pillar’s effectiveness slightly, consider having the pillar only work ever other round, to create a “capture the flag” type of environment between the characters and their opposition (with visual, auditory, or some other clue indicating when it’s powered up). Published in Dungeon Master's Guide, page(s) 68."
   },
   {
-    "file": "terrain/Plaguelands.html",
+    "file": "terrain/plaguelands.html",
     "name": "Plaguelands",
     "category": "terrain",
     "type": null,
@@ -2232,7 +2232,7 @@
     "text": "Plaguelands Plaguelands are regions where the Spellplague still runs amok, changing everything it contacts. Most plaguelands appear to be shrouded in a thick, luminous blue fog, with everything inside blurred and wavering when viewed from outside. Effect: The terrain inside the plaguelands boundary is mutable, shifting constantly like boiling mud. Each hour that a creature not already spellscarred or plaguechanged spends in a plagueland subjects it to the Spellplague. A creature that takes an extended rest in a plagueland takes a -1 penalty to Fortitude and loses one healing surge, which can only be regained outside the plagueland. This penalty stacks, but disappears when the creature takes an extended rest outside the plagueland. If a creature’s Fortitude drops to 0, it dies in an explosion of blue flame. Characters who survive a full day (24 or more consecutive hours) in a plagueland might qualify to choose a spellscar, at the Dungeon Master’s discretion. Usage: Due to the nature of the plaguelands, encounters inside them that include aberrations fit thematically, though almost any type of creature could be found in plaguelands. If the characters are in a plaguelands for a short time, use creatures with attacks targeting Fortitude to take advantage of that penalty. Be aware of the healing surge penalty if the characters will be in the plaguelands for an extended time, however, because the characters will have less resources to survive the longer they are there. Published in Forgotten Realms Campaign Guide, page(s) 54."
   },
   {
-    "file": "terrain/Pocket of Night.html",
+    "file": "terrain/pocket-of-night.html",
     "name": "Pocket of Night",
     "category": "terrain",
     "type": null,
@@ -2253,7 +2253,7 @@
     "text": "Pocket of Night In the darkest places of Samaragd, the shadows have an unnatural weight, and no natural light can penetrate the darkness. Effect: When creating magical light, a character in a pocket of night must make an ability check using his or her class’s primary ability score against a hard DC. On a failure, the magical light fails to illuminate anything; on a success, it casts only dim light. Usage: Use a pocket of night with creatures that have darkvision and powers that take advantage of the concealment this terrain offers. Published in The Plane Above, page(s) 87."
   },
   {
-    "file": "terrain/Portals.html",
+    "file": "terrain/portals.html",
     "name": "Portals",
     "category": "terrain",
     "type": null,
@@ -2274,7 +2274,7 @@
     "text": "Portals Magic portals link diverse places across the world and across the planes. A portal is an immovable magical surface of a size and shape created by its creator. The surface is often situated in a physical frame, such as an arch or doorway, that stands free rather than inside a wall. Some portals allow those looking at it to view the location where those who use it will arrive. A creature trained in Arcana can make a DC 24 Arcana check to detect a portal’s magic. Effect: When a creature passes through the surface of a portal, it is transported to a set destination. Putting any significant part of an object or body through the portal’s surface transports the whole object or creature to the destination, unless an obstacle blocks that space, in which case the portal doesn’t function. If a creature occupies the destination space, the creature being transported is shunted to the nearest unoccupied space. Any number of creatures can enter a portal at the same time, as long as the portal’s size can accommodate them. Unattended objects, such as a flying arrow, can’t pass through a portal by itself, instead bouncing off. There is no line of effect for powers and rituals to work through portals, unless the portal was designed that way. A portal’s creator can set extra limitations on a portal. One limitation is the requirement of a key to pass through a portal. Another limitation is restricted access, so that only specific creatures or objects can pass through. A portal can have multiple preset destinations, allowing the user to select among them, or based on the key used. Other portals will set the destination randomly. A portal can also malfunction. The most common malfunction is an unintended or random destination. Some malfunctioning portals have strange effects. Usage: A great way to change up an adventure from what is expected is to use a malfunctioning portal, just don’t introduce one too often or the players will avoid all portals, or examine each one to make sure it’s safe. If the group believes they are going to one location and prepare for that destination, send them to another completely different location they aren’t prepared for (for example, if they are prepared to go to the Hells, send them to an icy world in the Astral Sea. Give them a way back, however, if you don’t want the story to change course for an extended period. Published in Forgotten Realms Campaign Guide, page(s) 54."
   },
   {
-    "file": "terrain/Primal Mud.html",
+    "file": "terrain/primal-mud.html",
     "name": "Primal Mud",
     "category": "terrain",
     "type": null,
@@ -2295,7 +2295,7 @@
     "text": "Primal Mud Life force rises up through the Feydark into the Feywild in the form of primal mud. This organic sludge takes on various colorations, from a brown muddy hue to a clear, viscous slime. It gathers in pools and depressions, from where it is sucked through the Feydark’s root structures up into the Feywild above. Primal mud nourishes the Feydark’s dense subterranean f lora. Brief contact with primal mud heals; lengthier exposure tears down living tissue, returning it to its raw nutrient origins. A patch of primal mud typically covers 1 to 3 contiguous squares of cavern f loor, but multiple mud patches are often present in the same large chamber. Primal mud can be identified with a DC 20 Dungeoneering check. Effect: Primal mud is difficult terrain. A creature standing in primal mud can spend a healing surge as a minor action. This act temporarily expends the mud’s magic and dries it out, changing that entire patch of primal mud into normal terrain until the end of the encounter. A fey creature that uses this benefit gains 1d6 additional hit points per tier and gains a +2 bonus to speed until the end of its next turn. Usage: Use primal mud in particularly long or tough encounters to give the characters an edge in the fight. Alternatively, a wily fey opponent can use primal mud to heal itself and then flee the battlefield, possibly to set up an ambush in a later chamber. Published in Underdark, page(s) 101."
   },
   {
-    "file": "terrain/Primordial Font.html",
+    "file": "terrain/primordial-font.html",
     "name": "Primordial Font",
     "category": "terrain",
     "type": null,
@@ -2316,7 +2316,7 @@
     "text": "Primordial Font Volatile fountains of liquid elemental energy can erupt anywhere in the Elemental Chaos, changing those who bathe in them. Effect: A creature that remains in a square containing a primordial font for its entire turn gains a random elemental keyword and an accompanying benefit, as shown in the table below. Alternatively, a creature in the font’s square can spend a standard action to splash the liquid over itself, gaining the keyword and the accompanying benefit even if it does not end its turn in the font. Whenever a creature gains a primordial font effect and is already under the effect of a previous result, the prior effect ends. Otherwise, a creature that is under a primordial font’s effect rolls a d20 at the end of its turn. On a result of 9 or lower, the effect ends. Creatures of the elemental origin that are affected by a primordial font can make a saving throw to avoid its effect. d6 Keyword Effect 1 Earth You gain resist 5 to all damage. 2 Fire You deal 1d6 extra fire damage per tier with melee attacks. 3 Ice Each creature that starts its turn adjacent to you is slowed until the start of your next turn. 4 Lightning Until the start of your next turn, you don’t grant combat advantage or take a -5 penalty to attack rolls when you run. 5 Thunder Each creature that starts its turn adjacent to you is dazed until the start of your next turn. 6 Water You can shift as a minor action. Usage: Primordial fonts create interesting random interactions for monsters and characters alike. You can place them in an encounter when you want a strange and unpredictable battle. Alternatively, primordial fonts are useful in areas containing portals or other restricted zones that are accessible only to creatures that have a certain elemental keyword. Published in The Plane Below, page(s) 17."
   },
   {
-    "file": "terrain/Psychic Reservoir.html",
+    "file": "terrain/psychic-reservoir.html",
     "name": "Psychic Reservoir",
     "category": "terrain",
     "type": null,
@@ -2337,7 +2337,7 @@
     "text": "Psychic Reservoir Sheltered from the blowing grit, odd violet crystals grow in caverns or rocky terrain. These formations are psychic reservoirs, prized by psionic characters for the latent energy they contain. Effect: With a minor action, a character adjacent to a psychic reservoir can extract the energy from it, causing it to crumble to dust. If that character uses power points, he or she gains 1 power point that lasts until the end of the encounter or until expended. Otherwise, the character adds 5 psychic damage per tier to his or her next damage roll. Usage: Psychic reservoirs add a slight power boost to one side or the other in an encounter. By placing them in scattered spots about the battlefield, you encourage quick action and maneuverability. Psychic reservoirs are particularly valuable in an encounter featuring creatures that are vulnerable to psychic damage. Published in Dark Sun Creature Catalog, page(s) 136."
   },
   {
-    "file": "terrain/Quick Sear.html",
+    "file": "terrain/quick-sear.html",
     "name": "Quick Sear",
     "category": "terrain",
     "type": null,
@@ -2358,7 +2358,7 @@
     "text": "Quick Sear This mixture of acid and quicksilver is a viscous, silvery green liquid. It appears as a small puddle in a single square. Effect: A creature that starts its turn in a square of quick sear or adjacent to such a square takes 5 acid damage per tier. If a square of quick sear is within the area of effect of a close or an area attack, it moves 1d6 squares in a random direction. Usage: Quick sear adds a random element to an encounter that could otherwise prove dull or static. Use it in encounters where a sense of randomness and an unexpected twist seems appropriate. Published in Dungeon Master's Guide 2, page(s) 61."
   },
   {
-    "file": "terrain/Rage Stone.html",
+    "file": "terrain/rage-stone.html",
     "name": "Rage Stone",
     "category": "terrain",
     "type": null,
@@ -2379,7 +2379,7 @@
     "text": "Rage Stone This expanse of black-veined crimson stone is infused with the psychic residue of pitched battles and brutal atrocities. A creature standing on a square of rage stone feels itself consumed with negative and violent emotions that it must unleash. Effect: A creature that starts its turn in a square of rage stone must make a melee attack on that turn or takes 5 psychic damage per tier. Usage: Creatures that are comfortable making melee attacks suffer few ill effects from rage stone, aside from lingering emotional turmoil that has no game effect. Creatures that prefer to stay away from melee combat (including most PC controllers, for example) are the most likely to take damage from rage stone. Putting rage stone at the periphery of an encounter area can play havoc with PC controllers and ranged strikers, as well as with artillery monsters. Published in Dungeon Master's Guide 2, page(s) 61."
   },
   {
-    "file": "terrain/Razorvine.html",
+    "file": "terrain/razorvine.html",
     "name": "Razorvine",
     "category": "terrain",
     "type": null,
@@ -2400,7 +2400,7 @@
     "text": "Razorvine This hardy creeper plant is ubiquitous in Sigil and throughout the planes. It has sharp, serrated leaves that cut creatures moving through the vegetation. Effect: Razorvines form in an area that is at least 4 contiguous squares. A razorvine is difficult terrain. A creature that enters a razorvine square or starts its turn there takes 10 damage per tier. Usage: Use this terrain to keep the characters out of specific locations in an encounter area, or place a controller or an elite creature within a circle of razorvine, or in a U-shaped section that only allows one character to approach it without going through razorvine squares. Unless the characters have strong ranged attacks, they must choose whether to take damage from the razorvine, or find another way to bypass them. Used as part of a trap, razorvine growing from movable wooden or stone walls can block the characters’ retreat from a tough fight. Published in Manual of the Planes, page(s) 22."
   },
   {
-    "file": "terrain/Red Pipe.html",
+    "file": "terrain/red-pipe.html",
     "name": "Red Pipe",
     "category": "terrain",
     "type": null,
@@ -2430,7 +2430,7 @@
     "text": "Single-Use TerrainRed Pipe This pipe runs across the chamber before turning 90 degrees. Standard Action Requirement: You must be adjacent to the pipe if you use the Thievery skill. Check: Thievery check (hard DC) to breach the pipe; otherwise deal 10 damage to a square of the pipe in a single attack to breach it (all defenses 10). Success: The pipe bursts. Attack: Close blast 3 (creatures in the blast); +7 vs. Fortitude Hit: 1d8 + 4 poison damage, and the target is blinded (save ends). Published in Dungeon Magazine 195."
   },
   {
-    "file": "terrain/Rocky Badlands.html",
+    "file": "terrain/rocky-badlands.html",
     "name": "Rocky Badlands",
     "category": "terrain",
     "type": null,
@@ -2451,7 +2451,7 @@
     "text": "Rocky Badlands The canyons and wastes of Athas’s rocky badlands are rugged and arid. Scant plant life enlivens the desolation. Effect: Rocky badlands contain numerous teetering stone pillars, the remnants of outcroppings eroded by sand and wind over the eons. Usage: Homesteaders are hard pressed to survive in the badlands. As a result, few settlements exist in these areas. They are most useful as ambush sites or as locales for monster or bandit lairs. Published in Dark Sun Creature Catalog, page(s) 136."
   },
   {
-    "file": "terrain/Rope Bridge.html",
+    "file": "terrain/rope-bridge.html",
     "name": "Rope Bridge",
     "category": "terrain",
     "type": null,
@@ -2484,7 +2484,7 @@
     "text": "At-Will TerrainRope Bridge This rickety bridge spans a deep gap. One sudden move, and it sways perilously, threatening to put anyone on it over the side. Standard Action Requirement: You must be on or adjacent to the bridge. Check: Athletics check (moderate DC) to sway the bridge. Success: The bridge sways. Target: Each creature standing on the bridge (including you, if applicable) Attack: Level + 3 vs. Reflex Hit: The target is knocked prone. If the target is already prone, it falls off the bridge. Published in Dungeon Master's Guide 2, page(s) 63."
   },
   {
-    "file": "terrain/Ruined Wall.html",
+    "file": "terrain/ruined-wall.html",
     "name": "Ruined Wall",
     "category": "terrain",
     "type": null,
@@ -2523,7 +2523,7 @@
     "text": "Single-Use TerrainRuined Wall This sagging wall is ready to fall over with just the right application of force. Standard Action Requirement: You must be adjacent to the wall. Check: Athletics check (hard DC) to topple the wall. Success: The wall collapses. Target: Each creature in a close blast 3 in the direction the wall fell Attack: Level + 3 vs. Reflex Hit: 1d10 + one-half level damage, and the target is knocked prone. Miss: Half damage. Effect: The space the wall covered and the area of the blast become difficult terrain. Published in Dungeon Master's Guide 2, page(s) 63."
   },
   {
-    "file": "terrain/Sacred Circle.html",
+    "file": "terrain/sacred-circle.html",
     "name": "Sacred Circle",
     "category": "terrain",
     "type": null,
@@ -2544,7 +2544,7 @@
     "text": "Sacred Circle A sacred circle is dedicated to a specific deity and infused with divine energy. Effect: A creature that has the same alignment as the deity a sacred circle is dedicated to gains a +2 bonus to attack rolls while standing in that circle. Most sacred circles fill an area 3 squares by 3 squares. Usage: Use a circle dedicated to an evil deity with the aligned monsters (evil cultists) arrayed within the circle, improving their attacks. Or use a circle dedicated to a good or unaligned deity that the characters can use to improve their attacks against enemies with high defenses. Each option requires different strategies for the characters to use, and makes forced movement effects more valuable for one side or the other. Published in Dungeon Master's Guide, page(s) 68."
   },
   {
-    "file": "terrain/Salt Flats.html",
+    "file": "terrain/salt-flats.html",
     "name": "Salt Flats",
     "category": "terrain",
     "type": null,
@@ -2565,7 +2565,7 @@
     "text": "Salt Flats Salt flats are bleak plains encrusted with saline deposits and bone-dry sand. The rare water sources in these areas are brackish. Effect: Violence in salt flats invariably results in painful injuries. Fine salt crystals suspended in the constant breeze permeate whatever covering is placed over wounds, causing unending agony. Clean water to wash away the salt or aid in recovery is nonexistent. Dunes of the finest particulates, called salt piles, collect throughout the salt flats. Usage: The denuding of Athas’s plant life and the gradual evaporation of its seas has resulted in vast regions of salt flats. These areas challenge travelers even when no opponents or hazards exist. Published in Dark Sun Creature Catalog, page(s) 136."
   },
   {
-    "file": "terrain/Salt Pile.html",
+    "file": "terrain/salt-pile.html",
     "name": "Salt Pile",
     "category": "terrain",
     "type": null,
@@ -2598,7 +2598,7 @@
     "text": "Single-Use TerrainSalt Pile A pile of wind-blown salt rests on the ground. A savvy combatant can use it to blind a foe or harm an injured foe. Standard Action Requirement: You must be adjacent to the salt pile. Check: Athletics check (easy DC) to toss or kick a spray of particles. Success: The salt showers the target. Target: One creature in a close blast 3 Attack: Level + 3 vs. Reflex Hit: The target is blinded (save ends). If the target is bloodied, it is instead blinded and slowed (save ends both). Published in Dark Sun Creature Catalog, page(s) 136."
   },
   {
-    "file": "terrain/Sandy Wastes.html",
+    "file": "terrain/sandy-wastes.html",
     "name": "Sandy Wastes",
     "category": "terrain",
     "type": null,
@@ -2619,7 +2619,7 @@
     "text": "Sandy Wastes The wastes of Athas stretch for miles in every direction, largely featureless but for sand, wind, and relentless heat. Effect: Sandy wastes are covered in rolling dunes that can hide bandits, raiders, and desert predators. A small dune covers a 3-by-3-square or larger area. Usage: Merciless sunlight is the only thing more plentiful on Athas than sandy wastes. Within them, small dunes are ideal ambush spots for creatures hardy enough to lie in wait while covered with sand. Published in Dark Sun Creature Catalog, page(s) 136."
   },
   {
-    "file": "terrain/Settled Ash.html",
+    "file": "terrain/settled-ash.html",
     "name": "Settled Ash",
     "category": "terrain",
     "type": null,
@@ -2655,7 +2655,7 @@
     "text": "Single-Use TerrainSettled Ash Ash from plants destroyed by defiling magic coats the ground. The slightest disturbance kicks up an obscuring cloud. Standard Action Requirement: You must be adjacent to a square of settled ash. Check: Athletics check (easy DC) to raise a cloud of ash. Success: The ash fills the air, obscuring vision. Target: Each creature in a close blast 3 Attack: Level + 3 vs. Fortitude Hit: The target is blinded until the end of your next turn. Effect: The area of the blast is heavily obscured until the end of the encounter. Published in Dark Sun Creature Catalog, page(s) 134."
   },
   {
-    "file": "terrain/Shattering Crystal.html",
+    "file": "terrain/shattering-crystal.html",
     "name": "Shattering Crystal",
     "category": "terrain",
     "type": null,
@@ -2691,7 +2691,7 @@
     "text": "Single-Use TerrainShattering Crystal The giant’s greatclub smashes into the crystal, and rubble hurtles toward you. Minor Action Requirement: The giant must be adjacent to a crystal stalactite or stalagmite. Check: The giant makes a melee basic attack against the crystal (AC 5). Success: The stalactite or stalagmite shatters and makes an attack, which is a close blast 3 or close burst 1 (giant’s choice) centered on the stalactite’s or stalagmite’s square. Target: Each creature in the blast or burst Attack: +13 vs. Fortitude Hit: 1d10 + 3 damage. Effect: The blast or burst becomes an area of difficult terrain that lasts until the end of the encounter. Published in The Plane Below, page(s) 92."
   },
   {
-    "file": "terrain/Sickening Heat.html",
+    "file": "terrain/sickening-heat.html",
     "name": "Sickening Heat",
     "category": "terrain",
     "type": null,
@@ -2712,7 +2712,7 @@
     "text": "Sickening Heat Athas’s sun burns with peculiar intensity in areas where magic has defiled a copious amount of plant life. This severe heat can sicken creatures. Effect: A creature that ends its turn in a square of sickening heat is weakened until the end of its next turn. Usage: Sickening heat defiled terrain is particularly debilitating to strikers and others who specialize in high-damage output. A monster with a power that slides and then immobilizes enemies is particularly effective in an area of sickening heat. Published in Dark Sun Creature Catalog, page(s) 135."
   },
   {
-    "file": "terrain/Silt Deep Spot.html",
+    "file": "terrain/silt-deep-spot.html",
     "name": "Silt Deep Spot",
     "category": "terrain",
     "type": null,
@@ -2739,7 +2739,7 @@
     "text": "At-Will TerrainSilt Deep Spot Within a shallow pool of silt, occasional deep spots can be exploited by observant combatants. Standard Action Check: Nature check (hard DC) to recognize a deeper spot in the silt pool. Target: One creature you choose within a silt pool Attack: Level + 3 vs. Reflex Hit: The target is restrained (save ends). Published in Dark Sun Creature Catalog, page(s) 137."
   },
   {
-    "file": "terrain/Silt Pool.html",
+    "file": "terrain/silt-pool.html",
     "name": "Silt Pool",
     "category": "terrain",
     "type": null,
@@ -2760,7 +2760,7 @@
     "text": "Silt Pool Natural dips and crevasses in the land can fill up with extremely light, powdery silt. These areas act like quicksand, easily trapping unwary creatures. Effect: Silt pools are difficult terrain, and occasionally hide silt deep spots. They can also contain silt sink hazards. Usage: Although smaller silt pools can blend into the surrounding terrain, the flat, liquid surface of a larger silt pool rarely goes unnoticed. Wading through a silt pool and risking silt deep spots might be the only path available. Published in Dark Sun Creature Catalog, page(s) 136."
   },
   {
-    "file": "terrain/Slides.html",
+    "file": "terrain/slides.html",
     "name": "Slides",
     "category": "terrain",
     "type": null,
@@ -2781,7 +2781,7 @@
     "text": "Slides A slide is coated with a slick substance and designed to send characters tumbling, offering quick transport at a price. Effect: A slide is difficult terrain. A creature that enters a slide square must make an Acrobatics check. A creature that fails immediately moves to the end of the slide, falls prone, and ends its move. Usage: Use a slide with skirmisher monsters that can handle the Acrobatics checks and take advantage of the slides to move around quickly. Published in Dungeon Master's Kit, page(s) 211, Dungeon Master's Guide, page(s) 68."
   },
   {
-    "file": "terrain/Slipsand.html",
+    "file": "terrain/slipsand.html",
     "name": "Slipsand",
     "category": "terrain",
     "type": null,
@@ -2802,7 +2802,7 @@
     "text": "Slipsand Athas’s acute heat can cause an elemental reaction in sandy areas where magic, primal power, or psionics have been used heavily. The ground becomes saturated with high quantities of glass particles, making its surface particularly treacherous. Effect: A creature that enters a square containing slipsand must make an Acrobatics check (moderate DC). On a failure, the creature falls prone and takes 5 damage per tier from the glass fragments. Usage: Creatures not trained in Acrobatics, particularly those that have low Dexterity scores, are greatly inhibited by slipsand. This terrain should be used judiciously, since it can drastically reduce mobility in an encounter. Published in Dark Sun Creature Catalog, page(s) 137."
   },
   {
-    "file": "terrain/Small Dune.html",
+    "file": "terrain/small-dune.html",
     "name": "Small Dune",
     "category": "terrain",
     "type": null,
@@ -2826,7 +2826,7 @@
     "text": "At-Will TerrainSmall Dune A small, slowly shifting dune is formed from loose sand that parts easily, then flows back to erase any trace of disturbance. Standard Action Requirement: You must be in a square of the dune. Check: Athletics check (easy DC) to burrow into the dune. Success: You bury yourself beneath the sand. You fall prone and have total concealment until you move or attack. Published in Dark Sun Creature Catalog, page(s) 136."
   },
   {
-    "file": "terrain/Soul Shard Clusters.html",
+    "file": "terrain/soul-shard-clusters.html",
     "name": "Soul Shard Clusters",
     "category": "terrain",
     "type": null,
@@ -2847,7 +2847,7 @@
     "text": "Soul Shard Clusters Remnants of living creatures slain in the Shadowdark linger as soul shards, and often these shards congregate into clusters. Some of the shards resemble ghostly versions of the creatures they were in life, while others appear as ephemeral skulls. Death giants covet soul shards, using them to fuel their powers. A soul shard cluster encountered in the Shadowdark fills a 3-square-by-3-square area. It can be identified with a DC 25 Dungeoneering or Religion check. Effect: A soul shard cluster has no substance, doesn’t block movement or line of sight, and can’t be attacked or damaged in any way. Any living, nonshadow creature within the space of a soul shard cluster takes a -2 penalty to attack rolls and all defenses. A living creature within the space of a soul shard cluster can attempt a hard Religion check as a standard action to draw on the energy of the soul shard, regaining hit points if the check succeeds as if it had spent a healing surge. Success dissipates the soul shard cluster temporarily, but it reforms somewhere else nearby within hours or days. A creature can’t retry the check. Usage: The presence of a soul shard cluster could be the only warning characters have before a death giant attacks them. Published in Underdark, page(s) 121."
   },
   {
-    "file": "terrain/Soul Venom.html",
+    "file": "terrain/soul-venom.html",
     "name": "Soul Venom",
     "category": "terrain",
     "type": null,
@@ -2868,7 +2868,7 @@
     "text": "Soul Venom These areas of Samaragd contain tainted atmosphere. Effect: While in an area of soul venom, a creature gains vulnerable 5 poison per tier, or vulnerable 10 poison per tier while bloodied. Creatures that have immunity or resistance to poison are immune to these effects. Usage: Add patches of soul venom to an encounter with medusas or other poison-using creatures that have poison resistance or immunity to give them a bigger punch. Published in The Plane Above, page(s) 87."
   },
   {
-    "file": "terrain/Spiderwebs.html",
+    "file": "terrain/spiderwebs.html",
     "name": "Spiderwebs",
     "category": "terrain",
     "type": null,
@@ -2889,7 +2889,7 @@
     "text": "Spiderwebs Enormous spiders haunt the underground regions of the world, sometimes leaving sticky webs behind long after they themselves are gone. Effect: The webs of giant spiders are difficult terrain. A creature that enters a spiderweb must make an Athletics check or an Acrobatics check or become immobilized. Trapped creatures can use the escape action to free themselves from the web. A spiderweb square is lightly obscured. Usage: Don’t use spiderwebs only in encounters with giant spiders—they can also be interesting terrain in fights against either mobile monsters or monsters with push and slide effects. An ogre might try to push the party rogue into a spiderweb to make him stand still. Published in Dungeon Master's Kit, page(s) 211, Dungeon Master's Guide, page(s) 69."
   },
   {
-    "file": "terrain/Spore Field.html",
+    "file": "terrain/spore-field.html",
     "name": "Spore Field",
     "category": "terrain",
     "type": null,
@@ -2910,7 +2910,7 @@
     "text": "Spore Field The overwhelming vigor of the fungal colonies that suffuse the Living Grotto and nearby tunnels manifests most dangerously in spore fields. These places transfix creatures that breathe in their intoxicating spores, even as other spores begin the job of rapidly decomposing the soon-to-be organic detritus. Spore field patches are found in areas of 3 to 12 contiguous squares. A spore field can be identified with a DC 25 Dungeoneering check. Effect: A creature that enters a spore field or ends its turn in one is restrained and takes ongoing 5 damage per tier (save ends both). If a creature drops to 0 hit points while in a spore field, its body produces a burst 1 centered on the creature; all squares in the burst become spore field squares. Creatures in the burst are treated as if they had entered it. Plants are immune to the effects of a spore field. Usage: Placing a spore field in an encounter with slower creatures could even up the odds a bit for those creatures. Of course, characters can also use the terrain to slow down faster foes by maneuvering the foes into it. Published in Underdark, page(s) 109."
   },
   {
-    "file": "terrain/Strangling Wind.html",
+    "file": "terrain/strangling-wind.html",
     "name": "Strangling Wind",
     "category": "terrain",
     "type": null,
@@ -2931,7 +2931,7 @@
     "text": "Strangling Wind The pressure of this wind is so great, and its blasts so turbulent, that it slows and even suffocates those who push themselves too hard. The winds are strong enough to hinder the accuracy of ranged and area attacks (even magical ones). A jet of strangling wind is typically 3 squares wide and 6 to 8 squares long at paragon tier, and 5 squares by 10 squares at epic tier. Effect: A creature that starts its turn in a square of strangling wind is slowed until the start of its next turn. A creature that runs or takes a double move in strangling wind is dazed (save ends) at the end of that movement, even if it is no longer within the wind’s area. With each failed saving throw, the target loses a healing surge. Creatures take a -5 penalty to attack rolls with ranged or area attacks launched within or into an area of strangling wind. Usage: Strangling wind makes a formidable barrier that penalizes creatures trying to move quickly through the area. Elemental brutes and soldiers, such as rockfire dreadnoughts (see Monster Manual)and demons, love fighting in strangling wind. They can take their time beating the pulp out of their enemies without worrying much about ranged attacks. Published in The Plane Below, page(s) 17."
   },
   {
-    "file": "terrain/Swinging Rope or Vine.html",
+    "file": "terrain/swinging-rope-or-vine.html",
     "name": "Swinging Rope or Vine",
     "category": "terrain",
     "type": null,
@@ -2961,7 +2961,7 @@
     "text": "At-Will TerrainSwinging Rope or Vine A vine hangs down from the treetops over a deep chasm. Move Action Requirement: A vine hangs down from the treetops over a deep chasm. Check: Athletics check (moderate DC) to swing from the vine or rope’s starting square to its ending square. Success: You move from the vine or rope’s starting square to its ending square along the vine or rope’s path. This movement provokes opportunity attacks, and you can let go from the vine at any point during this movement. If you reach the ending square, you can make an Athletics check to jump at the end of the swing, treating it as a jump with a running start, but you must jump in the same direction as the movement of the swinging vine or rope. Failure: You do not move, and your move action ends. Special: When placing a swinging vine or rope in an encounter, the DM must determine the rope’s starting square, its path of travel, its ending square, and whether it can travel in both directions. Published in Dungeon Master's Guide 2."
   },
   {
-    "file": "terrain/Table of Combustibles.html",
+    "file": "terrain/table-of-combustibles.html",
     "name": "Table of Combustibles",
     "category": "terrain",
     "type": null,
@@ -2994,7 +2994,7 @@
     "text": "Single-Use TerrainTable of Combustibles A table holds beakers and vials containing volatile combustibles that have a violent reaction when mixed together or thrown to the ground. Standard Action Requirement: You must be adjacent to the table. Check: Athletics check (hard DC) to overturn the table. You can drop prone as part of the standard action to avoid the attack. Success: The table is overturned. Target: Each creature in a close burst 2 centered on the table Attack: Level + 3 vs. Reflex Hit: Ongoing 5 fire and poison damage per tier (save ends). Published in Dungeon Master's Guide 2, page(s) 63."
   },
   {
-    "file": "terrain/Tapestry.html",
+    "file": "terrain/tapestry.html",
     "name": "Tapestry",
     "category": "terrain",
     "type": null,
@@ -3027,7 +3027,7 @@
     "text": "Single-Use TerrainTapestry A quick tug, and the tapestry hanging on the wall flutters to the ground, trapping anyone next to it. Standard Action Requirement: You must be adjacent to the tapestry. Check: Athletics check (moderate DC) to pull the tapestry down. Success: The tapestry falls. Target: Each creature in a close blast 3 out from the tapestry Attack: Level + 3 vs. Reflex Hit: The target is blinded and slowed until it is no longer underneath the tapestry. Published in Dungeon Master's Guide 2, page(s) 63, Dungeon Magazine 180, page(s) 47."
   },
   {
-    "file": "terrain/Teetering Stone Pillar.html",
+    "file": "terrain/teetering-stone-pillar.html",
     "name": "Teetering Stone Pillar",
     "category": "terrain",
     "type": null,
@@ -3060,7 +3060,7 @@
     "text": "Single-Use TerrainTeetering Stone Pillar This towering stone column narrows at its base, making it top-heavy and unstable. Standard Action Requirement: You must be adjacent to the pillar. Check: Athletics check (moderate DC) to collapse the pillar. Success: The pillar topples over. Target: One or two creatures, which must be adjacent to each other; one of the creatures must also be adjacent to the pillar Attack: Level + 3 vs. Reflex Hit: 1d10 + one-half level damage, and the target is dazed (save ends). Published in Dark Sun Creature Catalog, page(s) 136."
   },
   {
-    "file": "terrain/Teleporters.html",
+    "file": "terrain/teleporters.html",
     "name": "Teleporters",
     "category": "terrain",
     "type": null,
@@ -3081,7 +3081,7 @@
     "text": "Teleporters Teleporters are magical gates that whisk creatures from one spot to another. Effect: A creature that enters a teleporter space immediately moves to the teleporter’s destination square. The destination square can be another teleporter to allow for two-way travel. In that case, the creature automatically moves to a square adjacent to the destination square. Usage: Besides allowing for interesting movement options during an encounter, teleporters are a great way to surprise characters. Have some minions or other weak enemies draw the characters into an area with one or more teleporters, and then bring the brutes, skirmishers, or soldiers into the combat behind the front lines. You can also mix teleporters with mirror crystals to create a complex and dynamic encounter. Published in Dungeon Master's Guide, page(s) 69."
   },
   {
-    "file": "terrain/Thunder Shards.html",
+    "file": "terrain/thunder-shards.html",
     "name": "Thunder Shards",
     "category": "terrain",
     "type": null,
@@ -3102,7 +3102,7 @@
     "text": "Thunder Shards These crystalline shards of solidified thunder energy are both unstable and dangerous. They rumble and shudder as they course with the energy within them. Most creatures avoid them, but occasionally orcs, ogres, and other battle hungry creatures dwell near them. Although thunder shards are dangerous, they also make useful defensive fortifications if used properly. Effect: Squares of thunder shards are difficult terrain. If a creature makes a melee attack against a target in a thunder shard square, roll a d20; on a 10 or higher, both the attacker and the target take 5 thunder damage and are pushed 1d4 squares from each other. Usage: Thunder shards are useful barriers to encourage movement and add a random element to the fight. The random push is especially useful if the area has pits or other dangerous terrain. Published in Dungeon Master's Guide 2, page(s) 61."
   },
   {
-    "file": "terrain/Tree of Life Defiling.html",
+    "file": "terrain/tree-of-life-defiling.html",
     "name": "Tree of Life Defiling",
     "category": "terrain",
     "type": null,
@@ -3123,7 +3123,7 @@
     "text": "At-Will TerrainTree of Life Defiling The tree of life pulses with vitality, fueling the powers of a greedy defiler. Free Action Requirement: You must be within 5 squares of a tree of life. Effect: When you use arcane defiling or a necrotic power and deal damage to one or more of your allies, the tree of life takes that damage instead. Published in Dark Sun Creature Catalog, page(s) 137."
   },
   {
-    "file": "terrain/Tree of Life.html",
+    "file": "terrain/tree-of-life.html",
     "name": "Tree of Life",
     "category": "terrain",
     "type": null,
@@ -3144,7 +3144,7 @@
     "text": "Tree of Life A tree of life is mystically infused with primal forces of life. Sorcerer-kings and other defilers with significant resources maintain groves of these mighty timbers to fuel their magic. Effect: A tree of life emits a 5-square aura. Creatures within the area regain the maximum possible number of hit points from healing effects. When making a skill check during the performance of a divination ritual, a character within the tree’s aura gains a +5 bonus. Also, a character who takes an extended rest within the aura gains an extra healing surge that lasts until he or she takes another extended rest. A tree of life has 500 hit points and vulnerable 10 necrotic. It regenerates 5 hit points per hour. If the tree’s hit points drop to 0, it dies. Usage: Trees of life are rare and wondrous objects. Most of these hardwoods are jealously hoarded by sorcerer-kings deep within their palaces. Using tree of life defiling, defilers can draw on their magic more freely within a tree of life’s aura. Published in Dark Sun Creature Catalog, page(s) 137."
   },
   {
-    "file": "terrain/Unstable Monolith.html",
+    "file": "terrain/unstable-monolith.html",
     "name": "Unstable Monolith",
     "category": "terrain",
     "type": null,
@@ -3183,7 +3183,7 @@
     "text": "Single-Use TerrainUnstable Monolith This spotted stone does not sit easily in the earth and might fall with a bit of pressure. Standard Action Requirement: You must be adjacent to the monolith. Check: Athletics check, DC 21, to topple the monolith. Success: The monolith falls in the direction you choose and makes the following attack. Target: Each creature in a close blast 3 in the direction the monolith falls Attack: +9 vs. Reflex Hit: 2d8 + 4 damage, the monolith knocks the target prone, and the target has superior cover and cannot stand up. The target cannot stand up until it makes a DC 15 escape check. Miss: Half damage, and the monolith slides the target to the nearest unoccupied square adjacent to the area of the blast. Effect: The area of the blast is difficult terrain until the end of the encounter. Published in Dungeon Magazine 181."
   },
   {
-    "file": "terrain/Venomous Air.html",
+    "file": "terrain/venomous-air.html",
     "name": "Venomous Air",
     "category": "terrain",
     "type": null,
@@ -3204,7 +3204,7 @@
     "text": "Venomous Air These are clouds of nigh-undetectable poisons that hang in the air and amplify other poison attacks. Effect: When a creature within an area of venomous air is hit with a poison attack, it takes 1d6 extra poison damage per tier. Usage: Use venomous air in an encounter with a large number of weaker creatures or minions that have poison attacks to turn them into a greater threat. Published in The Plane Above, page(s) 87."
   },
   {
-    "file": "terrain/Whirlwind.html",
+    "file": "terrain/whirlwind.html",
     "name": "Whirlwind",
     "category": "terrain",
     "type": null,
@@ -3225,7 +3225,7 @@
     "text": "Whirlwind Whirlwinds form in areas infused with elemental energy (often in water or air). A whirlwind’s current drags creatures along its path. Effect: When a creature enters a whirlwind square or starts its turn in one, it moves a distance and direction according to the whirlwind’s strength and direction (as determined by the Dungeon Master). This movement is a slide effect, with the distance and direction determined by the whirlwind. A creature that wants to fight against the whirlwind can spend squares of movement to reduce the distance the wind slides it (if the creature still has movement left during its turn). The creature can reduce the distance partially, or decrease it to 0, provided the creature has enough movement to do so. If a whirlwind slides a creature through another square that has a whirlwind, the creature ignores that other whirlwind. A whirlwind can also move creatures upward. A creature that ends its turn outside of a whirlwind square and aloft falls to the ground if it isn’t flying. Usage: Whirlwinds increase the amount of forced movement occurring in an encounter, creating a chaotic and moving battlefield that can present difficulties for defenders who like to lock down their opponents. Pair whirlwinds that launch creatures into the air with flying skirmisher that aren’t harmed by the forced movement to increase their movement capabilities. Whirlwinds can also make an encounter in a high location with long falls more dramatic, especially if the characters are fighting opponents with forced movement powers. Published in Dungeon Master's Guide, page(s) 69."
   },
   {
-    "file": "terrain/Wrath Mud.html",
+    "file": "terrain/wrath-mud.html",
     "name": "Wrath Mud",
     "category": "terrain",
     "type": null,
@@ -3246,7 +3246,7 @@
     "text": "Wrath Mud In parts of the Abyss, the land itself is subject to the insane rage that twists and contorts reality. Certain stinking bogs contain eerie mud that saps the sanity from creatures within it, pushing them to violence through psychic pain. The mud has a normal consistency but features an oily sheen, ref lecting light in a swirling rainbow of sickly color. Effect: Areas of wrath mud are difficult terrain. Any creature within a square of wrath mud that scores a critical hit with a melee attack deals 1d10 extra damage per tier on that attack. Furthermore, a creature that starts its turn in a square of wrath mud and does not make a melee attack before the end of its turn takes 5 psychic damage per tier. Usage: Wrath mud is similar to, but more unforgiving than, blood rock. It is typically used to create bottlenecks that force bloody melee battles—the kind of fight that demons enjoy most. Published in The Plane Below, page(s) 17."
   },
   {
-    "file": "terrain/Z'tal Horde.html",
+    "file": "terrain/ztal-horde.html",
     "name": "Z'tal Horde",
     "category": "terrain",
     "type": null,

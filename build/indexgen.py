@@ -379,7 +379,7 @@ def build_tables(content_root, output_root, categories=None):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("categories", nargs="*", help="Content folders to build (default: all)")
-    parser.add_argument("--content", type=Path, default=ROOT / "content", help="Source directory")
+    parser.add_argument("--content", type=Path, default=ROOT / "public/content", help="Source directory")
     parser.add_argument("--output", type=Path, default=ROOT / "tables", help="Generated JSON directory")
     args = parser.parse_args()
     try:
