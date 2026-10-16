@@ -89,3 +89,94 @@ Run the extractor tests:
 ```sh
 python3 -m unittest discover -s tests -v
 ```
+
+## Algolia search
+
+`src/search/search.ts` defines the provider-independent `Search` interface.
+`AlgoliaSearch` uses the `algoliasearch` npm client for full-text queries, exact
+tag filters, zero-based pagination, and cancellation of pending results. The SDK
+may finish its network request after cancellation. Empty queries browse entries or search by
+tags alone. The `/search` page uses this interface and preserves queries, tags,
+and pagination in its URL. Results link to the original HTML through `/c/*`.
+Vite serves the content in development and copies it into `dist/content` during
+the production build. Configure your static host to serve `index.html` for SPA
+routes such as `/search` and `/c/*`.
+
+The indexer reads visible text directly from `content` and joins table metadata
+by `file`. Rebuild the tables after changing content:
+
+```sh
+python3 build/indexgen.py
+# Validate locally without credentials or network access:
+npm run index:algolia
+# Optionally export records for inspection:
+npm run index:algolia -- --output /tmp/compendium-algolia.jsonl
+```
+
+Tags are case-sensitive `field:value` strings. Multiple tags use AND, combined
+with the full-text query. Default fields are `category`, `level`, `role`, `rank`,
+`rarity`, `item_type`, `slot`, `class_or_path`, `power_type`, `usage`, `action`,
+`tier`, `keywords`, `size`, `origin`, `creature_type`, `power_source`,
+`category_label`, `sources`, `variant_level`, `variant_price`, and
+`variant_enhancement`. Array values become separate tags; nulls are omitted.
+An explicit table `tags` list is also retained. Add other structured fields with
+repeatable `--tag-field` options, for example `--tag-field languages`.
+
+```ts
+import { AlgoliaSearch } from "./src/search/algolia";
+
+const search = new AlgoliaSearch({
+  applicationId: "YOUR_APP_ID",
+  searchKey: "YOUR_SEARCH_ONLY_KEY",
+  indexName: "compendium",
+});
+const results = await search.search({
+  query: "ongoing damage",
+  tags: ["category:monster", "level:1"],
+  page: 0,
+  pageSize: 20,
+});
+```
+
+Add the values from `.env.example` to your local `.env`. The browser uses only
+the `VITE_ALGOLIA_*` variables; use a search-only key restricted to the index.
+Never expose an admin key through a `VITE_` variable. Restart Vite after changing
+configuration. The Node indexer reads process environment variables, so export
+them before uploading (or source a shell-compatible `.env`):
+
+```sh
+set -a
+. ./.env
+set +a
+npm run index:algolia -- --upload
+npm start
+```
+
+Uploads use `ALGOLIA_APP_ID`, `ALGOLIA_ADMIN_KEY`, and `ALGOLIA_INDEX_NAME`
+(default `compendium`, also overridable with `--index`). The upload command
+replaces that index, including its settings, using a temporary index after all
+batches finish. Use a dedicated compendium index. This removes stale records
+when files disappear or shrink. A failed upload leaves the live index intact;
+the printed temporary index can be removed in the Algolia dashboard. The upload
+key must permit settings, record writes, and moving temporary indices.
+
+Long HTML files are split into overlapping records below 9,000 UTF-8 JSON bytes.
+Every chunk retains the same tags, and Algolia groups results by `file` so each
+entry appears once. All text is indexed, though query terms must match within
+one chunk; the overlap preserves short phrases near boundaries. This can use
+more Algolia records than there are HTML files.
+
+Both searches and uploads use the official [`algoliasearch` npm SDK](https://github.com/algolia/algoliasearch-client-javascript).
+`build/algolia.mjs` runs the Python extractor, then uses the SDK for settings,
+batched uploads, task polling, and index replacement. Python only generates local
+records and makes no network requests. Filtering and replacement follow Algolia's
+[tag filters](https://www.algolia.com/doc/api-reference/api-parameters/tagFilters)
+and [index replacement](https://www.algolia.com/doc/rest-api/search/operation-index).
+
+Run search tests and build:
+
+```sh
+npm run test:search # Node 22.6+ for native TypeScript stripping
+python3 -m unittest discover -s tests -v
+npm run build
+```

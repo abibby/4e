@@ -9,6 +9,7 @@
   "dependencies": {
     "@react-router/dev": "^7.18.4",
     "@vitejs/plugin-react": "^6.1.2",
+    "algoliasearch": "^5.60.0",
     "cookie": "^1.1.1",
     "detect-libc": "^2.1.2",
     "fdir": "^6.5.0",
@@ -34,7 +35,9 @@
   },
   "scripts": {
     "start": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "test:search": "node --experimental-strip-types --test tests/search.test.mjs tests/algolia-index.test.mjs",
+    "index:algolia": "node build/algolia.mjs"
   },
   "repository": {
     "type": "git",

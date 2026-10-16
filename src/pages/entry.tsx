@@ -1,14 +1,17 @@
 import type { LoaderFunctionArgs } from "react-router";
 import { useLoaderData } from "react-router";
 
-export async function loader({ url }: LoaderFunctionArgs) {
+export async function loader({ request }: LoaderFunctionArgs) {
+    const url = new URL(request.url)
     let html: string
     if (import.meta.env.SSR) {
         // load the file from the disk directly
         html = ""
     } else {
         const p = url.pathname.replace(/^\/c\//, "/content/");
-        html = await fetch(p).then(r => r.text())
+        const response = await fetch(p, { signal: request.signal })
+        if (!response.ok) throw new Response("Entry not found", { status: response.status })
+        html = await response.text()
     }
 
     return {

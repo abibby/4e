@@ -1,5 +1,4 @@
 .DS_Store
-/tables/
 __pycache__/
 /dist
 node_modules
