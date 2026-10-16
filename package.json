@@ -38,7 +38,7 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "test:search": "node --experimental-strip-types --test tests/search.test.mjs tests/algolia-index.test.mjs",
+    "test:search": "node --experimental-strip-types --test tests/search.test.mjs tests/search-filters.test.mjs tests/algolia-index.test.mjs",
     "index:algolia": "node --experimental-strip-types build/algolia.ts"
   },
   "repository": {

@@ -124,14 +124,25 @@ object contains duplicate extracted prose and isn't indexed as filter fields.
 Item variants are exposed as `variant_level`, `variant_price`, and
 `variant_enhancement` arrays. `level` retains the table's own level value.
 
-The search page has category, minimum level, maximum level, and rarity controls.
-For uncommon items at levels 3 through 6, select category `item`, minimum `3`,
-maximum `6`, and rarity `Uncommon`. Both bounds are inclusive. Leave the search
-text empty to browse all matching items. Additional `field:value` boxes support
-equality filters on other columns. All filters combine with AND and stay in the
-URL when paging. Attribute names are case-sensitive; facet string values are
-case-insensitive. `_tags` retains labels for existing search-result consumers
-and explicit custom tags.
+The responsive search page includes resource type, inclusive level bounds, keyword,
+source reference, and category-specific filters: power class/path, usage, action
+and type; item rarity, type and slot; creature role, rank, size, origin and type;
+feat tier; class power source; and ritual category and skill. Text field filters
+match exact indexed values (case-insensitive); source references may include page
+numbers. Use the main full-text search for partial matches.
+
+Apply filters together, remove individual applied filters with their chips, or
+clear all filters while keeping your search text. Switching resource type clears
+incompatible draft fields. The search page uses the standard resource filters;
+all applied filters combine using AND. Queries, filters, results per page, and
+pagination stay in the URL, including browser back/forward
+navigation. Entry pages link back to the originating search and support printing.
+
+Shared controls, result cards, pagination and the application layout live in
+`src/components`. `src/hooks/use-search.ts` handles draft filters and navigation
+links; `src/search/filters.ts` owns filter definitions, URL serialization, and
+validation. Styling uses responsive CSS, visible keyboard focus, reduced-motion
+support and scoped legacy entry styles. Search and entry routes load on demand.
 
 The search API accepts equality values and numeric ranges on any indexed column:
 

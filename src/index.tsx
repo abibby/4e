@@ -1,26 +1,37 @@
+import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import { Home } from "./pages/home";
-import { Entry, loader as entryLoader } from "./pages/entry";
-import { Search, loader as searchLoader } from "./pages/search";
+import { Layout, RouteError, InitialLoading } from "./components/layout";
+import "./styles.css";
 
-let router = createBrowserRouter([
+const router = createBrowserRouter([
   {
-    path: "/",
-    Component: Home,
-  },
-  {
-    path: "/search",
-    Component: Search,
-    loader: searchLoader,
-  },
-  {
-    path: "/c/*",
-    Component: Entry,
-    loader: entryLoader,
+    Component: Layout,
+    ErrorBoundary: RouteError,
+    HydrateFallback: InitialLoading,
+    children: [
+      { path: "/", Component: Home },
+      {
+        path: "/search",
+        lazy: async () => {
+          const { Search, loader } = await import("./pages/search");
+          return { Component: Search, loader };
+        },
+      },
+      {
+        path: "/c/*",
+        lazy: async () => {
+          const { Entry, loader } = await import("./pages/entry");
+          return { Component: Entry, loader };
+        },
+      },
+    ],
   },
 ]);
 
 createRoot(document.getElementById("main")!).render(
-  <RouterProvider router={router} />,
+  <StrictMode>
+    <RouterProvider router={router} />
+  </StrictMode>,
 );
