@@ -1,0 +1,54 @@
+{
+  "name": "4e",
+  "version": "1.0.0",
+  "description": "Generate one searchable JSON table for every subfolder of `content` using Python 3.9 or later. No dependencies are required.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "@react-router/dev": "^7.18.4",
+    "@vitejs/plugin-react": "^6.1.2",
+    "cookie": "^1.1.1",
+    "detect-libc": "^2.1.2",
+    "fdir": "^6.5.0",
+    "lightningcss": "^1.33.0",
+    "lightningcss-linux-x64-gnu": "^1.33.0",
+    "lightningcss-linux-x64-musl": "^1.33.0",
+    "nanoid": "^3.3.20",
+    "picocolors": "^1.1.1",
+    "picomatch": "^4.0.7",
+    "playwright": "^1.64.0",
+    "playwright-core": "^1.64.0",
+    "postcss": "^8.5.29",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router": "^7.18.4",
+    "rolldown": "^1.2.13",
+    "scheduler": "^0.28.0",
+    "set-cookie-parser": "^2.7.2",
+    "source-map-js": "^1.2.2",
+    "tinyglobby": "^0.2.17",
+    "vite": "^8.3.4",
+    "vite-ssg": "^28.3.0"
+  },
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abibby/4e.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abibby/4e/issues"
+  },
+  "homepage": "https://github.com/abibby/4e#readme",
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0"
+  }
+}
